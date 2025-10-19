@@ -2,7 +2,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = "http://192.168.1.68:1313/"
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "congo"

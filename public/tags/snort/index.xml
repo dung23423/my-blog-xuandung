@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snort on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/snort/</link>
+    <description>Recent content in Snort on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/snort/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HoneyPot/HoneyNet System - Đồ án An ninh mạng</title>
+      <link>http://localhost:1313/projects/honeypot/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/honeypot/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

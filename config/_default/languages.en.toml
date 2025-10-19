@@ -1,0 +1,14 @@
+languageCode = "vi"
+languageName = "Tiếng Việt"
+weight = 1
+title = "Blog của Triệu Xuân Dũng"
+
+[params]
+  displayName = "VI"
+  isoCode = "vi"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = ""
+  secondaryLogo = ""
+  description = "Developer & Blogger"
+  # copyright = "© 2025 Triệu Xuân Dũng"

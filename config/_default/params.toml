@@ -1,0 +1,88 @@
+# Cấu hình cơ bản
+colorScheme = "auto"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+# Thông tin tác giả
+[author]
+  name = "Triệu Xuân Dũng"
+  image = "images/avatar.jpg"
+  headline = "Developer & Blogger"
+  bio = "Đam mê công nghệ và chia sẻ kiến thức"
+  links = [
+    { mastodon = "https://mastodon.social/@yourusername" },
+    { github = "https://github.com/yourusername" },
+    { linkedin = "https://linkedin.com/in/yourprofile" },
+    { facebook = "https://facebook.com/yourprofile" },
+    { twitter = "https://twitter.com/yourusername" },
+    { email = "mailto:your@email.com" }
+  ]
+
+# Trang chủ
+[homepage]
+  layout = "profile" # profile, page, custom
+  showRecent = true
+  showRecentItems = 50
+  showMoreLink = true
+  showMoreLinkDest = "/posts"
+  cardView = false
+  cardViewScreenWidth = false
+
+[list]
+  showCards = true
+  cardView = true
+  cardViewScreenWidth = false
+  showSummary = true
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  showBreadcrumbs = false
+  groupByYear = true
+  showTaxonomies = true
+
+[article]
+  showBreadcrumbs = false
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false
+  showHero = true
+  heroStyle = "background"
+  showSummary = true
+  showTableOfContents = true
+  showTaxonomies = true        # ✅ Thêm dòng này
+  showRelatedContent = true     # ✅ Và dòng này
+  
+
+# Sitemap
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+# Taxonomy
+[taxonomy]
+  showTermCount = true
+
+# Firebase (nếu dùng)
+# [firebase]
+#   apiKey = ""
+#   authDomain = ""
+
+# Footer
+[footer]
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = false
+# Tính năng
+enableSearch = true
+enableCodeCopy = true
+enableImageLazyLoading = true
+enableImageWebp = true
+# Custom CSS
+[params]
+  customCSS = ["css/custom.css"]
+ description = "Blog cá nhân về lập trình Java, JavaScript và công nghệ. Chia sẻ kiến thức, kinh nghiệm và dự án."
+  author = "Triệu Xuân Dũng"
+  keywords = ["Java", "JavaScript", "Spring Boot", "Flutter", "Web Development", "Programming"]
+
+[pagination]
+  pagerSize = 20  # ✅ Mỗi trang 20 bài

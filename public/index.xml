@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trang chủ on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Trang chủ on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Thu, 16 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liên hệ</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Về tôi</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 16 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ArrayList vs LinkedList: Câu chuyện về cái giá của sự lựa chọn sai</title>
+      <link>http://localhost:1313/posts/collections-framework-java/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/collections-framework-java/</guid>
+      <description>Tôi từng nghĩ ArrayList và LinkedList giống nhau. Cho đến khi app của tôi xử lý 10 giây thay vì 0.1 giây. Đây là những gì tôi học được.</description>
+    </item>
+    <item>
+      <title>Exception Handling: Khi try-catch trở thành disaster - Bài học từ production crash</title>
+      <link>http://localhost:1313/posts/exception-handling-java/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/exception-handling-java/</guid>
+      <description>Empty catch block, swallowing exceptions, và catch Exception quá rộng - những sai lầm kinh điển tôi đã mắc phải. Story time!</description>
+    </item>
+    <item>
+      <title>Hành trình 4 tháng từ &#39;Hello World&#39; đến Spring Boot: Kinh nghiệm học Java của một sinh viên</title>
+      <link>http://localhost:1313/posts/hoc-java-tu-zero-kinh-nghiem/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hoc-java-tu-zero-kinh-nghiem/</guid>
+      <description>4 tháng, từ người chưa biết gì về Java đến có thể build REST API với Spring Boot. Đây là những gì tôi đã học được - và cả những sai lầm đáng tiếc.</description>
+    </item>
+    <item>
+      <title>JavaScript Closures: Từ &#39;Hả?&#39; đến &#39;À ra thế!&#39; - Bí mật về phạm vi biến</title>
+      <link>http://localhost:1313/posts/javascript-closures-scope/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-closures-scope/</guid>
+      <description>Tôi code JavaScript 6 tháng mới biết closures tồn tại. Thêm 3 tháng nữa mới thực sự hiểu nó. Đây là con đường ngắn hơn để bạn hiểu.</description>
+    </item>
+    <item>
+      <title>JavaScript ES6&#43;: Từ callback hell đến async/await - Cuộc cách mạng ngôn ngữ tôi đã chứng kiến</title>
+      <link>http://localhost:1313/posts/javascript-es6-plus/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-es6-plus/</guid>
+      <description>Từ var và callback hell đến let/const và async/await. Đây là câu chuyện về cách ES6+ biến JavaScript từ &amp;lsquo;messy&amp;rsquo; thành &amp;rsquo;elegant&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>Node.js REST API: Khi JavaScript chạy trên server - Alternative cho Spring Boot</title>
+      <link>http://localhost:1313/posts/nodejs-express-rest-api/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nodejs-express-rest-api/</guid>
+      <description>Sếp: &amp;lsquo;Backend team đang quá tải, frontend có ai biết làm API không?&amp;rsquo; Tôi: &amp;lsquo;Để em thử Node.js.&amp;rsquo; 3 ngày sau: API hoạt động. 1 tuần sau: Production ready. JavaScript everywhere!</description>
+    </item>
+    <item>
+      <title>OOP trong Java: Khi lý thuyết gặp thực tế - Những bài học từ dự án thực chiến</title>
+      <link>http://localhost:1313/posts/oop-trong-java/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/oop-trong-java/</guid>
+      <description>OOP không phải để thi. Đây là cách tôi dùng 4 trụ cột OOP để refactor một đống spaghetti code thành kiến trúc sạch đẹp.</description>
+    </item>
+    <item>
+      <title>React Hooks: Từ Class Components đến Functional - Cuộc cách mạng tôi không ngờ tới</title>
+      <link>http://localhost:1313/posts/react-hooks-complete-guide/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/react-hooks-complete-guide/</guid>
+      <description>Tôi từng viết 500 dòng class component. Sau khi học Hooks, refactor còn 200 dòng và code clean gấp 10 lần. Đây là những gì tôi ước mình biết sớm hơn.</description>
+    </item>
+    <item>
+      <title>Testing JavaScript: Từ 0% coverage đến &#39;Sleep well at night&#39; với Jest</title>
+      <link>http://localhost:1313/posts/javascript-testing-jest/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-testing-jest/</guid>
+      <description>Bug nghiêm trọng. Production crash. 2 giờ sáng được gọi dậy fix. Sáng hôm sau, tôi quyết định: Không bao giờ để điều này xảy ra nữa. Welcome to testing.</description>
+    </item>
+    <item>
+      <title>Xây dựng REST API với Spring Boot: Từ Hello World đến Production-Ready trong 1 tuần</title>
+      <link>http://localhost:1313/posts/spring-boot-rest-api/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spring-boot-rest-api/</guid>
+      <description>7 ngày. Từ &amp;lsquo;What is Spring Boot?&amp;rsquo; đến một REST API production-ready với JWT authentication. Đây là roadmap chi tiết tôi đã đi qua.</description>
+    </item>
+    <item>
+      <title>HoneyPot/HoneyNet System - Đồ án An ninh mạng</title>
+      <link>http://localhost:1313/projects/honeypot/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/honeypot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>🍊 Calo Plan - Ứng dụng quản lý dinh dưỡng</title>
+      <link>http://localhost:1313/projects/calo-plan/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/calo-plan/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

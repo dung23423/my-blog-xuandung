@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div class="taxonomy-page">
+    <header class="taxonomy-header">
+        <h1>{{ .Title }}</h1>
+        <p class="taxonomy-description">
+            {{ if eq .Title "Tags" }}
+                Tất cả các chủ đề đã viết trên blog
+            {{ else if eq .Title "Categories" }}
+                Danh mục bài viết
+            {{ end }}
+        </p>
+    </header>
+    
+    <div class="taxonomy-cloud">
+        {{ range .Data.Terms.ByCount }}
+        <a href="{{ .Page.Permalink }}" class="taxonomy-tag">
+            {{ .Page.Title }}
+            <span class="tag-count">{{ .Count }}</span>
+        </a>
+        {{ end }}
+    </div>
+    
+    <div class="taxonomy-list">
+        {{ range .Data.Terms.Alphabetical }}
+        <div class="taxonomy-item">
+            <h3>
+                <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+                <span class="item-count">{{ .Count }} bài</span>
+            </h3>
+            <ul class="post-list">
+                {{ range first 3 .Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <time>{{ .Date.Format "02 Jan 2006" }}</time>
+                </li>
+                {{ end }}
+                {{ if gt .Count 3 }}
+                <li class="view-all">
+                    <a href="{{ .Page.Permalink }}">Xem tất cả →</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

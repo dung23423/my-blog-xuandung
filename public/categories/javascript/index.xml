@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/categories/javascript/</link>
+    <description>Recent content in JavaScript on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Closures: Từ &#39;Hả?&#39; đến &#39;À ra thế!&#39; - Bí mật về phạm vi biến</title>
+      <link>http://localhost:1313/posts/javascript-closures-scope/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-closures-scope/</guid>
+      <description>Tôi code JavaScript 6 tháng mới biết closures tồn tại. Thêm 3 tháng nữa mới thực sự hiểu nó. Đây là con đường ngắn hơn để bạn hiểu.</description>
+    </item>
+    <item>
+      <title>JavaScript ES6&#43;: Từ callback hell đến async/await - Cuộc cách mạng ngôn ngữ tôi đã chứng kiến</title>
+      <link>http://localhost:1313/posts/javascript-es6-plus/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-es6-plus/</guid>
+      <description>Từ var và callback hell đến let/const và async/await. Đây là câu chuyện về cách ES6+ biến JavaScript từ &amp;lsquo;messy&amp;rsquo; thành &amp;rsquo;elegant&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>Node.js REST API: Khi JavaScript chạy trên server - Alternative cho Spring Boot</title>
+      <link>http://localhost:1313/posts/nodejs-express-rest-api/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nodejs-express-rest-api/</guid>
+      <description>Sếp: &amp;lsquo;Backend team đang quá tải, frontend có ai biết làm API không?&amp;rsquo; Tôi: &amp;lsquo;Để em thử Node.js.&amp;rsquo; 3 ngày sau: API hoạt động. 1 tuần sau: Production ready. JavaScript everywhere!</description>
+    </item>
+    <item>
+      <title>React Hooks: Từ Class Components đến Functional - Cuộc cách mạng tôi không ngờ tới</title>
+      <link>http://localhost:1313/posts/react-hooks-complete-guide/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/react-hooks-complete-guide/</guid>
+      <description>Tôi từng viết 500 dòng class component. Sau khi học Hooks, refactor còn 200 dòng và code clean gấp 10 lần. Đây là những gì tôi ước mình biết sớm hơn.</description>
+    </item>
+    <item>
+      <title>Testing JavaScript: Từ 0% coverage đến &#39;Sleep well at night&#39; với Jest</title>
+      <link>http://localhost:1313/posts/javascript-testing-jest/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-testing-jest/</guid>
+      <description>Bug nghiêm trọng. Production crash. 2 giờ sáng được gọi dậy fix. Sáng hôm sau, tôi quyết định: Không bao giờ để điều này xảy ra nữa. Welcome to testing.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frontend on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/frontend/</link>
+    <description>Recent content in Frontend on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript ES6&#43;: Từ callback hell đến async/await - Cuộc cách mạng ngôn ngữ tôi đã chứng kiến</title>
+      <link>http://localhost:1313/posts/javascript-es6-plus/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-es6-plus/</guid>
+      <description>Từ var và callback hell đến let/const và async/await. Đây là câu chuyện về cách ES6+ biến JavaScript từ &amp;lsquo;messy&amp;rsquo; thành &amp;rsquo;elegant&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>React Hooks: Từ Class Components đến Functional - Cuộc cách mạng tôi không ngờ tới</title>
+      <link>http://localhost:1313/posts/react-hooks-complete-guide/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/react-hooks-complete-guide/</guid>
+      <description>Tôi từng viết 500 dòng class component. Sau khi học Hooks, refactor còn 200 dòng và code clean gấp 10 lần. Đây là những gì tôi ước mình biết sớm hơn.</description>
+    </item>
+  </channel>
+</rss>

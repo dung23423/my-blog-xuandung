@@ -1,0 +1,77 @@
+{{ define "main" }}
+<div class="project-page">
+    <!-- Hero -->
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1>{{ .Title }}</h1>
+            <p class="project-desc">{{ .Params.description }}</p>
+            
+            <div class="tech-badges">
+                {{ range .Params.techStack }}
+                <span class="badge">{{ . }}</span>
+                {{ end }}
+            </div>
+            
+            <div class="project-links">
+                {{ if .Params.projectUrl }}
+                <a href="{{ .Params.projectUrl }}" class="btn-github" target="_blank">
+                    GitHub
+                </a>
+                {{ end }}
+                {{ if .Params.demoUrl }}
+                <a href="{{ .Params.demoUrl }}" class="btn-demo" target="_blank">
+                    Demo
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <div class="project-content">
+        
+        <!-- Screenshots -->
+        {{ if .Params.screenshots }}
+        <section class="screenshots">
+            <h2>📸 Screenshots</h2>
+            <div class="screenshots-grid">
+                {{ range .Params.screenshots }}
+                <img src="{{ . }}" alt="Screenshot" loading="lazy">
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+
+        <!-- Features -->
+        {{ if .Params.features }}
+        <section class="features">
+            <h2>⭐ Tính năng chính</h2>
+            <ul class="features-list">
+                {{ range .Params.features }}
+                <li>✓ {{ . }}</li>
+                {{ end }}
+            </ul>
+        </section>
+        {{ end }}
+
+        <!-- Stats -->
+        {{ if .Params.stats }}
+        <section class="stats">
+            <h2>📊 Thông tin</h2>
+            <div class="stats-grid">
+                {{ range $key, $value := .Params.stats }}
+                <div class="stat-item">
+                    <strong>{{ $key }}:</strong> {{ $value }}
+                </div>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+
+        <!-- Content -->
+        <article class="project-article">
+            {{ .Content }}
+        </article>
+
+    </div>
+</div>
+{{ end }}

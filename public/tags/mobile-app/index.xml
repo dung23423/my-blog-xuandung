@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile App on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/mobile-app/</link>
+    <description>Recent content in Mobile App on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mobile-app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🍊 Calo Plan - Ứng dụng quản lý dinh dưỡng</title>
+      <link>http://localhost:1313/projects/calo-plan/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/calo-plan/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

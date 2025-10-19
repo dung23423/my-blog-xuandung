@@ -1,0 +1,379 @@
+{{ define "main" }}
+<article class="projects-page">
+    
+    <!-- Header Section -->
+    <header class="projects-header">
+        <div class="projects-header-content">
+            <h1 class="projects-title">{{ .Title }}</h1>
+            {{ if .Params.description }}
+            <p class="projects-description">{{ .Params.description }}</p>
+            {{ end }}
+        </div>
+    </header>
+    
+    <!-- Projects Grid -->
+    <div class="projects-container">
+        {{ $pages := .Pages }}
+        {{ if .Site.Params.projects.groupByYear }}
+        <!-- Group by Year -->
+        {{ range $pages.GroupByDate "2006" }}
+        <div class="projects-year-section">
+            <h2 class="year-heading">{{ .Key }}</h2>
+            <div class="projects-grid">
+                {{ range .Pages }}
+                <article class="project-card">
+                    {{ if .Params.feature }}
+                    <a href="{{ .Permalink }}" class="project-image">
+                        <img src="{{ .Params.feature }}" alt="{{ .Title }}" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="view-project">Xem dự án →</span>
+                        </div>
+                    </a>
+                    {{ else }}
+                    <a href="{{ .Permalink }}" class="project-image project-no-image">
+                        <div class="project-icon">{{ index (split .Title "") 0 }}</div>
+                        <div class="project-overlay">
+                            <span class="view-project">Xem dự án →</span>
+                        </div>
+                    </a>
+                    {{ end }}
+                    
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                                {{ .Date.Format "02 Jan 2006" }}
+                            </time>
+                            <span class="reading-time">{{ .ReadingTime }} phút đọc</span>
+                        </div>
+                        
+                        <h3 class="project-title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h3>
+                        
+                        {{ if .Summary }}
+                        <p class="project-summary">{{ .Summary | truncate 120 }}</p>
+                        {{ end }}
+                        
+                        {{ if .Params.tags }}
+                        <div class="project-tags">
+                            {{ range first 4 .Params.tags }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ else }}
+        <!-- No grouping -->
+        <div class="projects-grid">
+            {{ range $pages }}
+            <article class="project-card">
+                {{ if .Params.feature }}
+                <a href="{{ .Permalink }}" class="project-image">
+                    <img src="{{ .Params.feature }}" alt="{{ .Title }}" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="view-project">Xem dự án →</span>
+                    </div>
+                </a>
+                {{ else }}
+                <a href="{{ .Permalink }}" class="project-image project-no-image">
+                    <div class="project-icon">{{ index (split .Title "") 0 }}</div>
+                    <div class="project-overlay">
+                        <span class="view-project">Xem dự án →</span>
+                    </div>
+                </a>
+                {{ end }}
+                
+                <div class="project-content">
+                    <div class="project-meta">
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                            {{ .Date.Format "02 Jan 2006" }}
+                        </time>
+                        <span class="reading-time">{{ .ReadingTime }} phút đọc</span>
+                    </div>
+                    
+                    <h3 class="project-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h3>
+                    
+                    {{ if .Summary }}
+                    <p class="project-summary">{{ .Summary | truncate 120 }}</p>
+                    {{ end }}
+                    
+                    {{ if .Params.tags }}
+                    <div class="project-tags">
+                        {{ range first 4 .Params.tags }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    
+</article>
+
+<style>
+/* ============================================
+   PROJECTS PAGE - MODERN LAYOUT
+   ============================================ */
+
+.projects-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.projects-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+}
+
+.projects-header {
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: 3rem;
+    background: 
+        linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%),
+        url('/images/projects-bg.jpg') center/cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.projects-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.year-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* Project Card */
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
+}
+
+/* Project Image */
+.project-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+/* No Image Fallback */
+.project-no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-icon {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Overlay */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102, 126, 234, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.view-project {
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+/* Project Content */
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.813rem;
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+}
+
+.project-meta time {
+    font-weight: 500;
+}
+
+.reading-time::before {
+    content: "•";
+    margin-right: 0.5rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.project-title a {
+    color: #1f2937;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-title a:hover {
+    color: #667eea;
+}
+
+.project-summary {
+    font-size: 0.938rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .projects-page {
+        padding: 0 1rem;
+    }
+    
+    .projects-header {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .projects-title {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .year-heading {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+.dark .project-card {
+    background: var(--color-neutral-800);
+}
+
+.dark .project-title a {
+    color: var(--color-neutral-100);
+}
+
+.dark .project-summary {
+    color: var(--color-neutral-400);
+}
+
+.dark .year-heading {
+    color: var(--color-neutral-100);
+}
+</style>
+{{ end }}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Express on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/express/</link>
+    <description>Recent content in Express on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/express/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js REST API: Khi JavaScript chạy trên server - Alternative cho Spring Boot</title>
+      <link>http://localhost:1313/posts/nodejs-express-rest-api/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nodejs-express-rest-api/</guid>
+      <description>Sếp: &amp;lsquo;Backend team đang quá tải, frontend có ai biết làm API không?&amp;rsquo; Tôi: &amp;lsquo;Để em thử Node.js.&amp;rsquo; 3 ngày sau: API hoạt động. 1 tuần sau: Production ready. JavaScript everywhere!</description>
+    </item>
+  </channel>
+</rss>

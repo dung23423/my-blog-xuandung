@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue.js on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/vue.js/</link>
+    <description>Recent content in Vue.js on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ứng dụng Quản lý Công việc</title>
+      <link>http://localhost:1313/projects/du-an-2/</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/du-an-2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

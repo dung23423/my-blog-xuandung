@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/categories/review/</link>
+    <description>Recent content in Review on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React vs Vue.js 2025: Framework nào phù hợp với bạn?</title>
+      <link>http://localhost:1313/posts/so-sanh-react-vs-vue-2025/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/so-sanh-react-vs-vue-2025/</guid>
+      <description>Phân tích sâu 2 framework phổ biến nhất hiện nay với kinh nghiệm thực tế từ các dự án đã làm.</description>
+    </item>
+  </channel>
+</rss>

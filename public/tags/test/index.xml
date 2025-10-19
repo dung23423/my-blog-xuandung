@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/test/</link>
+    <description>Recent content in Test on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Oct 2025 14:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài viết đầu tiên</title>
+      <link>http://localhost:1313/posts/bai-viet-1/</link>
+      <pubDate>Tue, 14 Oct 2025 14:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/bai-viet-1/</guid>
+      <description>Tóm tắt ngắn gọn về bài viết này sẽ hiển thị trong danh sách Recent</description>
+    </item>
+    <item>
+      <title>Bài viết đầu tiên</title>
+      <link>http://localhost:1313/samples/bai-viet-1/</link>
+      <pubDate>Tue, 14 Oct 2025 14:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/samples/bai-viet-1/</guid>
+      <description>Tóm tắt ngắn gọn về bài viết này sẽ hiển thị trong danh sách Recent</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,176 @@
+<!-- HERO 3 IMAGES - WIX STYLE -->
+<section class="hero-triple-images">
+    <div class="hero-images-grid">
+        <!-- Image 1: Workspace/Desk -->
+        <div class="hero-img-column">
+            <img src="/images/hero/workspace1.jpg" alt="Workspace" loading="eager">
+        </div>
+        
+        <!-- Image 2: Portrait (Center with Title Overlay) -->
+        <div class="hero-img-column hero-center">
+            <img src="/images/hero/portrait1.jpg" alt="Triệu Xuân Dũng" loading="eager">
+            
+            <!-- Title Overlay -->
+            <div class="hero-title-box">
+                <h1 class="hero-title">My Life. My Blog.</h1>
+            </div>
+        </div>
+        
+        <!-- Image 3: Plant/Decor -->
+        <div class="hero-img-column">
+            <img src="/images/hero/plant1.jpg" alt="Decoration" loading="eager">
+        </div>
+    </div>
+</section>
+
+<style>
+/* ============================================
+   HERO 3 IMAGES - FULL WIDTH (WIX STYLE)
+   ============================================ */
+
+/* Container full width - break out of Congo's container */
+.hero-triple-images {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+/* Grid 3 cột bằng nhau */
+.hero-images-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70vh; /* 70% chiều cao màn hình */
+    min-height: 500px;
+    max-height: 800px;
+    gap: 0; /* Không có khoảng cách giữa các ảnh */
+}
+
+/* Mỗi cột ảnh */
+.hero-img-column {
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5; /* Màu nền khi ảnh chưa load */
+}
+
+.hero-img-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ảnh fill đầy, crop nếu cần */
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect - zoom nhẹ */
+.hero-img-column:hover img {
+    transform: scale(1.05);
+}
+
+/* Title Overlay ở ảnh giữa */
+.hero-title-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2B2B2B;
+    margin: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET (iPad)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .hero-images-grid {
+        height: 60vh;
+        min-height: 450px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title-box {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Chuyển thành 1 cột dọc */
+    .hero-images-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: auto;
+        max-height: none;
+    }
+    
+    .hero-img-column {
+        height: 40vh; /* Mỗi ảnh chiếm 40% viewport */
+        min-height: 300px;
+    }
+    
+    /* Title không overlay nữa, hiển thị riêng */
+    .hero-title-box {
+        position: relative;
+        background: white;
+        padding: 1.5rem 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img-column {
+        height: 35vh;
+        min-height: 250px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-title-box {
+        padding: 1rem;
+    }
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+.dark .hero-title-box {
+    background: rgba(31, 41, 55, 0.95);
+}
+
+.dark .hero-title {
+    color: #F9FAFB;
+}
+
+.dark .hero-img-column {
+    background: #1f2937;
+}
+</style>

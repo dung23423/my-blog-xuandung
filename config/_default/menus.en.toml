@@ -1,0 +1,45 @@
+[[main]]
+  name = "Trang chủ"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Về tôi"
+  pageRef = "about"
+  weight = 20
+
+[[main]]
+  name = "Dự án"
+  pageRef = "projects"
+  weight = 30
+
+[[main]]
+  name = "Bài viết"
+  pageRef = "posts"
+  weight = 40
+
+[[main]]
+  name = "Liên hệ"
+  pageRef = "contact"
+  weight = 50
+
+# Social menu
+[[social]]
+  name = "GitHub"
+  pageRef = "https://github.com/yourusername"
+  weight = 10
+
+[[social]]
+  name = "LinkedIn"
+  pageRef = "https://linkedin.com/in/yourprofile"
+  weight = 20
+
+[[social]]
+  name = "Facebook"
+  pageRef = "https://facebook.com/yourprofile"
+  weight = 30
+
+[[social]]
+  name = "Email"
+  pageRef = "mailto:your@email.com"
+  weight = 40

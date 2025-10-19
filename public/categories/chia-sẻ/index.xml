@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chia Sẻ on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/categories/chia-s%E1%BA%BB/</link>
+    <description>Recent content in Chia Sẻ on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 05 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/chia-s%E1%BA%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kinh nghiệm học lập trình từ Zero đến Junior Developer trong 1 năm</title>
+      <link>http://localhost:1313/posts/kinh-nghiem-hoc-lap-trinh-tu-zero/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/kinh-nghiem-hoc-lap-trinh-tu-zero/</guid>
+      <description>Chia sẻ chi tiết lộ trình học, tài nguyên và những sai lầm cần tránh khi tự học lập trình từ đầu.</description>
+    </item>
+  </channel>
+</rss>

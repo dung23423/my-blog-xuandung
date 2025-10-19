@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Blog của Triệu Xuân Dũng</title>
+    <link>http://localhost:1313/tags/testing/</link>
+    <description>Recent content in Testing on Blog của Triệu Xuân Dũng</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing JavaScript: Từ 0% coverage đến &#39;Sleep well at night&#39; với Jest</title>
+      <link>http://localhost:1313/posts/javascript-testing-jest/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript-testing-jest/</guid>
+      <description>Bug nghiêm trọng. Production crash. 2 giờ sáng được gọi dậy fix. Sáng hôm sau, tôi quyết định: Không bao giờ để điều này xảy ra nữa. Welcome to testing.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,10 +2,12 @@
 title: "🍊 Calo Plan - Ứng dụng quản lý dinh dưỡng"
 date: 2025-05-10
 draft: false
+image: "/images/projects/calo-plan/logo.jpg"
 tags: ["Flutter", "Dart", "Mobile App", "Health"]
 categories: ["Mobile Development"]
 description: "Ứng dụng theo dõi calories và dinh dưỡng được xây dựng bằng Flutter"
 layout: "project"
+
 projectUrl: "https://github.com/yourusername/calo-plan"
 demoUrl: ""
 techStack: ["Flutter", "Dart", "SQLite", "Provider", "Charts"]
@@ -24,7 +26,7 @@ stats: {
   "Thời gian phát triển": "2 tháng"
 }
 screenshots: [
-#   "/images/projects/calo-plan/logo.jpg",
+  #"/images/projects/calo-plan/logo.jpg",
   "/images/projects/calo-plan/profile.jpg",
   "/images/projects/calo-plan/statistics.jpg",
   "/images/projects/calo-plan/home.jpg"

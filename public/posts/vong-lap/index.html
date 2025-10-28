@@ -1,0 +1,1790 @@
+
+
+
+  
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Vòng Lập (Loops) &middot; Blog của Triệu Xuân Dũng</title>
+    <meta name="title" content="Vòng Lập (Loops) &middot; Blog của Triệu Xuân Dũng" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.f2be56d84f60f337db61170ceea852a7d7b84fd7e65eac5ea2c9490909441bd9.css"
+    integrity="sha256-8r5W2E9g8zfbYRcM7qhSp9e4T9fmXqxeoslJCQlEG9k="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/vong-lap/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/vong-lap/">
+  <meta property="og:site_name" content="Blog của Triệu Xuân Dũng">
+  <meta property="og:title" content="Vòng Lập (Loops)">
+  <meta property="og:description" content="Developer &amp; Blogger">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-14T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vòng Lập (Loops)">
+  <meta name="twitter:description" content="Developer &amp; Blogger">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Vòng Lập (Loops)",
+    "headline": "Vòng Lập (Loops)",
+    
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/vong-lap\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Triệu Xuân Dũng"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-14T00:00:00\u002b00:00",
+    "datePublished": "2025-10-14T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-10-14T00:00:00\u002b00:00",
+    
+    "keywords": ["javascript"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2053"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Trang Chủ",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/",
+       "name": "Lập Trình",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Vòng Lập ( Loops)",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Triệu Xuân Dũng" />
+  
+  
+    
+      <link href="https://mastodon.social/@yourusername" rel="me" />
+    
+      <link href="https://github.com/yourusername" rel="me" />
+    
+      <link href="https://linkedin.com/in/yourprofile" rel="me" />
+    
+      <link href="https://facebook.com/yourprofile" rel="me" />
+    
+      <link href="https://twitter.com/yourusername" rel="me" />
+    
+      <link href="mailto:your@email.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+<style>
+ 
+@media (max-width: 768px) {
+    .mobile-menu-wrapper {
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        pointer-events: none;
+    }
+    
+    .mobile-menu-wrapper > * {
+        pointer-events: auto;
+    }
+    
+    .mobile-nav-btn,
+    .mobile-search-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .mobile-nav-btn span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-nav-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .mobile-search-btn {
+        background: white;
+        border: 2px solid #667eea;
+    }
+    
+    .mobile-search-btn svg {
+        width: 24px;
+        height: 24px;
+        color: #667eea;
+    }
+    
+     
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        z-index: 1999;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        padding-top: 5rem;
+    }
+    
+    .mobile-sidebar.active {
+        left: 0;
+    }
+    
+    .mobile-sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        color: #374151;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+    }
+    
+    .mobile-sidebar a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-left-color: #667eea;
+        color: #667eea;
+    }
+    
+    .mobile-sidebar svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+     
+    .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(5px);
+        z-index: 2001;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+    
+    .mobile-search-overlay.active {
+        display: flex;
+    }
+    
+    .search-box {
+        background: white;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        position: relative;
+    }
+    
+    .search-box input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #667eea;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+    
+    .search-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #9ca3af;
+        cursor: pointer;
+    }
+    
+     
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1998;
+        display: none;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+    
+     
+    .dark .mobile-sidebar,
+    .dark .search-box {
+        background: #1f2937;
+    }
+    
+    .dark .mobile-sidebar a {
+        color: #d1d5db;
+    }
+    
+    .dark .search-box input {
+        background: #111827;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-wrapper,
+    .mobile-sidebar,
+    .mobile-search-overlay,
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.innerWidth > 768) return;
+    
+    
+    const menuHTML = `
+        <div class="mobile-menu-wrapper">
+            <button class="mobile-nav-btn" id="mobileNavBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <a href="/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                Trang chủ
+            </a>
+            <a href="/about/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Về tôi
+            </a>
+            <a href="/projects/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                Dự án
+            </a>
+            <a href="/posts/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Bài viết
+            </a>
+            <a href="/contact/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Liên hệ
+            </a>
+        </div>
+        
+        <div class="mobile-search-overlay" id="mobileSearchOverlay">
+            <div class="search-box">
+                <button class="search-close" id="searchClose">×</button>
+                <input type="text" placeholder="Tìm kiếm bài viết..." id="searchInput">
+            </div>
+        </div>
+        
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    `;
+    
+    document.body.insertAdjacentHTML('afterbegin', menuHTML);
+    
+    
+    const navBtn = document.getElementById('mobileNavBtn');
+    const searchBtn = document.getElementById('mobileSearchBtn');
+    const sidebar = document.getElementById('mobileSidebar');
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const overlay = document.getElementById('mobileOverlay');
+    const searchClose = document.getElementById('searchClose');
+    
+    
+    function toggleMenu() {
+        navBtn.classList.toggle('active');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    function toggleSearch() {
+        searchOverlay.classList.toggle('active');
+        document.body.style.overflow = searchOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    navBtn.addEventListener('click', toggleMenu);
+    searchBtn.addEventListener('click', toggleSearch);
+    overlay.addEventListener('click', toggleMenu);
+    searchClose.addEventListener('click', toggleSearch);
+    
+    
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Blog của Triệu Xuân Dũng</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/"
+                  title="Trang chủ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Trang chủ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title="Về tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Về tôi</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/projects/"
+                  title="Dự án của tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Dự án</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Bài viết</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/contact/"
+                  title="Liên hệ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Liên hệ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Vòng Lập (Loops)
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-14 00:00:00 &#43;0000 UTC">14 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Lập Trình</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="http://localhost:1313/tags/javascript/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Javascript</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-giới-thiệu-chung">1. Giới thiệu chung</a></li>
+    <li><a href="#2-while">2. while</a>
+      <ul>
+        <li><a href="#21-cú-pháp">2.1 Cú pháp</a></li>
+        <li><a href="#22-nguyên-lý">2.2 Nguyên lý</a></li>
+        <li><a href="#23-ví-dụ-cơ-bản">2.3 Ví dụ cơ bản</a></li>
+        <li><a href="#24-ví-dụ-thực-tế-poll-một-trạng-thái">2.4 Ví dụ thực tế: poll một trạng thái</a></li>
+        <li><a href="#55-pitfall--vòng-vô-hạn">5.5 Pitfall — vòng vô hạn</a></li>
+        <li><a href="#pattern-sentinel-loop">Pattern: sentinel loop</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-dowhile">3. do&hellip;while</a>
+      <ul>
+        <li><a href="#31-cú-pháp">3.1 Cú pháp</a></li>
+        <li><a href="#32-điểm-nổi-bật">3.2 Điểm nổi bật</a></li>
+        <li><a href="#33-ví-dụ">3.3 Ví dụ</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-for-cổ-điển">4. for (cổ điển)</a>
+      <ul>
+        <li><a href="#41-cú-pháp-tiêu-chuẩn">4.1 Cú pháp tiêu chuẩn</a></li>
+        <li><a href="#42-ví-dụ">4.2 Ví dụ</a></li>
+        <li><a href="#43-và-nhiều-biến-cùng-lúc">4.3 Và nhiều biến cùng lúc</a></li>
+        <li><a href="#44-hoisting--scope-var-vs-let">4.4 Hoisting / scope: var vs let</a></li>
+        <li><a href="#45-closure-trong-loop-bẫy-phổ-biến">4.5 Closure trong loop (bẫy phổ biến)</a></li>
+        <li><a href="#46-ví-dụ-vòng-lặp-lồng-nhau-matrix">4.6 Ví dụ: vòng lặp lồng nhau (matrix)</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-forof">5. for&hellip;of</a>
+      <ul>
+        <li><a href="#51-cú-pháp">5.1 Cú pháp</a></li>
+        <li><a href="#52-iterable-các-đối-tượng-support">5.2 Iterable? (các đối tượng support)</a></li>
+        <li><a href="#53-ví-dụ">5.3 Ví dụ</a></li>
+        <li><a href="#54-forof-vs-foreach-vs-for-classic">5.4 for&hellip;of vs forEach vs for (classic)</a></li>
+        <li><a href="#55-destructuring-với-forof-map-entries">5.5 Destructuring với for&hellip;of (Map entries)</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-forin">6. for&hellip;in</a>
+      <ul>
+        <li><a href="#61-cú-pháp">6.1 Cú pháp</a></li>
+        <li><a href="#62-dùng-để-lặp-thuộc-tính-của-object-không-dùng-cho-mảng">6.2 Dùng để lặp <strong>thuộc tính</strong> của object (không dùng cho mảng)</a></li>
+        <li><a href="#63-cảnh-báo">6.3 Cảnh báo</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-các-phương-thức-lặp-của-mảng-functional">7. Các phương thức lặp của mảng (functional)</a>
+      <ul>
+        <li><a href="#71-arrforeachfn">7.1 arr.forEach(fn)</a></li>
+        <li><a href="#72-arrmapfn">7.2 arr.map(fn)</a></li>
+        <li><a href="#73-arrfilterfn">7.3 arr.filter(fn)</a></li>
+        <li><a href="#74-arrreducefn-init">7.4 arr.reduce(fn, init)</a></li>
+        <li><a href="#75-arrfind--findindex--some--every">7.5 arr.find / findIndex / some / every</a></li>
+        <li><a href="#76-flatmap-es2019">7.6 flatMap (ES2019)</a></li>
+        <li><a href="#77-lưu-ý-async--foreachmap">7.7 Lưu ý async &amp; forEach/map</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-break--continue--label">8. break / continue / label</a>
+      <ul>
+        <li><a href="#81-break">8.1 break</a></li>
+        <li><a href="#82-continue">8.2 continue</a></li>
+        <li><a href="#83-labeled-break--continue-khi-dùng-nested-loops">8.3 Labeled break / continue (khi dùng nested loops)</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-vòng-lặp-lồng-nhau--tối-ưu-hóa">9. Vòng lặp lồng nhau &amp; tối ưu hóa</a>
+      <ul>
+        <li><a href="#91-tính-phức-tạp-thời-gian">9.1 Tính phức tạp thời gian</a></li>
+        <li><a href="#92-ví-dụ--tìm-cặp-có-tổng-k-on2">9.2 Ví dụ — tìm cặp có tổng k (O(n^2))</a></li>
+        <li><a href="#93-tối-ưu-dùng-bộ-nhớ-hash-để-giảm-xuống-on">9.3 Tối ưu: dùng bộ nhớ (hash) để giảm xuống O(n)</a></li>
+        <li><a href="#94-lồng-nhiều-cấp-3-cân-nhắc-thuật-toán-khác-divide-and-conquer-sort--two-pointer-k-sum-optimized">9.4 Lồng nhiều cấp (3+): cân nhắc thuật toán khác (divide and conquer, sort &amp; two-pointer, k-sum optimized)</a></li>
+      </ul>
+    </li>
+    <li><a href="#10-xóa--chỉnh-sửa-phần-tử-khi-lặp">10. Xóa / Chỉnh sửa phần tử khi lặp</a>
+      <ul>
+        <li><a href="#101-lặp-từ-cuối-về-đầu-splice-an-toàn">10.1 Lặp từ cuối về đầu (splice an toàn)</a></li>
+        <li><a href="#102-dùng-filter-để-tạo-mảng-mới-immutable-style">10.2 Dùng filter để tạo mảng mới (immutable style)</a></li>
+        <li><a href="#103-lưu-index-cần-xóa-rồi-xóa-sau-khi-muốn-mark-first">10.3 Lưu index cần xóa rồi xóa sau (khi muốn mark-first)</a></li>
+        <li><a href="#104-tránh-dùng-shift-trong-vòng-lặp-lớn">10.4 Tránh dùng shift() trong vòng lặp lớn</a></li>
+      </ul>
+    </li>
+    <li><a href="#11-async-trong-vòng-lặp-tuần-tự-vs-song-song">11. Async trong vòng lặp: tuần tự vs song song</a>
+      <ul>
+        <li><a href="#111-vấn-đề-thường-gặp">11.1 Vấn đề thường gặp</a></li>
+        <li><a href="#112-thực-thi-tuần-tự-order-important">11.2 Thực thi tuần tự (order important)</a></li>
+        <li><a href="#113-thực-thi-song-song-tất-cả-cùng-lúc-chờ-tất-cả">11.3 Thực thi song song (tất cả cùng lúc, chờ tất cả)</a></li>
+      </ul>
+    </li>
+    <li><a href="#12-generators--iterators-nhắc-qua">12. Generators / Iterators (nhắc qua)</a></li>
+    <li><a href="#13-tóm-tắt-nhanh">13. Tóm tắt nhanh</a></li>
+    <li><a href="#tổng-hợp-các-loại-vòng-lặp-trong-javascript">Tổng hợp các loại vòng lặp trong JavaScript</a></li>
+    <li><a href="#ghi-nhớ-nhanh">Ghi nhớ nhanh:</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_334a12660d8591b2.webp 330w,http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_ea13bb2c7a0da92a.webp 660w
+            
+              ,http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_ea99157d3ad3b713.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_938cec5a5e2ac4d0.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1600"
+        height="900"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 1"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_96b3d01e3899f344.png" srcset="http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_32caed3a6b314693.png 330w,http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_96b3d01e3899f344.png 660w
+          
+            ,http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_95f029ef4062b9bb.png 1024w
+          
+          
+            ,http://localhost:1313/posts/vong-lap/images/anhnen_loop_hu_d723f03722ad784d.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+
+<strong>Mục tiêu:</strong> chương này trình bày chi tiết mọi loại vòng lặp trong JavaScript, ví dụ thực tế, anti-patterns, so sánh, hiệu suất, các lỗi thường gặp và bài tập có lời giải.</p>
+<hr>
+<h2 id="1-giới-thiệu-chung" class="relative group">1. Giới thiệu chung <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-chung" aria-label="Anchor">#</a></span></h2><p>Vòng lặp (loop) là cấu trúc cho phép thực thi một khối mã nhiều lần. Vòng lặp khác nhau ở:</p>
+<ul>
+<li><strong>khi nào kiểm tra điều kiện</strong> (đầu/ cuối)</li>
+<li><strong>đối tượng để lặp</strong> (số lần, mảng, object, iterable)</li>
+<li><strong>khả năng thoát sớm</strong> (break), bỏ qua (continue)</li>
+<li><strong>tương tác với async/await</strong></li>
+</ul>
+<p>Trong JavaScript phổ biến: <code>while</code>, <code>do...while</code>, <code>for</code>, <code>for...of</code>, <code>for...in</code>, và các phương thức mảng (<code>forEach</code>, <code>map</code>, <code>filter</code>, <code>reduce</code>, &hellip;).</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/vong-lap/images/i_for_hu_1e1870025a31397d.webp 330w,http://localhost:1313/posts/vong-lap/images/i_for_hu_c264c3fe8eb2bebd.webp 660w
+            
+              ,http://localhost:1313/posts/vong-lap/images/i_for_hu_1b5fce85e822683e.webp 1024w
+            
+            
+              
+                ,http://localhost:1313/posts/vong-lap/images/i_for_hu_9f6533ff9c1f92fe.webp 1072w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1072"
+        height="1200"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 2"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/vong-lap/images/i_for_hu_a08ecba1e3ecdd96.png" srcset="http://localhost:1313/posts/vong-lap/images/i_for_hu_94eb690c5f955e7d.png 330w,http://localhost:1313/posts/vong-lap/images/i_for_hu_a08ecba1e3ecdd96.png 660w
+          
+            ,http://localhost:1313/posts/vong-lap/images/i_for_hu_6e8bbd34e4595125.png 1024w
+          
+          
+            ,http://localhost:1313/posts/vong-lap/images/i_for.png 1072w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h2 id="2-while" class="relative group">2. while <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-while" aria-label="Anchor">#</a></span></h2><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="http://localhost:1313/posts/vong-lap/images/vonglapwhile_hu_8d3d66330b97c08e.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="585"
+        height="415"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 3"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/vong-lap/images/vonglapwhile.png"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h3 id="21-cú-pháp" class="relative group">2.1 Cú pháp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#21-c%c3%ba-ph%c3%a1p" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="22-nguyên-lý" class="relative group">2.2 Nguyên lý <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#22-nguy%c3%aan-l%c3%bd" aria-label="Anchor">#</a></span></h3><ul>
+<li>Kiểm tra <code>condition</code> điều kiện trước mỗi lần lặp.</li>
+<li>Nếu <code>true</code> → chạy body → quay lại kiểm tra.</li>
+<li>Nếu <code>false</code> → không chạy body lần nào (nếu ban đầu false).</li>
+</ul>
+<h3 id="23-ví-dụ-cơ-bản" class="relative group">2.3 Ví dụ cơ bản <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#23-v%c3%ad-d%e1%bb%a5-c%c6%a1-b%e1%ba%a3n" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="24-ví-dụ-thực-tế-poll-một-trạng-thái" class="relative group">2.4 Ví dụ thực tế: poll một trạng thái <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#24-v%c3%ad-d%e1%bb%a5-th%e1%bb%b1c-t%e1%ba%bf-poll-m%e1%bb%99t-tr%e1%ba%a1ng-th%c3%a1i" aria-label="Anchor">#</a></span></h3><p>Giả sử ta muốn chờ giá trị <code>ready</code> trở thành <code>true</code> (ví dụ demo; thực tế dùng event thay vì poll):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">waitForReady</span><span class="p">(</span><span class="nx">checkFn</span><span class="p">,</span> <span class="nx">interval</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="nx">timeout</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">start</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">-</span> <span class="nx">start</span> <span class="o">&lt;</span> <span class="nx">timeout</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">ok</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">checkFn</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">ok</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">r</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">r</span><span class="p">,</span> <span class="nx">interval</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="55-pitfall--vòng-vô-hạn" class="relative group">5.5 Pitfall — vòng vô hạn <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#55-pitfall--v%c3%b2ng-v%c3%b4-h%e1%ba%a1n" aria-label="Anchor">#</a></span></h3><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/vong-lap/images/vohan_hu_5b263b2ea680d59.webp 330w,http://localhost:1313/posts/vong-lap/images/vohan_hu_c624462517217c71.webp 660w
+            
+              ,http://localhost:1313/posts/vong-lap/images/vohan_hu_84c6ea9cde5020a0.webp 1024w
+            
+            
+              
+                ,http://localhost:1313/posts/vong-lap/images/vohan_hu_f1f2ae0db473b14e.webp 1200w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1200"
+        height="1200"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 4"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/vong-lap/images/vohan_hu_adb54fcde2effb99.png" srcset="http://localhost:1313/posts/vong-lap/images/vohan_hu_9af685bb8fc8a74a.png 330w,http://localhost:1313/posts/vong-lap/images/vohan_hu_adb54fcde2effb99.png 660w
+          
+            ,http://localhost:1313/posts/vong-lap/images/vohan_hu_48acfce12f59490.png 1024w
+          
+          
+            ,http://localhost:1313/posts/vong-lap/images/vohan.png 1200w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// missing i++ =&gt; infinite loop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p><strong>Cách debug:</strong> thêm <code>console.log</code>, breakpoint; đảm bảo biến thay đổi. Tránh <code>while(true)</code> <strong>không</strong> có <strong>break</strong> trừ khi cần thiết (server loops).</p>
+<h3 id="pattern-sentinel-loop" class="relative group">Pattern: sentinel loop <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#pattern-sentinel-loop" aria-label="Anchor">#</a></span></h3><p>Khi đầu vào kết thúc bởi &ldquo;sentinel&rdquo; (ví dụ: nhập -1 để dừng):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">((</span><span class="nx">n</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Nhập số (-1 để kết thúc)&#34;</span><span class="p">)))</span> <span class="o">!==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Bạn nhập&#34;</span><span class="p">,</span> <span class="nx">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="3-dowhile" class="relative group">3. do&hellip;while <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-dowhile" aria-label="Anchor">#</a></span></h2><h3 id="31-cú-pháp" class="relative group">3.1 Cú pháp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#31-c%c3%ba-ph%c3%a1p" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">condition</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="32-điểm-nổi-bật" class="relative group">3.2 Điểm nổi bật <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#32-%c4%91i%e1%bb%83m-n%e1%bb%95i-b%e1%ba%adt" aria-label="Anchor">#</a></span></h3><ul>
+<li>Body chạy <strong>ít nhất 1 lần</strong>, sau đó mới kiểm tra <code>condition</code>.</li>
+<li>Dùng cho menu hoặc nhập dữ liệu cần chạy trước, kiểm tra sau.</li>
+</ul>
+<h3 id="33-ví-dụ" class="relative group">3.3 Ví dụ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#33-v%c3%ad-d%e1%bb%a5" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">answer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">answer</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Tiếp tục? (yes/no)&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">answer</span> <span class="o">!==</span> <span class="s2">&#34;no&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><hr>
+<h2 id="4-for-cổ-điển" class="relative group">4. for (cổ điển) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-for-c%e1%bb%95-%c4%91i%e1%bb%83n" aria-label="Anchor">#</a></span></h2><h3 id="41-cú-pháp-tiêu-chuẩn" class="relative group">4.1 Cú pháp tiêu chuẩn <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#41-c%c3%ba-ph%c3%a1p-ti%c3%aau-chu%e1%ba%a9n" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="nx">initialization</span><span class="p">;</span> <span class="nx">condition</span><span class="p">;</span> <span class="nx">finalExpression</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li><code>initialization</code> chạy một lần.</li>
+<li><code>condition</code> kiểm tra trước mỗi lần lặp.</li>
+<li><code>finalExpression</code> chạy sau mỗi body (thường tăng biến đếm).</li>
+</ul>
+<h3 id="42-ví-dụ" class="relative group">4.2 Ví dụ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#42-v%c3%ad-d%e1%bb%a5" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="43-và-nhiều-biến-cùng-lúc" class="relative group">4.3 Và nhiều biến cùng lúc <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#43-v%c3%a0-nhi%e1%bb%81u-bi%e1%ba%bfn-c%c3%b9ng-l%c3%bac" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+</span></span></code></pre></div><h3 id="44-hoisting--scope-var-vs-let" class="relative group">4.4 Hoisting / scope: var vs let <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#44-hoisting--scope-var-vs-let" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span> <span class="c1">// 3 (var là function-scoped)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">j</span><span class="p">);</span> <span class="c1">// undefined (j không tồn tại ngoài block)
+</span></span></span></code></pre></div><p><strong>Lời khuyên:</strong> luôn dùng <code>let</code>/<code>const</code>(for &hellip; of) trong vòng lặp.</p>
+<h3 id="45-closure-trong-loop-bẫy-phổ-biến" class="relative group">4.5 Closure trong loop (bẫy phổ biến) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#45-closure-trong-loop-b%e1%ba%aby-ph%e1%bb%95-bi%e1%ba%bfn" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">),</span> <span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Kết quả: 3,3,3 (vì var i dùng chung sau vòng lập i = 3)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Fix 1: dùng let
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">),</span> <span class="mi">100</span><span class="p">);</span> <span class="c1">// 0,1,2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Fix 2: IIFE
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Mỗi vòng lặp sẽ tạo ra một hàm mới.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Tham số (i) truyền vào là bản sao của giá trị i ở vòng đó.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">),</span> <span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// =&gt; Mỗi hàm IIFE có biến i riêng biệt trong scope riêng của nó.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="46-ví-dụ-vòng-lặp-lồng-nhau-matrix" class="relative group">4.6 Ví dụ: vòng lặp lồng nhau (matrix) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#46-v%c3%ad-d%e1%bb%a5-v%c3%b2ng-l%e1%ba%b7p-l%e1%bb%93ng-nhau-matrix" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">mat</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">mat</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">mat</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="nx">mat</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="5-forof" class="relative group">5. for&hellip;of <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-forof" aria-label="Anchor">#</a></span></h2><h3 id="51-cú-pháp" class="relative group">5.1 Cú pháp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#51-c%c3%ba-ph%c3%a1p" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">val</span> <span class="k">of</span> <span class="nx">iterable</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// val is each value
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="52-iterable-các-đối-tượng-support" class="relative group">5.2 Iterable? (các đối tượng support) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#52-iterable-c%c3%a1c-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-support" aria-label="Anchor">#</a></span></h3><ul>
+<li>Array, String, Map, Set, NodeList, arguments, các object có Symbol.iterator</li>
+</ul>
+<h3 id="53-ví-dụ" class="relative group">5.3 Ví dụ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#53-v%c3%ad-d%e1%bb%a5" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">ch</span> <span class="k">of</span> <span class="s2">&#34;abc&#34;</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// a b c
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">v</span> <span class="k">of</span> <span class="nx">s</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">v</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="54-forof-vs-foreach-vs-for-classic" class="relative group">5.4 for&hellip;of vs forEach vs for (classic) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#54-forof-vs-foreach-vs-for-classic" aria-label="Anchor">#</a></span></h3><ul>
+<li><code>for...of</code> hỗ trợ <code>break</code>, <code>continue</code> và <code>await</code> (tuần tự) — rất phù hợp để gọi async tuần tự.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">item</span> <span class="k">of</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">item</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span> <span class="c1">// 1, 3
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li><code>forEach</code> <strong>không</strong> dừng bằng <code>break</code> (không hỗ trợ await tuần tự).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">));</span>
+</span></span></code></pre></div><ul>
+<li><code>for</code> cổ điển phù hợp khi cần index hoặc nâng cấp hiệu năng vi mô.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="55-destructuring-với-forof-map-entries" class="relative group">5.5 Destructuring với for&hellip;of (Map entries) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#55-destructuring-v%e1%bb%9bi-forof-map-entries" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">m</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Map</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s2">&#34;b&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="p">[</span><span class="nx">k</span><span class="p">,</span> <span class="nx">v</span><span class="p">]</span> <span class="k">of</span> <span class="nx">m</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">v</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="6-forin" class="relative group">6. for&hellip;in <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#6-forin" aria-label="Anchor">#</a></span></h2><h3 id="61-cú-pháp" class="relative group">6.1 Cú pháp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#61-c%c3%ba-ph%c3%a1p" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">object</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// key is property name (string)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="62-dùng-để-lặp-thuộc-tính-của-object-không-dùng-cho-mảng" class="relative group">6.2 Dùng để lặp <strong>thuộc tính</strong> của object (không dùng cho mảng) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#62-d%c3%b9ng-%c4%91%e1%bb%83-l%e1%ba%b7p-thu%e1%bb%99c-t%c3%adnh-c%e1%bb%a7a-object-kh%c3%b4ng-d%c3%b9ng-cho-m%e1%ba%a3ng" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Alice&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">k</span> <span class="k">in</span> <span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">k</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">user</span><span class="p">[</span><span class="nx">k</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="63-cảnh-báo" class="relative group">6.3 Cảnh báo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#63-c%e1%ba%a3nh-b%c3%a1o" aria-label="Anchor">#</a></span></h3><ul>
+<li><code>for...in</code> lặp cả thuộc tính trên prototype chain. Dùng kèm <code>hasOwnProperty</code> nếu cần.</li>
+<li>Thứ tự không được đảm bảo (với object). Với mảng, dùng <code>for</code> hoặc <code>for...of</code>.</li>
+</ul>
+<hr>
+<h2 id="7-các-phương-thức-lặp-của-mảng-functional" class="relative group">7. Các phương thức lặp của mảng (functional) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#7-c%c3%a1c-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-l%e1%ba%b7p-c%e1%bb%a7a-m%e1%ba%a3ng-functional" aria-label="Anchor">#</a></span></h2><p>Các phương thức này không phải là &lsquo;vòng lặp&rsquo; cú pháp, nhưng thực hiện lặp nội bộ.</p>
+<h3 id="71-arrforeachfn" class="relative group">7.1 arr.forEach(fn) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#71-arrforeachfn" aria-label="Anchor">#</a></span></h3><ul>
+<li>Chạy <code>fn(value, index, array)</code> cho từng phần tử.</li>
+<li>Trả về <code>undefined</code> (không chain được result).</li>
+<li>Không hỗ trợ <code>break</code> / <code>continue</code>. Có thể <code>return</code> ra khỏi callback nhưng không thoát vòng lặp ngoài.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">v</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">v</span><span class="p">));</span>
+</span></span></code></pre></div><h3 id="72-arrmapfn" class="relative group">7.2 arr.map(fn) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#72-arrmapfn" aria-label="Anchor">#</a></span></h3><ul>
+<li>Trả về mảng mới: <code>result[i] = fn(array[i])</code>.</li>
+<li>Dùng khi cần chuyển đổi mảng.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">doubled</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// [2,4,6]
+</span></span></span></code></pre></div><h3 id="73-arrfilterfn" class="relative group">7.3 arr.filter(fn) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#73-arrfilterfn" aria-label="Anchor">#</a></span></h3><ul>
+<li>Trả về mảng gồm phần tử thỏa điều kiện <code>fn</code> (true).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">evens</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">].</span><span class="nx">filter</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">// [2,4]
+</span></span></span></code></pre></div><h3 id="74-arrreducefn-init" class="relative group">7.4 arr.reduce(fn, init) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#74-arrreducefn-init" aria-label="Anchor">#</a></span></h3><ul>
+<li>Dùng để gộp mảng thành 1 giá trị (accumulator).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">v</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">acc</span> <span class="o">+</span> <span class="nx">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="75-arrfind--findindex--some--every" class="relative group">7.5 arr.find / findIndex / some / every <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#75-arrfind--findindex--some--every" aria-label="Anchor">#</a></span></h3><ul>
+<li><code>find</code> trả về phần tử đầu tiên thỏa điều kiện.</li>
+<li><code>findIndex</code> trả về index của phần tử đầu tiên thỏa điều kiện.</li>
+<li><code>some</code> trả về <code>true</code> nếu <em>bất kỳ</em> phần tử thỏa điều kiện.</li>
+<li><code>every</code> trả về <code>true</code> nếu <em>tất cả</em> phần tử thỏa điều kiện.</li>
+</ul>
+<h3 id="76-flatmap-es2019" class="relative group">7.6 flatMap (ES2019) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#76-flatmap-es2019" aria-label="Anchor">#</a></span></h3><ul>
+<li>Map từng phần tử và &ldquo;phẳng hóa&rdquo; kết quả 1 mức.</li>
+</ul>
+<h3 id="77-lưu-ý-async--foreachmap" class="relative group">7.7 Lưu ý async &amp; forEach/map <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#77-l%c6%b0u-%c3%bd-async--foreachmap" aria-label="Anchor">#</a></span></h3><ul>
+<li><code>arr.forEach(async x =&gt; { await ... })</code> sẽ không tuần tự (outer function won&rsquo;t await the inner promises). Dùng <code>for...of</code> + <code>await</code> nếu cần tuần tự.</li>
+</ul>
+<hr>
+<h2 id="8-break--continue--label" class="relative group">8. break / continue / label <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#8-break--continue--label" aria-label="Anchor">#</a></span></h2><h3 id="81-break" class="relative group">8.1 break <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#81-break" aria-label="Anchor">#</a></span></h3><ul>
+<li>Thoát hoàn toàn vòng lặp hiện tại.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">4</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="82-continue" class="relative group">8.2 continue <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#82-continue" aria-label="Anchor">#</a></span></h3><ul>
+<li>Bỏ phần còn lại trong lần lặp, chuyển sang lần tiếp theo.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="83-labeled-break--continue-khi-dùng-nested-loops" class="relative group">8.3 Labeled break / continue (khi dùng nested loops) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#83-labeled-break--continue-khi-d%c3%b9ng-nested-loops" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">outer</span><span class="o">:</span> <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">j</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">break</span> <span class="nx">outer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Kết quả:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 0 0
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 0 1
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 0 2
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 1 0
+</span></span></span></code></pre></div><p><strong>Cẩn trọng</strong>: labelled break/continue làm code khó đọc; chỉ dùng khi thực sự cần.</p>
+<hr>
+<h2 id="9-vòng-lặp-lồng-nhau--tối-ưu-hóa" class="relative group">9. Vòng lặp lồng nhau &amp; tối ưu hóa <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#9-v%c3%b2ng-l%e1%ba%b7p-l%e1%bb%93ng-nhau--t%e1%bb%91i-%c6%b0u-h%c3%b3a" aria-label="Anchor">#</a></span></h2><h3 id="91-tính-phức-tạp-thời-gian" class="relative group">9.1 Tính phức tạp thời gian <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#91-t%c3%adnh-ph%e1%bb%a9c-t%e1%ba%a1p-th%e1%bb%9di-gian" aria-label="Anchor">#</a></span></h3><ul>
+<li>Nested loops thường O(n*m) hoặc O(n^2) nếu hai chiều tương tự.</li>
+<li>Ví dụ: loop lồng nhau kiểm tra cặp phần tử → O(n^2).</li>
+</ul>
+<h3 id="92-ví-dụ--tìm-cặp-có-tổng-k-on2" class="relative group">9.2 Ví dụ — tìm cặp có tổng k (O(n^2)) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#92-v%c3%ad-d%e1%bb%a5--t%c3%acm-c%e1%ba%b7p-c%c3%b3-t%e1%bb%95ng-k-on2" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">k</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">===</span> <span class="nx">k</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Found&#34;</span><span class="p">,</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="93-tối-ưu-dùng-bộ-nhớ-hash-để-giảm-xuống-on" class="relative group">9.3 Tối ưu: dùng bộ nhớ (hash) để giảm xuống O(n) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#93-t%e1%bb%91i-%c6%b0u-d%c3%b9ng-b%e1%bb%99-nh%e1%bb%9b-hash-%c4%91%e1%bb%83-gi%e1%ba%a3m-xu%e1%bb%91ng-on" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">seen</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Set</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">v</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">need</span> <span class="o">=</span> <span class="nx">k</span> <span class="o">-</span> <span class="nx">v</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">seen</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">need</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Found&#34;</span><span class="p">,</span> <span class="nx">v</span><span class="p">,</span> <span class="nx">need</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">seen</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">v</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="94-lồng-nhiều-cấp-3-cân-nhắc-thuật-toán-khác-divide-and-conquer-sort--two-pointer-k-sum-optimized" class="relative group">9.4 Lồng nhiều cấp (3+): cân nhắc thuật toán khác (divide and conquer, sort &amp; two-pointer, k-sum optimized) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#94-l%e1%bb%93ng-nhi%e1%bb%81u-c%e1%ba%a5p-3-c%c3%a2n-nh%e1%ba%afc-thu%e1%ba%adt-to%c3%a1n-kh%c3%a1c-divide-and-conquer-sort--two-pointer-k-sum-optimized" aria-label="Anchor">#</a></span></h3><hr>
+<h2 id="10-xóa--chỉnh-sửa-phần-tử-khi-lặp" class="relative group">10. Xóa / Chỉnh sửa phần tử khi lặp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#10-x%c3%b3a--ch%e1%bb%89nh-s%e1%bb%ada-ph%e1%ba%a7n-t%e1%bb%ad-khi-l%e1%ba%b7p" aria-label="Anchor">#</a></span></h2><p>Các cách phổ biến và an toàn:</p>
+<h3 id="101-lặp-từ-cuối-về-đầu-splice-an-toàn" class="relative group">10.1 Lặp từ cuối về đầu (splice an toàn) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#101-l%e1%ba%b7p-t%e1%bb%ab-cu%e1%bb%91i-v%e1%bb%81-%c4%91%e1%ba%a7u-splice-an-to%c3%a0n" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">threshold</span><span class="p">)</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="102-dùng-filter-để-tạo-mảng-mới-immutable-style" class="relative group">10.2 Dùng filter để tạo mảng mới (immutable style) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#102-d%c3%b9ng-filter-%c4%91%e1%bb%83-t%e1%ba%a1o-m%e1%ba%a3ng-m%e1%bb%9bi-immutable-style" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">arr</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">threshold</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="103-lưu-index-cần-xóa-rồi-xóa-sau-khi-muốn-mark-first" class="relative group">10.3 Lưu index cần xóa rồi xóa sau (khi muốn mark-first) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#103-l%c6%b0u-index-c%e1%ba%a7n-x%c3%b3a-r%e1%bb%93i-x%c3%b3a-sau-khi-mu%e1%bb%91n-mark-first" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">toRemove</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">shouldRemove</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]))</span> <span class="nx">toRemove</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">idx</span> <span class="k">of</span> <span class="nx">toRemove</span><span class="p">.</span><span class="nx">reverse</span><span class="p">())</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="104-tránh-dùng-shift-trong-vòng-lặp-lớn" class="relative group">10.4 Tránh dùng shift() trong vòng lặp lớn <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#104-tr%c3%a1nh-d%c3%b9ng-shift-trong-v%c3%b2ng-l%e1%ba%b7p-l%e1%bb%9bn" aria-label="Anchor">#</a></span></h3><p><code>shift()</code> di chuyển toàn bộ mảng (O(n)), gây chậm nếu lặp nhiều lần.</p>
+<hr>
+<h2 id="11-async-trong-vòng-lặp-tuần-tự-vs-song-song" class="relative group">11. Async trong vòng lặp: tuần tự vs song song <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#11-async-trong-v%c3%b2ng-l%e1%ba%b7p-tu%e1%ba%a7n-t%e1%bb%b1-vs-song-song" aria-label="Anchor">#</a></span></h2><h3 id="111-vấn-đề-thường-gặp" class="relative group">11.1 Vấn đề thường gặp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#111-v%e1%ba%a5n-%c4%91%e1%bb%81-th%c6%b0%e1%bb%9dng-g%e1%ba%b7p" aria-label="Anchor">#</a></span></h3><ul>
+<li>Dùng <code>forEach</code> với <code>async</code> không chờ await tuần tự.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">urls</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kr">async</span> <span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">res</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span> <span class="c1">//  sẽ không chờ ở ngoài
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Xong!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// In ra &#34;Xong!&#34; ngay lập tức, dù các fetch() còn đang chạy.
+</span></span></span></code></pre></div><h3 id="112-thực-thi-tuần-tự-order-important" class="relative group">11.2 Thực thi tuần tự (order important) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#112-th%e1%bb%b1c-thi-tu%e1%ba%a7n-t%e1%bb%b1-order-important" aria-label="Anchor">#</a></span></h3><p>Chờ hoàn thành toàn bộ bước hiện tại rồi mới tiếp tục sang bước kế tiếp.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">urls</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;https://example.com/file1.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;https://example.com/file2.txt&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">url</span> <span class="k">of</span> <span class="nx">urls</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">res</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kr">await</span> <span class="nx">res</span><span class="p">.</span><span class="nx">text</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Tất cả đã xong!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Nội dung file1.txt
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Nội dung file2.txt
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Tất cả đã xong!
+</span></span></span></code></pre></div><h3 id="113-thực-thi-song-song-tất-cả-cùng-lúc-chờ-tất-cả" class="relative group">11.3 Thực thi song song (tất cả cùng lúc, chờ tất cả) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#113-th%e1%bb%b1c-thi-song-song-t%e1%ba%a5t-c%e1%ba%a3-c%c3%b9ng-l%c3%bac-ch%e1%bb%9d-t%e1%ba%a5t-c%e1%ba%a3" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">urls</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;https://example.com/a.txt&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;https://example.com/b.txt&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;https://example.com/c.txt&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">promises</span> <span class="o">=</span> <span class="nx">urls</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">url</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">results</span> <span class="o">=</span> <span class="kr">await</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">promises</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">res</span> <span class="k">of</span> <span class="nx">results</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kr">await</span> <span class="nx">res</span><span class="p">.</span><span class="nx">text</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Nội dung file A
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Nội dung file B
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Nội dung file C
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// =&gt; Tất cả request đều chạy song song → nhanh hơn nhiều so với for...of + await.
+</span></span></span></code></pre></div><hr>
+<h2 id="12-generators--iterators-nhắc-qua" class="relative group">12. Generators / Iterators (nhắc qua) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12-generators--iterators-nh%e1%ba%afc-qua" aria-label="Anchor">#</a></span></h2><p>Generators (function*) tạo iterator, cung cấp cách lazy iterate, hữu ích khi data lớn hoặc stream-like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span><span class="o">*</span> <span class="nx">idGen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="k">yield</span> <span class="nx">id</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">g</span> <span class="o">=</span> <span class="nx">idGen</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">g</span><span class="p">.</span><span class="nx">next</span><span class="p">().</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">g</span><span class="p">.</span><span class="nx">next</span><span class="p">().</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 2
+</span></span></span></code></pre></div><hr>
+<h2 id="13-tóm-tắt-nhanh" class="relative group">13. Tóm tắt nhanh <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#13-t%c3%b3m-t%e1%ba%aft-nhanh" aria-label="Anchor">#</a></span></h2><h2 id="tổng-hợp-các-loại-vòng-lặp-trong-javascript" class="relative group">Tổng hợp các loại vòng lặp trong JavaScript <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#t%e1%bb%95ng-h%e1%bb%a3p-c%c3%a1c-lo%e1%ba%a1i-v%c3%b2ng-l%e1%ba%b7p-trong-javascript" aria-label="Anchor">#</a></span></h2><table>
+  <thead>
+      <tr>
+          <th>Loại vòng lặp</th>
+          <th>Đặc điểm chính</th>
+          <th>Khi nên dùng</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>while</code></strong></td>
+          <td>Kiểm tra điều kiện <strong>trước khi chạy</strong> (<code>check-first</code>)</td>
+          <td>Khi chưa biết trước số lần lặp</td>
+      </tr>
+      <tr>
+          <td><strong><code>do...while</code></strong></td>
+          <td>Chạy <strong>ít nhất 1 lần</strong> rồi mới kiểm tra (<code>run-first</code>)</td>
+          <td>Khi cần thực thi ít nhất 1 lần</td>
+      </tr>
+      <tr>
+          <td><strong><code>for</code></strong></td>
+          <td>Dựa trên <strong>chỉ số (index)</strong></td>
+          <td>Khi cần kiểm soát số vòng hoặc truy cập mảng theo chỉ số</td>
+      </tr>
+      <tr>
+          <td><strong><code>for...of</code></strong></td>
+          <td>Duyệt <strong>giá trị</strong> của iterable (array, string, map, set)</td>
+          <td>Khi cần đọc giá trị, hỗ trợ <code>await</code>, <code>break</code>, <code>continue</code></td>
+      </tr>
+      <tr>
+          <td><strong><code>for...in</code></strong></td>
+          <td>Duyệt <strong>key</strong> của object</td>
+          <td>Khi cần duyệt thuộc tính (nhớ dùng <code>hasOwnProperty</code>)</td>
+      </tr>
+      <tr>
+          <td><strong><code>forEach</code> / <code>map</code> / <code>filter</code> / <code>reduce</code></strong></td>
+          <td>Cú pháp <strong>hàm bậc cao (functional)</strong></td>
+          <td>Khi cần viết ngắn gọn, dễ đọc; không dừng được bằng <code>break</code></td>
+      </tr>
+      <tr>
+          <td><strong>Xóa phần tử</strong></td>
+          <td>Lặp ngược (<code>for (let i = arr.length - 1; i &gt;= 0; i--)</code>) hoặc dùng <code>filter()</code></td>
+          <td>Để tránh lỗi khi thay đổi mảng khi đang lặp</td>
+      </tr>
+      <tr>
+          <td><strong>Bất đồng bộ (async)</strong></td>
+          <td><code>for...of</code> + <code>await</code> → chạy <strong>tuần tự</strong><br><code>Promise.all()</code> → chạy <strong>song song</strong></td>
+          <td>Chọn tùy mục đích: cần thứ tự hay tốc độ</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="ghi-nhớ-nhanh" class="relative group">Ghi nhớ nhanh: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ghi-nh%e1%bb%9b-nhanh" aria-label="Anchor">#</a></span></h2><blockquote>
+<p><code>while</code> – kiểm tra trước<br>
+<code>do...while</code> – chạy trước rồi kiểm tra<br>
+<code>for</code> – theo chỉ số<br>
+<code>for...of</code> – theo giá trị<br>
+<code>for...in</code> – theo key<br>
+<code>forEach</code> – không dừng/await được<br>
+<code>async</code> – tuần tự (<code>for...of</code>), song song (<code>Promise.all</code>)</p></blockquote>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/posts/ham-feynmen/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  > Hiểu Biết Hàm Trong JavaScript (Phương Pháp Feynman)</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-13 00:00:00 &#43;0000 UTC">13 October 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="http://localhost:1313/posts/oop-trong-java/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >OOP trong Java: Khi lý thuyết gặp thực tế - Những bài học từ dự án thực chiến</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-14 00:00:00 &#43;0000 UTC">14 October 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+<section class="contact-section-global">
+    <div class="contact-wrapper-global">
+        <h2 class="contact-title-global">Let me know what's on your mind</h2>
+        <form class="contact-form-global">
+            <div class="form-row-global">
+                <div>
+                    <label>First name *</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Last name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-group-global">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group-global">
+                <label>Leave us a message...</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-global">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="custom-footer-compact">
+    <div class="footer-inner">
+        <p class="footer-text">
+            © 2025 Triệu Xuân Dũng • 
+            Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>  
+            
+        </p>
+    </div>
+    
+    
+    <button id="scrollToTop" class="scroll-btn" aria-label="Scroll to top">↑</button>
+</footer>
+
+<style>
+ 
+
+.contact-section-global {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #FDF6F0;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contact-wrapper-global {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact-title-global {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: #1f2937;
+}
+
+.contact-form-global {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row-global {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-row-global label,
+.form-group-global label {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 0.4rem;
+    color: #4b5563;
+}
+
+.form-row-global input,
+.form-group-global input,
+.form-group-global textarea {
+    width: 100%;
+    padding: 0.625rem 0;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    background: transparent;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-row-global input:focus,
+.form-group-global input:focus,
+.form-group-global textarea:focus {
+    outline: none;
+    border-bottom-color: #667eea;
+}
+
+.form-group-global textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-submit-global {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-global:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+ 
+
+.custom-footer-compact {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-text a:hover {
+    opacity: 0.7;
+}
+
+ 
+.scroll-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #7c82f5 0%, #8654b3 100%);
+}
+
+ 
+
+@media (max-width: 768px) {
+    .contact-section-global {
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+    
+    .contact-wrapper-global {
+        padding: 0 1rem;
+    }
+    
+    .contact-title-global {
+        font-size: 1.5rem;
+    }
+    
+    .form-row-global {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .custom-footer-compact {
+        padding: 1.25rem 0;
+    }
+    
+    .footer-text {
+        font-size: 0.75rem;
+    }
+    
+    .scroll-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}
+
+ 
+
+.dark .contact-section-global {
+    background: var(--color-neutral-900);
+}
+
+.dark .contact-title-global {
+    color: var(--color-neutral-100);
+}
+
+.dark .form-row-global input,
+.dark .form-group-global input,
+.dark .form-group-global textarea {
+    color: var(--color-neutral-100);
+    border-bottom-color: var(--color-neutral-700);
+}
+
+.dark .form-row-global label,
+.dark .form-group-global label {
+    color: var(--color-neutral-400);
+}
+
+.dark .custom-footer-compact {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn:hover {
+    background: linear-gradient(135deg, #5b61d6 0%, #6b4bb0 100%);
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    
+    if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>
+    </div>
+  </body>
+</html>

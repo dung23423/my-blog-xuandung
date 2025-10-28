@@ -39,8 +39,74 @@
     
   
     
+  
+    
       <url>
-            <loc>http://localhost:1313/posts/collections-framework-java/</loc>
+            <loc>http://localhost:1313/posts/class-trong-js/</loc>
+            <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/object-trong-js/</loc>
+            <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/kieu-du-lieu-cua/</loc>
+            <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/</loc>
+            <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/toan-tu/</loc>
+            <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/luong-du-lieu/</loc>
+            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cau-lenh-dieu-kien/</loc>
             <lastmod>2025-10-14T00:00:00+00:00</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.5</priority>
@@ -58,51 +124,12 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       <url>
-            <loc>http://localhost:1313/posts/exception-handling-java/</loc>
+            <loc>http://localhost:1313/posts/ham/</loc>
             <lastmod>2025-10-14T00:00:00+00:00</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/hoc-java-tu-zero-kinh-nghiem/</loc>
-            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
     
   
     
@@ -120,36 +147,6 @@
           </url>
     
   
-    
-      <url>
-            <loc>http://localhost:1313/posts/javascript-es6-plus/</loc>
-            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/nodejs-express-rest-api/</loc>
-            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.5</priority>
-          </url>
     
   
     
@@ -169,11 +166,42 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/</loc>
+            <loc>http://localhost:1313/posts/vong-lap/</loc>
             <lastmod>2025-10-14T00:00:00+00:00</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/ham-feynmen/</loc>
+            <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/dom-js/</loc>
+            <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/collections-framework-java/</loc>
+            <lastmod>2025-10-12T00:00:00+00:00</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
     
   
     
@@ -182,8 +210,8 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/react-hooks-complete-guide/</loc>
-            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/hoc-java-tu-zero-kinh-nghiem/</loc>
+            <lastmod>2025-10-12T00:00:00+00:00</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.5</priority>
           </url>
@@ -195,34 +223,6 @@
   
     
   
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/javascript-testing-jest/</loc>
-            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/spring-boot-rest-api/</loc>
-            <lastmod>2025-10-14T00:00:00+00:00</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.5</priority>
-          </url>
     
   
     

@@ -2,7 +2,7 @@
 title: "🍊 Calo Plan - Ứng dụng quản lý dinh dưỡng"
 date: 2025-05-10
 draft: false
-image: "/images/projects/calo-plan/logo.jpg"
+feature: "/images/projects/calo-plan/logo.jpg"
 tags: ["Flutter", "Dart", "Mobile App", "Health"]
 categories: ["Mobile Development"]
 description: "Ứng dụng theo dõi calories và dinh dưỡng được xây dựng bằng Flutter"

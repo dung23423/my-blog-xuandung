@@ -1,6 +1,6 @@
 ---
 title: "ArrayList vs LinkedList: Câu chuyện về cái giá của sự lựa chọn sai"
-date: 2025-10-14
+date: 2025-10-12
 draft: false
 tags: ["Java", "Collections", "Data Structures", "Performance"]
 categories: ["Java"]

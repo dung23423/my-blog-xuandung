@@ -6,12 +6,12 @@
     <description>Recent content in Collections on Blog của Triệu Xuân Dũng</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/collections/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ArrayList vs LinkedList: Câu chuyện về cái giá của sự lựa chọn sai</title>
       <link>http://localhost:1313/posts/collections-framework-java/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/collections-framework-java/</guid>
       <description>Tôi từng nghĩ ArrayList và LinkedList giống nhau. Cho đến khi app của tôi xử lý 10 giây thay vì 0.1 giây. Đây là những gì tôi học được.</description>
     </item>

@@ -1,0 +1,1890 @@
+
+
+
+  
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title> Hiểu Biết Các Loại Stream &middot; Blog của Triệu Xuân Dũng</title>
+    <meta name="title" content=" Hiểu Biết Các Loại Stream &middot; Blog của Triệu Xuân Dũng" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.f2be56d84f60f337db61170ceea852a7d7b84fd7e65eac5ea2c9490909441bd9.css"
+    integrity="sha256-8r5W2E9g8zfbYRcM7qhSp9e4T9fmXqxeoslJCQlEG9k="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/luong-du-lieu/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/luong-du-lieu/">
+  <meta property="og:site_name" content="Blog của Triệu Xuân Dũng">
+  <meta property="og:title" content=" Hiểu Biết Các Loại Stream">
+  <meta property="og:description" content="Developer &amp; Blogger">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-14T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Feynman">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content=" Hiểu Biết Các Loại Stream">
+  <meta name="twitter:description" content="Developer &amp; Blogger">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": " Hiểu Biết Các Loại Stream",
+    "headline": " Hiểu Biết Các Loại Stream",
+    
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/luong-du-lieu\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Triệu Xuân Dũng"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-14T00:00:00\u002b00:00",
+    "datePublished": "2025-10-14T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-10-14T00:00:00\u002b00:00",
+    
+    "keywords": ["java","Feynman"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1586"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Trang Chủ",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/",
+       "name": "Lập Trình",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Hiểu Biết Các Loại Stream",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Triệu Xuân Dũng" />
+  
+  
+    
+      <link href="https://mastodon.social/@yourusername" rel="me" />
+    
+      <link href="https://github.com/yourusername" rel="me" />
+    
+      <link href="https://linkedin.com/in/yourprofile" rel="me" />
+    
+      <link href="https://facebook.com/yourprofile" rel="me" />
+    
+      <link href="https://twitter.com/yourusername" rel="me" />
+    
+      <link href="mailto:your@email.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+<style>
+ 
+@media (max-width: 768px) {
+    .mobile-menu-wrapper {
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        pointer-events: none;
+    }
+    
+    .mobile-menu-wrapper > * {
+        pointer-events: auto;
+    }
+    
+    .mobile-nav-btn,
+    .mobile-search-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .mobile-nav-btn span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-nav-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .mobile-search-btn {
+        background: white;
+        border: 2px solid #667eea;
+    }
+    
+    .mobile-search-btn svg {
+        width: 24px;
+        height: 24px;
+        color: #667eea;
+    }
+    
+     
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        z-index: 1999;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        padding-top: 5rem;
+    }
+    
+    .mobile-sidebar.active {
+        left: 0;
+    }
+    
+    .mobile-sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        color: #374151;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+    }
+    
+    .mobile-sidebar a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-left-color: #667eea;
+        color: #667eea;
+    }
+    
+    .mobile-sidebar svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+     
+    .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(5px);
+        z-index: 2001;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+    
+    .mobile-search-overlay.active {
+        display: flex;
+    }
+    
+    .search-box {
+        background: white;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        position: relative;
+    }
+    
+    .search-box input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #667eea;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+    
+    .search-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #9ca3af;
+        cursor: pointer;
+    }
+    
+     
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1998;
+        display: none;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+    
+     
+    .dark .mobile-sidebar,
+    .dark .search-box {
+        background: #1f2937;
+    }
+    
+    .dark .mobile-sidebar a {
+        color: #d1d5db;
+    }
+    
+    .dark .search-box input {
+        background: #111827;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-wrapper,
+    .mobile-sidebar,
+    .mobile-search-overlay,
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.innerWidth > 768) return;
+    
+    
+    const menuHTML = `
+        <div class="mobile-menu-wrapper">
+            <button class="mobile-nav-btn" id="mobileNavBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <a href="/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                Trang chủ
+            </a>
+            <a href="/about/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Về tôi
+            </a>
+            <a href="/projects/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                Dự án
+            </a>
+            <a href="/posts/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Bài viết
+            </a>
+            <a href="/contact/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Liên hệ
+            </a>
+        </div>
+        
+        <div class="mobile-search-overlay" id="mobileSearchOverlay">
+            <div class="search-box">
+                <button class="search-close" id="searchClose">×</button>
+                <input type="text" placeholder="Tìm kiếm bài viết..." id="searchInput">
+            </div>
+        </div>
+        
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    `;
+    
+    document.body.insertAdjacentHTML('afterbegin', menuHTML);
+    
+    
+    const navBtn = document.getElementById('mobileNavBtn');
+    const searchBtn = document.getElementById('mobileSearchBtn');
+    const sidebar = document.getElementById('mobileSidebar');
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const overlay = document.getElementById('mobileOverlay');
+    const searchClose = document.getElementById('searchClose');
+    
+    
+    function toggleMenu() {
+        navBtn.classList.toggle('active');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    function toggleSearch() {
+        searchOverlay.classList.toggle('active');
+        document.body.style.overflow = searchOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    navBtn.addEventListener('click', toggleMenu);
+    searchBtn.addEventListener('click', toggleSearch);
+    overlay.addEventListener('click', toggleMenu);
+    searchClose.addEventListener('click', toggleSearch);
+    
+    
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Blog của Triệu Xuân Dũng</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/"
+                  title="Trang chủ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Trang chủ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title="Về tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Về tôi</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/projects/"
+                  title="Dự án của tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Dự án</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Bài viết</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/contact/"
+                  title="Liên hệ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Liên hệ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+         Hiểu Biết Các Loại Stream
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-14 00:00:00 &#43;0000 UTC">14 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Lập Trình</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="http://localhost:1313/tags/java/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Java</a
+            >
+          
+            <a
+              href="http://localhost:1313/tags/feynman/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Feynman</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-byte-stream-chở-hàng-thô">1. Byte Stream: Chở hàng thô</a></li>
+    <li><a href="#2-character-stream-chở-chữ-cái">2. Character Stream: Chở chữ cái</a></li>
+    <li><a href="#3-buffered-stream-xe-tải-lớn-thay-vì-xe-máy">3. Buffered Stream: Xe tải lớn thay vì xe máy</a></li>
+    <li><a href="#4-data-stream-ghi-nhãn-hàng-hóa">4. Data Stream: Ghi nhãn hàng hóa</a></li>
+    <li><a href="#5-inputstream-ống-hút-chung">5. InputStream: Ống hút chung</a></li>
+    <li><a href="#6-outputstream-ống-xả-chung">6. OutputStream: Ống xả chung</a></li>
+    <li><a href="#bức-tranh-tổng-thể">Bức Tranh Tổng Thể</a></li>
+    <li><a href="#tóm-tắt-siêu-đơn-giản">Tóm Tắt Siêu Đơn Giản</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>Stream trong Java giống như những <strong>con sông</strong> chở dữ liệu trong máy tính. Dữ liệu (như file ảnh, văn bản, số liệu) được &ldquo;chở&rdquo; từ nơi này (ví dụ: ổ cứng) đến nơi khác (ví dụ: file mới hoặc màn hình). Stream giúp chúng ta <strong>đọc</strong> (lấy nước từ sông) hoặc <strong>ghi</strong> (đổ nước vào sông) dữ liệu. Hãy tưởng tượng tôi đang giải thích cho một người bạn chưa biết gì về lập trình, dùng ngôn ngữ đơn giản và ví dụ đời thường.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/images/stream_hu_ecc2906130044a72.webp 330w,http://localhost:1313/posts/luong-du-lieu/images/stream_hu_86dac4f8ee258c87.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/stream_hu_edc1688b85398861.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/stream_hu_4adc56cc55165e10.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 1"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/images/stream_hu_d160392270f2fd9a.png" srcset="http://localhost:1313/posts/luong-du-lieu/images/stream_hu_f868ab6fc108c449.png 330w,http://localhost:1313/posts/luong-du-lieu/images/stream_hu_d160392270f2fd9a.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/stream_hu_16e94f6e771f433b.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/stream_hu_dd9feec12ca3518e.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h2 id="1-byte-stream-chở-hàng-thô" class="relative group">1. Byte Stream: Chở hàng thô <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-byte-stream-ch%e1%bb%9f-h%c3%a0ng-th%c3%b4" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: Tưởng tượng bạn copy file nhạc MP3 hoặc ảnh JPEG từ USB sang máy tính. Bạn không cần biết trong file có gì, chỉ chép nguyên xi từng mẩu nhỏ (gọi là <strong>byte</strong>, như từng viên gạch). Đó là <strong>Byte Stream</strong>.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_6e1994e4b5795d82.webp 330w,http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_b3d56d811591b953.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_b989b04c7390cde7.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_db258b2f379addc0.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 2"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_c7489f8f7f9069f8.png" srcset="http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_b518c0a23f8f3a3f.png 330w,http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_c7489f8f7f9069f8.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_457140664c69a92c.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/byte_stream_hu_3d2fbe6afcbb2aa9.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Byte Stream chở dữ liệu dưới dạng <strong>byte</strong> (8 bit, như mã số nhỏ).</li>
+<li>Dùng cho dữ liệu nhị phân: ảnh, video, nhạc, file PDF.</li>
+<li>Giống xe tải chở hàng thô, không quan tâm bên trong là gì.</li>
+</ul>
+<p><strong>Ví dụ đời thường</strong>: Copy file ảnh &ldquo;cat.jpg&rdquo; từ máy sang USB. Byte Stream lấy từng mẩu nhỏ của ảnh và chép sang.</p>
+<p><strong>Ví dụ code Java</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileInputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileOutputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ByteStreamExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">FileInputStream</span><span class="w"> </span><span class="n">fis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileInputStream</span><span class="p">(</span><span class="s">&#34;cat.jpg&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Mở &#34;sông&#34; đọc từ file ảnh</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">FileOutputStream</span><span class="w"> </span><span class="n">fos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileOutputStream</span><span class="p">(</span><span class="s">&#34;copy_cat.jpg&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Mở &#34;sông&#34; ghi ra file mới</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">byteData</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">byteData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fis</span><span class="p">.</span><span class="na">read</span><span class="p">())</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="n">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Đọc từng byte</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">fos</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">byteData</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi byte đó ra</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fis</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fos</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đã chép ảnh xong!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Có lỗi xảy ra: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Tại sao chậm?</strong> Đọc từng byte giống như bê từng viên gạch – đúng nhưng mất thời gian.</p>
+<hr>
+<h2 id="2-character-stream-chở-chữ-cái" class="relative group">2. Character Stream: Chở chữ cái <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-character-stream-ch%e1%bb%9f-ch%e1%bb%af-c%c3%a1i" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: Bạn mở file &ldquo;note.txt&rdquo; chứa câu &ldquo;Xin chào&rdquo;. Nếu dùng Byte Stream, bạn thấy số (như 88, 105 – mã ASCII/UTF-8). <strong>Character Stream</strong> giống người dịch, biến số thành chữ &ldquo;Xin chào&rdquo; để bạn đọc dễ dàng.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_681ed55ecd50adf.webp 330w,http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_f362d1723207aa7a.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_6f445e4b168f5ab3.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_558212bb505f5fa9.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 3"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_7d4ef55566214aa.png" srcset="http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_ccdf283a029db962.png 330w,http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_7d4ef55566214aa.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_38a15f3d0434239.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/character_stream_hu_246d40f3e019067b.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Character Stream chở <strong>ký tự</strong> (như chữ A, B, hoặc &ldquo;ă&rdquo;, &ldquo;ế&rdquo;).</li>
+<li>Tự động dịch byte thành ký tự theo bảng mã (như UTF-8).</li>
+<li>Dùng cho file văn bản: .txt, .java, .html.</li>
+</ul>
+<p><strong>Ví dụ đời thường</strong>: Copy file &ldquo;note.txt&rdquo; chứa &ldquo;Xin chào&rdquo; sang file mới. Character Stream chép đúng chữ, không lo mã số.</p>
+<p><strong>Ví dụ code Java</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileReader</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileWriter</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CharacterStreamExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">FileReader</span><span class="w"> </span><span class="n">fr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">&#34;note.txt&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Mở &#34;sông&#34; đọc chữ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">FileWriter</span><span class="w"> </span><span class="n">fw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileWriter</span><span class="p">(</span><span class="s">&#34;copy_note.txt&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Mở &#34;sông&#34; ghi chữ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">charData</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">charData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fr</span><span class="p">.</span><span class="na">read</span><span class="p">())</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="n">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Đọc từng ký tự</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">fw</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">charData</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi ký tự đó ra</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fr</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fw</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đã chép file text xong!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Có lỗi xảy ra: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Tại sao tiện?</strong> Bạn không cần tự dịch mã số thành chữ – Character Stream làm sẵn.</p>
+<hr>
+<h2 id="3-buffered-stream-xe-tải-lớn-thay-vì-xe-máy" class="relative group">3. Buffered Stream: Xe tải lớn thay vì xe máy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-buffered-stream-xe-t%e1%ba%a3i-l%e1%bb%9bn-thay-v%c3%ac-xe-m%c3%a1y" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: Thay vì bê từng viên gạch (Byte Stream) hoặc từng chữ (Character Stream), bạn dùng <strong>xe tải lớn</strong> chở cả đống cùng lúc. <strong>Buffered Stream</strong> giống xe tải: gom dữ liệu vào thùng lớn (buffer) trước khi chở, nên nhanh hơn.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_feb19f376e3c1b1b.webp 330w,http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_f3bbad7a8e6a2c3.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_19261b2f830eb2bc.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_83e12a3c5bfc9cec.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 4"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_7d03ddcce0e4cb9c.png" srcset="http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_a7eb1ca0cfdbf190.png 330w,http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_7d03ddcce0e4cb9c.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_b76557c989fb13c8.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/bufered_stream_hu_97b8185ecf334efe.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Buffered Stream thêm <strong>bộ đệm</strong> để gom dữ liệu trước khi đọc/ghi.</li>
+<li>Giảm số lần máy tính làm việc với ổ cứng, nên nhanh hơn.</li>
+<li>Dùng được với cả Byte Stream và Character Stream.</li>
+</ul>
+<p><strong>Ví dụ đời thường</strong>: Copy file ảnh &ldquo;cat.jpg&rdquo; bằng xe tải chở 1MB mỗi lần, hoặc copy &ldquo;note.txt&rdquo; từng câu thay vì từng chữ.</p>
+<p><strong>Ví dụ code Java</strong> (cho text):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.BufferedReader</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.BufferedWriter</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileReader</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileWriter</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">BufferedStreamExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">BufferedReader</span><span class="w"> </span><span class="n">br</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedReader</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">&#34;note.txt&#34;</span><span class="p">));</span><span class="w"> </span><span class="c1">// Đọc chữ với buffer</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">BufferedWriter</span><span class="w"> </span><span class="n">bw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedWriter</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileWriter</span><span class="p">(</span><span class="s">&#34;copy_note.txt&#34;</span><span class="p">));</span><span class="w"> </span><span class="c1">// Ghi chữ với buffer</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">line</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">br</span><span class="p">.</span><span class="na">readLine</span><span class="p">())</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Đọc cả dòng</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">bw</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">line</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi cả dòng</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">bw</span><span class="p">.</span><span class="na">newLine</span><span class="p">();</span><span class="w"> </span><span class="c1">// Thêm dòng mới</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">br</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">bw</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đã chép file text nhanh hơn!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Có lỗi xảy ra: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Tại sao nhanh?</strong> Chở cả xe tải thay vì đi lại từng lần, tiết kiệm thời gian.</p>
+<hr>
+<h2 id="4-data-stream-ghi-nhãn-hàng-hóa" class="relative group">4. Data Stream: Ghi nhãn hàng hóa <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-data-stream-ghi-nh%c3%a3n-h%c3%a0ng-h%c3%b3a" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: Bạn gửi gói hàng chứa số 100, số 3.14, và chữ &ldquo;Xin chào&rdquo;. Nếu dùng Byte Stream, người nhận chỉ thấy byte thô, không biết cái nào là số, cái nào là chữ. <strong>Data Stream</strong> giống như ghi nhãn: &ldquo;Đây là số nguyên 100&rdquo;, &ldquo;Đây là số thập phân 3.14&rdquo;, &ldquo;Đây là chữ Xin chào&rdquo;. Khi nhận, mở đúng thứ tự và loại.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_f8d90fadd318313c.webp 330w,http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_d20e87c43cbb3c34.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_348ee721ca4254ce.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_57859e4123e71db.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 5"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_2cb25fef4e667832.png" srcset="http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_51427673c7b2ca04.png 330w,http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_2cb25fef4e667832.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_4120f33977095e55.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/images/data_stream_hu_afeb1dcbddc78ada.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Data Stream ghi/đọc dữ liệu <strong>nguyên thủy</strong> (int, double, boolean) và String.</li>
+<li>Đảm bảo dữ liệu giữ đúng kiểu và thứ tự khi đọc lại.</li>
+<li>Dùng cho mạng hoặc lưu số liệu vào file.</li>
+</ul>
+<p><strong>Ví dụ đời thường</strong>: Lưu điểm số học sinh (90, 8.5, true, &ldquo;Tèo&rdquo;) vào file, sau này mở ra vẫn đúng kiểu.</p>
+<p><strong>Ví dụ code Java</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.DataInputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.DataOutputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileInputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileOutputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">DataStreamExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Ghi dữ liệu</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">DataOutputStream</span><span class="w"> </span><span class="n">dos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DataOutputStream</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileOutputStream</span><span class="p">(</span><span class="s">&#34;data.txt&#34;</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">dos</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">90</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi số nguyên</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">dos</span><span class="p">.</span><span class="na">writeDouble</span><span class="p">(</span><span class="n">8</span><span class="p">.</span><span class="na">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi số thập phân</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">dos</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi true/false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">dos</span><span class="p">.</span><span class="na">writeUTF</span><span class="p">(</span><span class="s">&#34;Tèo&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ghi chuỗi</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">dos</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đã ghi dữ liệu!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Lỗi khi ghi: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Đọc dữ liệu</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">DataInputStream</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DataInputStream</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileInputStream</span><span class="p">(</span><span class="s">&#34;data.txt&#34;</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="p">.</span><span class="na">readInt</span><span class="p">();</span><span class="w"> </span><span class="c1">// Đọc số nguyên</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="p">.</span><span class="na">readDouble</span><span class="p">();</span><span class="w"> </span><span class="c1">// Đọc số thập phân</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">boolean</span><span class="w"> </span><span class="n">passed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="p">.</span><span class="na">readBoolean</span><span class="p">();</span><span class="w"> </span><span class="c1">// Đọc true/false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="p">.</span><span class="na">readUTF</span><span class="p">();</span><span class="w"> </span><span class="c1">// Đọc chuỗi</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Điểm: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">score</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Điểm thập phân: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">grade</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đậu: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">passed</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Tên: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">dis</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Lỗi khi đọc: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Tại sao hữu ích?</strong> Không cần tự dịch byte thành số/chữ – Data Stream làm sẵn và đảm bảo đúng.</p>
+<hr>
+<h2 id="5-inputstream-ống-hút-chung" class="relative group">5. InputStream: Ống hút chung <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-inputstream-%e1%bb%91ng-h%c3%bat-chung" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: InputStream là <strong>ống hút lớn</strong> để hút nước (byte) từ bất kỳ nguồn nào (file, mạng, bàn phím). Nhưng nó chỉ hút byte thô, cần thêm phụ kiện (như BufferedInputStream để hút nhanh, hoặc DataInputStream để hiểu dữ liệu).</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/input_stream_hu_7e19f9f08cb96631.webp 330w,http://localhost:1313/posts/luong-du-lieu/input_stream_hu_aebeab6757f2647f.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/input_stream_hu_b10798409641c343.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/input_stream_hu_9dff193abaf26238.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 6"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/input_stream_hu_875551662285998c.png" srcset="http://localhost:1313/posts/luong-du-lieu/input_stream_hu_52bf5048d4b0f70e.png 330w,http://localhost:1313/posts/luong-du-lieu/input_stream_hu_875551662285998c.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/input_stream_hu_3be76136667e2da0.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/input_stream_hu_3191c31c2b3e3c0.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>InputStream là <strong>cha</strong> của mọi ống hút đọc byte.</li>
+<li>Chỉ định nghĩa cách hút (read()), không xử lý dữ liệu.</li>
+<li>Các con: <code>FileInputStream</code> (đọc file), <code>BufferedInputStream</code> (đọc nhanh).</li>
+</ul>
+<p><strong>Ví dụ đời thường</strong>: Hút nước từ chai (file) bằng ống hút chung, nhưng cần bộ lọc để hút nhanh hoặc hiểu nước là gì.</p>
+<p><strong>Ví dụ code Java</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileInputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">InputStreamExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">FileInputStream</span><span class="w"> </span><span class="n">fis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileInputStream</span><span class="p">(</span><span class="s">&#34;cat.jpg&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Có &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fis</span><span class="p">.</span><span class="na">available</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; byte để đọc!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fis</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Lỗi: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><hr>
+<h2 id="6-outputstream-ống-xả-chung" class="relative group">6. OutputStream: Ống xả chung <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#6-outputstream-%e1%bb%91ng-x%e1%ba%a3-chung" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: OutputStream là <strong>ống xả nước</strong> ra ngoài (file, màn hình, mạng). Nó chỉ xả byte thô, cần thêm phụ kiện để xả nhanh hoặc đúng định dạng.</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/output_stream_hu_5d55c0bc8507ad12.webp 330w,http://localhost:1313/posts/luong-du-lieu/output_stream_hu_dc23424436d9927c.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/output_stream_hu_5e67735c97dc212e.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/luong-du-lieu/output_stream_hu_6edf00136b36b206.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 7"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/output_stream_hu_e3851a394bb2059.png" srcset="http://localhost:1313/posts/luong-du-lieu/output_stream_hu_99467e355f9d3f78.png 330w,http://localhost:1313/posts/luong-du-lieu/output_stream_hu_e3851a394bb2059.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/output_stream_hu_b66ace054a469552.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/output_stream_hu_38b7a141e573d5eb.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>OutputStream là <strong>cha</strong> của mọi ống xả ghi byte.</li>
+<li>Các con: <code>FileOutputStream</code> (ghi file), <code>BufferedOutputStream</code> (ghi nhanh).</li>
+</ul>
+<p><strong>Ví dụ đời thường</strong>: Đổ nước (dữ liệu) ra chai (file) bằng ống xả chung, cần bộ lọc để đổ nhanh hoặc đúng cách.</p>
+<p><strong>Ví dụ code Java</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileOutputStream</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">OutputStreamExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">FileOutputStream</span><span class="w"> </span><span class="n">fos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileOutputStream</span><span class="p">(</span><span class="s">&#34;hello.txt&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Xin chào!&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fos</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">getBytes</span><span class="p">());</span><span class="w"> </span><span class="c1">// Ghi byte của chuỗi</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">fos</span><span class="p">.</span><span class="na">close</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đã ghi file!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Lỗi: &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><hr>
+<h2 id="bức-tranh-tổng-thể" class="relative group">Bức Tranh Tổng Thể <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b%e1%bb%a9c-tranh-t%e1%bb%95ng-th%e1%bb%83" aria-label="Anchor">#</a></span></h2><p>Hãy tưởng tượng bạn vận chuyển hàng (dữ liệu) từ <strong>kho</strong> (file, mạng) đến <strong>cửa hàng</strong> (file, màn hình):</p>
+<ul>
+<li><strong>Byte Stream</strong>: Chở hàng thô (ảnh, video) từng viên gạch.</li>
+<li><strong>Character Stream</strong>: Chở chữ cái (text) đã dịch sẵn.</li>
+<li><strong>Buffered Stream</strong>: Dùng xe tải lớn để chở nhanh.</li>
+<li><strong>Data Stream</strong>: Ghi nhãn số, chữ để không nhầm.</li>
+<li><strong>InputStream/OutputStream</strong>: Ống hút/xả chung, cần thêm phụ kiện để hiệu quả.</li>
+</ul>
+<p><strong>Flowchart đơn giản</strong> (ASCII art):</p>
+<pre tabindex="0"><code>[ Kho: file, mạng ] --&gt; InputStream --&gt; [ BufferedInputStream --&gt; DataInputStream ]
+                                                |                (đọc nhanh)    | (đọc số/chữ)
+                                                v
+                                          [ Xử lý dữ liệu ]
+                                                |
+                                                v
+[ Cửa hàng:  file, màn hình ] &lt;-- OutputStream &lt;-- [ BufferedOutputStream &lt;-- DataOutputStream ]
+                                                (ghi nhanh)       (ghi số/chữ)
+</code></pre><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_b5a333dc5bc7cf92.webp 330w,http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_330504f8b2fd248e.webp 660w
+            
+              ,http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_7097638367bd123c.webp 1024w
+            
+            
+              
+                ,http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_cee75816bc1f1391.webp 1251w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1251"
+        height="670"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 8"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_472e11c4c0088.png" srcset="http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_4f100381f179efab.png 330w,http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_472e11c4c0088.png 660w
+          
+            ,http://localhost:1313/posts/luong-du-lieu/luongdichuyen_hu_9c297b9872da2a99.png 1024w
+          
+          
+            ,http://localhost:1313/posts/luong-du-lieu/luongdichuyen.png 1251w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích flowchart</strong>:</p>
+<ul>
+<li>Dữ liệu từ <strong>kho</strong> đi qua <strong>InputStream</strong> (ống hút).</li>
+<li>Thêm <strong>BufferedInputStream</strong> (xe tải) để nhanh, hoặc <strong>DataInputStream</strong> để hiểu dữ liệu.</li>
+<li>Sau xử lý, dữ liệu qua <strong>OutputStream</strong> (ống xả) ra <strong>cửa hàng</strong>.</li>
+<li>Các stream chồng lên nhau như bọc thêm lớp để tăng tính năng.</li>
+</ul>
+<hr>
+<h2 id="tóm-tắt-siêu-đơn-giản" class="relative group">Tóm Tắt Siêu Đơn Giản <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#t%c3%b3m-t%e1%ba%aft-si%c3%aau-%c4%91%c6%a1n-gi%e1%ba%a3n" aria-label="Anchor">#</a></span></h2><table>
+  <thead>
+      <tr>
+          <th>Loại Stream</th>
+          <th>Dùng Cho Gì?</th>
+          <th>Ví Dụ Đời Thường</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Byte Stream</td>
+          <td>Chép ảnh, video, không hiểu nội dung</td>
+          <td>Copy file &ldquo;cat.jpg&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Character Stream</td>
+          <td>Chép text, tự dịch chữ</td>
+          <td>Copy file &ldquo;note.txt&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Buffered Stream</td>
+          <td>Chở xe tải cho nhanh</td>
+          <td>Copy file lớn nhanh hơn</td>
+      </tr>
+      <tr>
+          <td>Data Stream</td>
+          <td>Ghi nhãn số, chữ để đúng</td>
+          <td>Lưu điểm số học sinh</td>
+      </tr>
+      <tr>
+          <td>InputStream</td>
+          <td>Ống hút chung cho byte</td>
+          <td>Đọc file ảnh</td>
+      </tr>
+      <tr>
+          <td>OutputStream</td>
+          <td>Ống xả chung cho byte</td>
+          <td>Ghi text ra file</td>
+      </tr>
+  </tbody>
+</table>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/posts/cau-lenh-dieu-kien/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Câu Lệnh Điều Kiện</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-14 00:00:00 &#43;0000 UTC">14 October 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="http://localhost:1313/posts/toan-tu/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Toán tử và so sánh chuỗi</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">15 October 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+<section class="contact-section-global">
+    <div class="contact-wrapper-global">
+        <h2 class="contact-title-global">Let me know what's on your mind</h2>
+        <form class="contact-form-global">
+            <div class="form-row-global">
+                <div>
+                    <label>First name *</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Last name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-group-global">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group-global">
+                <label>Leave us a message...</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-global">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="custom-footer-compact">
+    <div class="footer-inner">
+        <p class="footer-text">
+            © 2025 Triệu Xuân Dũng • 
+            Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>  
+            
+        </p>
+    </div>
+    
+    
+    <button id="scrollToTop" class="scroll-btn" aria-label="Scroll to top">↑</button>
+</footer>
+
+<style>
+ 
+
+.contact-section-global {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #FDF6F0;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contact-wrapper-global {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact-title-global {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: #1f2937;
+}
+
+.contact-form-global {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row-global {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-row-global label,
+.form-group-global label {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 0.4rem;
+    color: #4b5563;
+}
+
+.form-row-global input,
+.form-group-global input,
+.form-group-global textarea {
+    width: 100%;
+    padding: 0.625rem 0;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    background: transparent;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-row-global input:focus,
+.form-group-global input:focus,
+.form-group-global textarea:focus {
+    outline: none;
+    border-bottom-color: #667eea;
+}
+
+.form-group-global textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-submit-global {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-global:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+ 
+
+.custom-footer-compact {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-text a:hover {
+    opacity: 0.7;
+}
+
+ 
+.scroll-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #7c82f5 0%, #8654b3 100%);
+}
+
+ 
+
+@media (max-width: 768px) {
+    .contact-section-global {
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+    
+    .contact-wrapper-global {
+        padding: 0 1rem;
+    }
+    
+    .contact-title-global {
+        font-size: 1.5rem;
+    }
+    
+    .form-row-global {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .custom-footer-compact {
+        padding: 1.25rem 0;
+    }
+    
+    .footer-text {
+        font-size: 0.75rem;
+    }
+    
+    .scroll-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}
+
+ 
+
+.dark .contact-section-global {
+    background: var(--color-neutral-900);
+}
+
+.dark .contact-title-global {
+    color: var(--color-neutral-100);
+}
+
+.dark .form-row-global input,
+.dark .form-group-global input,
+.dark .form-group-global textarea {
+    color: var(--color-neutral-100);
+    border-bottom-color: var(--color-neutral-700);
+}
+
+.dark .form-row-global label,
+.dark .form-group-global label {
+    color: var(--color-neutral-400);
+}
+
+.dark .custom-footer-compact {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn:hover {
+    background: linear-gradient(135deg, #5b61d6 0%, #6b4bb0 100%);
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    
+    if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>
+    </div>
+  </body>
+</html>

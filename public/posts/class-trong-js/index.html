@@ -1,0 +1,1965 @@
+
+
+
+  
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Class Trong Js &middot; Blog của Triệu Xuân Dũng</title>
+    <meta name="title" content="Class Trong Js &middot; Blog của Triệu Xuân Dũng" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.f2be56d84f60f337db61170ceea852a7d7b84fd7e65eac5ea2c9490909441bd9.css"
+    integrity="sha256-8r5W2E9g8zfbYRcM7qhSp9e4T9fmXqxeoslJCQlEG9k="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/class-trong-js/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/class-trong-js/">
+  <meta property="og:site_name" content="Blog của Triệu Xuân Dũng">
+  <meta property="og:title" content="Class Trong Js">
+  <meta property="og:description" content="Developer &amp; Blogger">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Class Trong Js">
+  <meta name="twitter:description" content="Developer &amp; Blogger">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Class Trong Js",
+    "headline": "Class Trong Js",
+    
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/class-trong-js\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Triệu Xuân Dũng"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-15T00:00:00\u002b00:00",
+    "datePublished": "2025-10-15T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-10-15T00:00:00\u002b00:00",
+    
+    "keywords": ["javascript"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2864"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Trang Chủ",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/",
+       "name": "Lập Trình",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Class Trong Js",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Triệu Xuân Dũng" />
+  
+  
+    
+      <link href="https://mastodon.social/@yourusername" rel="me" />
+    
+      <link href="https://github.com/yourusername" rel="me" />
+    
+      <link href="https://linkedin.com/in/yourprofile" rel="me" />
+    
+      <link href="https://facebook.com/yourprofile" rel="me" />
+    
+      <link href="https://twitter.com/yourusername" rel="me" />
+    
+      <link href="mailto:your@email.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+<style>
+ 
+@media (max-width: 768px) {
+    .mobile-menu-wrapper {
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        pointer-events: none;
+    }
+    
+    .mobile-menu-wrapper > * {
+        pointer-events: auto;
+    }
+    
+    .mobile-nav-btn,
+    .mobile-search-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .mobile-nav-btn span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-nav-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .mobile-search-btn {
+        background: white;
+        border: 2px solid #667eea;
+    }
+    
+    .mobile-search-btn svg {
+        width: 24px;
+        height: 24px;
+        color: #667eea;
+    }
+    
+     
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        z-index: 1999;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        padding-top: 5rem;
+    }
+    
+    .mobile-sidebar.active {
+        left: 0;
+    }
+    
+    .mobile-sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        color: #374151;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+    }
+    
+    .mobile-sidebar a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-left-color: #667eea;
+        color: #667eea;
+    }
+    
+    .mobile-sidebar svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+     
+    .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(5px);
+        z-index: 2001;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+    
+    .mobile-search-overlay.active {
+        display: flex;
+    }
+    
+    .search-box {
+        background: white;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        position: relative;
+    }
+    
+    .search-box input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #667eea;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+    
+    .search-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #9ca3af;
+        cursor: pointer;
+    }
+    
+     
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1998;
+        display: none;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+    
+     
+    .dark .mobile-sidebar,
+    .dark .search-box {
+        background: #1f2937;
+    }
+    
+    .dark .mobile-sidebar a {
+        color: #d1d5db;
+    }
+    
+    .dark .search-box input {
+        background: #111827;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-wrapper,
+    .mobile-sidebar,
+    .mobile-search-overlay,
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.innerWidth > 768) return;
+    
+    
+    const menuHTML = `
+        <div class="mobile-menu-wrapper">
+            <button class="mobile-nav-btn" id="mobileNavBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <a href="/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                Trang chủ
+            </a>
+            <a href="/about/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Về tôi
+            </a>
+            <a href="/projects/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                Dự án
+            </a>
+            <a href="/posts/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Bài viết
+            </a>
+            <a href="/contact/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Liên hệ
+            </a>
+        </div>
+        
+        <div class="mobile-search-overlay" id="mobileSearchOverlay">
+            <div class="search-box">
+                <button class="search-close" id="searchClose">×</button>
+                <input type="text" placeholder="Tìm kiếm bài viết..." id="searchInput">
+            </div>
+        </div>
+        
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    `;
+    
+    document.body.insertAdjacentHTML('afterbegin', menuHTML);
+    
+    
+    const navBtn = document.getElementById('mobileNavBtn');
+    const searchBtn = document.getElementById('mobileSearchBtn');
+    const sidebar = document.getElementById('mobileSidebar');
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const overlay = document.getElementById('mobileOverlay');
+    const searchClose = document.getElementById('searchClose');
+    
+    
+    function toggleMenu() {
+        navBtn.classList.toggle('active');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    function toggleSearch() {
+        searchOverlay.classList.toggle('active');
+        document.body.style.overflow = searchOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    navBtn.addEventListener('click', toggleMenu);
+    searchBtn.addEventListener('click', toggleSearch);
+    overlay.addEventListener('click', toggleMenu);
+    searchClose.addEventListener('click', toggleSearch);
+    
+    
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Blog của Triệu Xuân Dũng</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/"
+                  title="Trang chủ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Trang chủ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title="Về tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Về tôi</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/projects/"
+                  title="Dự án của tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Dự án</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Bài viết</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/contact/"
+                  title="Liên hệ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Liên hệ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Class Trong Js
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">15 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">14 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Lập Trình</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="http://localhost:1313/tags/javascript/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Javascript</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-lớp-là-gì-định-nghĩa-cơ-bản-và-lịch-sử-ngắn-gọn">1. Lớp là gì? (Định nghĩa cơ bản và lịch sử ngắn gọn)</a>
+      <ul>
+        <li><a href="#11-so-sánh-với-đối-tượng-đơn-lẻ">1.1. So sánh với đối tượng đơn lẻ</a></li>
+        <li><a href="#12-lớp-trong-ngữ-cảnh-oop">1.2. Lớp trong ngữ cảnh OOP</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-tại-sao-sử-dụng-lớp-lợi-ích-chi-tiết">2. Tại sao sử dụng lớp? (Lợi ích chi tiết)</a>
+      <ul>
+        <li><a href="#21-ví-dụ-thực-tế-trong-ứng-dụng-webgame">2.1. Ví dụ thực tế trong ứng dụng web/game</a></li>
+        <li><a href="#22-bảng-so-sánh-không-lớp-vs-có-lớp">2.2. Bảng so sánh không lớp vs có lớp</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-khai-báo-lớp-cơ-bản">3. Khai báo lớp cơ bản</a>
+      <ul>
+        <li><a href="#31-cú-pháp-chi-tiết">3.1. Cú pháp chi tiết</a></li>
+        <li><a href="#32-hoisting-và-lưu-ý">3.2. Hoisting và lưu ý</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-constructor-hàm-tạo-chi-tiết">4. Constructor (hàm tạo) chi tiết</a>
+      <ul>
+        <li><a href="#41-vai-trò-và-cách-dùng">4.1. Vai trò và cách dùng</a></li>
+        <li><a href="#42-ví-dụ-với-tham-số-mặc-định">4.2. Ví dụ với tham số mặc định</a></li>
+        <li><a href="#43-lỗi-thường-gặp-trong-constructor">4.3. Lỗi thường gặp trong constructor</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-thuộc-tính-properties-trong-lớp">5. Thuộc tính (properties) trong lớp</a>
+      <ul>
+        <li><a href="#51-instance-properties">5.1. Instance properties</a></li>
+        <li><a href="#52-class-properties">5.2. Class properties</a></li>
+        <li><a href="#53-bảng-so-sánh-thuộc-tính-instance-vs-class">5.3. Bảng so sánh thuộc tính instance vs class</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-phương-thức-methods-trong-lớp">6. Phương thức (methods) trong lớp</a>
+      <ul>
+        <li><a href="#61-instance-methods">6.1. Instance methods</a></li>
+        <li><a href="#62-ví-dụ-minh-họa-với-nhiều-phương-thức">6.2. Ví dụ minh họa với nhiều phương thức</a></li>
+        <li><a href="#63-sử-dụng-this-chi-tiết">6.3. Sử dụng <code>this</code> chi tiết</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-kế-thừa-inheritance-với-extends-và-super">7. Kế thừa (inheritance) với <code>extends</code> và <code>super</code></a>
+      <ul>
+        <li><a href="#71-khái-niệm-kế-thừa">7.1. Khái niệm kế thừa</a></li>
+        <li><a href="#72-cách-dùng-extends">7.2. Cách dùng <code>extends</code></a></li>
+        <li><a href="#73-sử-dụng-super-cho-constructor-và-phương-thức">7.3. Sử dụng <code>super</code> cho constructor và phương thức</a></li>
+        <li><a href="#74-override-ghi-đè-phương-thức">7.4. Override (ghi đè) phương thức</a></li>
+        <li><a href="#75-ví-dụ-đa-cấp-kế-thừa">7.5. Ví dụ đa cấp kế thừa</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-static-methods-và-properties-tĩnh">8. Static methods và properties (tĩnh)</a>
+      <ul>
+        <li><a href="#81-định-nghĩa-và-vai-trò">8.1. Định nghĩa và vai trò</a></li>
+        <li><a href="#82-ví-dụ-static-methods">8.2. Ví dụ static methods</a></li>
+        <li><a href="#83-ví-dụ-static-properties">8.3. Ví dụ static properties</a></li>
+        <li><a href="#84-lỗi-thường-gặp-với-static">8.4. Lỗi thường gặp với static</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-private-fields-và-methods-riêng-tư">9. Private fields và methods (riêng tư)</a>
+      <ul>
+        <li><a href="#91-tại-sao-cần-private">9.1. Tại sao cần private?</a></li>
+        <li><a href="#92-cú-pháp-với-">9.2. Cú pháp với <code>#</code></a></li>
+        <li><a href="#93-private-methods">9.3. Private methods</a></li>
+        <li><a href="#94-so-sánh-với-convention-cũ-_underscore">9.4. So sánh với convention cũ (_underscore)</a></li>
+      </ul>
+    </li>
+    <li><a href="#10-getter-và-setter-truy-cập-kiểm-soát">10. Getter và Setter (truy cập kiểm soát)</a>
+      <ul>
+        <li><a href="#101-getter-lấy-giá-trị-an-toàn">10.1. Getter: Lấy giá trị an toàn</a></li>
+        <li><a href="#102-setter-đặt-giá-trị-với-validation">10.2. Setter: Đặt giá trị với validation</a></li>
+        <li><a href="#103-ví-dụ-kết-hợp-gettersetter-với-private">10.3. Ví dụ kết hợp getter/setter với private</a></li>
+        <li><a href="#104-lợi-ích-trong-thực-tế">10.4. Lợi ích trong thực tế</a></li>
+      </ul>
+    </li>
+    <li><a href="#11-so-sánh-với-phương-pháp-prototype-based-cũ">11. So sánh với phương pháp prototype-based (cũ)</a>
+      <ul>
+        <li><a href="#111-prototype-là-gì">11.1. Prototype là gì?</a></li>
+        <li><a href="#112-cách-viết-prototype-thủ-công">11.2. Cách viết prototype thủ công</a></li>
+        <li><a href="#113-bảng-so-sánh-class-vs-prototype">11.3. Bảng so sánh class vs prototype</a></li>
+        <li><a href="#114-class-hoạt-động-bên-dưới-như-thế-nào">11.4. Class hoạt động bên dưới như thế nào?</a></li>
+      </ul>
+    </li>
+    <li><a href="#12-các-khái-niệm-nâng-cao">12. Các khái niệm nâng cao</a>
+      <ul>
+        <li><a href="#121-computed-property-names">12.1. Computed property names</a></li>
+        <li><a href="#122-class-expressions">12.2. Class expressions</a></li>
+        <li><a href="#123-kiểm-tra-instanceof">12.3. Kiểm tra instanceof</a></li>
+      </ul>
+    </li>
+    <li><a href="#13-lỗi-thường-gặp-và-cách-tránh">13. Lỗi thường gặp và cách tránh</a>
+      <ul>
+        <li><a href="#131-lỗi-quên-new">13.1. Lỗi quên <code>new</code></a></li>
+        <li><a href="#132-lỗi-this-không-đúng-ngữ-cảnh">13.2. Lỗi <code>this</code> không đúng ngữ cảnh</a></li>
+        <li><a href="#133-vấn-đề-với-kế-thừa-sâu">13.3. Vấn đề với kế thừa sâu</a></li>
+      </ul>
+    </li>
+    <li><a href="#14-ứng-dụng-thực-tế-và-ví-dụ-lớn">14. Ứng dụng thực tế và ví dụ lớn</a>
+      <ul>
+        <li><a href="#141-xây-dựng-lớp-cho-game-đơn-giản">14.1. Xây dựng lớp cho game đơn giản</a></li>
+        <li><a href="#142-lớp-trong-ứng-dụng-web-form-validation">14.2. Lớp trong ứng dụng web (form validation)</a></li>
+      </ul>
+    </li>
+    <li><a href="#15-kết-luận-và-mẹo-sử-dụng">15. Kết luận và mẹo sử dụng</a></li>
+    <li><a href="#16-tài-liệu-tham-khảo">16. Tài liệu tham khảo</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>Lớp (class) trong JavaScript giống như một <strong>bản thiết kế xe hơi</strong> trong nhà máy: bạn vẽ chi tiết cách lắp ráp (cấu trúc), rồi sản xuất nhiều chiếc xe giống nhau (đối tượng), mỗi chiếc có thể tùy chỉnh (như màu sắc). Tôi sẽ giải thích như kể chuyện cho một người bạn chưa từng học lập trình, dùng nhiều hình ảnh đời thường, ví dụ code cụ thể, bảng so sánh, và flowchart để minh họa. Chúng ta sẽ đi chậm rãi, chia nhỏ thành nhiều phần con, để bạn nắm chắc từng khái niệm. JavaScript vốn dựa trên prototype (mẫu gốc), nhưng class là cách viết hiện đại, dễ hiểu hơn, giống lập trình hướng đối tượng (OOP) cổ điển.</p>
+<hr>
+<h2 id="1-lớp-là-gì-định-nghĩa-cơ-bản-và-lịch-sử-ngắn-gọn" class="relative group">1. Lớp là gì? (Định nghĩa cơ bản và lịch sử ngắn gọn) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-l%e1%bb%9bp-l%c3%a0-g%c3%ac-%c4%91%e1%bb%8bnh-ngh%c4%a9a-c%c6%a1-b%e1%ba%a3n-v%c3%a0-l%e1%bb%8bch-s%e1%bb%ad-ng%e1%ba%afn-g%e1%bb%8dn" aria-label="Anchor">#</a></span></h2><p>Lớp giống như một <strong>công thức làm bánh kem</strong> trong sách nấu ăn. Công thức chỉ dẫn nguyên liệu (thuộc tính) và cách làm (phương thức). Bạn dùng công thức để làm nhiều cái bánh (đối tượng), mỗi cái có thể thêm topping riêng (tùy chỉnh).</p>
+<p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/class-trong-js/minhhoalop_hu_c5490f61a653f00b.webp 330w,http://localhost:1313/posts/class-trong-js/minhhoalop_hu_43e1cae41a7bb1f2.webp 660w
+            
+              ,http://localhost:1313/posts/class-trong-js/minhhoalop_hu_b620ee62d6d8ce7a.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/class-trong-js/minhhoalop_hu_bab8b8190454a15e.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1536"
+        height="1024"
+        class="mx-auto my-0 rounded-md"
+        alt="alt text"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/class-trong-js/minhhoalop_hu_8027cafbe4401951.png" srcset="http://localhost:1313/posts/class-trong-js/minhhoalop_hu_29101780f33a9748.png 330w,http://localhost:1313/posts/class-trong-js/minhhoalop_hu_8027cafbe4401951.png 660w
+          
+            ,http://localhost:1313/posts/class-trong-js/minhhoalop_hu_f26c4d44281056f2.png 1024w
+          
+          
+            ,http://localhost:1313/posts/class-trong-js/minhhoalop_hu_fb31bd62253237d6.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Lớp là một <strong>mẫu thiết kế</strong> để tạo nhiều đối tượng có cấu trúc tương tự.</li>
+<li>Đối tượng tạo từ lớp gọi là <strong>instance</strong> (bản sao cụ thể).</li>
+<li>Lịch sử: Trước ES6 (2015), JS dùng prototype để mô phỏng lớp. Class là &ldquo;đường giả&rdquo; (syntactic sugar) để viết dễ hơn, nhưng bên dưới vẫn là prototype.</li>
+<li>Phương pháp dựa trên lớp: Tập trung vào lớp làm trung tâm, hỗ trợ kế thừa, đóng gói, đa hình (polymorphism).</li>
+</ul>
+<h3 id="11-so-sánh-với-đối-tượng-đơn-lẻ" class="relative group">1.1. So sánh với đối tượng đơn lẻ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#11-so-s%c3%a1nh-v%e1%bb%9bi-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-%c4%91%c6%a1n-l%e1%ba%bb" aria-label="Anchor">#</a></span></h3><p>Đối tượng đơn lẻ là một &ldquo;cái bánh làm tay&rdquo;, lớp là &ldquo;công thức cho nhiều bánh&rdquo;.</p>
+<p><strong>Ví dụ code</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Đối tượng đơn lẻ (không lớp)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">xe1</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mauSac</span><span class="o">:</span> <span class="s2">&#34;đỏ&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">chay</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Xe đỏ chạy!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Lớp (cho nhiều xe)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">class</span> <span class="nx">XeHoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">mauSac</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">mauSac</span> <span class="o">=</span> <span class="nx">mauSac</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">chay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Xe </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">mauSac</span><span class="si">}</span><span class="sb"> chạy!`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">xe2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XeHoi</span><span class="p">(</span><span class="s2">&#34;xanh&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">xe2</span><span class="p">.</span><span class="nx">chay</span><span class="p">();</span> <span class="c1">// In: Xe xanh chạy!
+</span></span></span></code></pre></div><h3 id="12-lớp-trong-ngữ-cảnh-oop" class="relative group">1.2. Lớp trong ngữ cảnh OOP <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12-l%e1%bb%9bp-trong-ng%e1%bb%af-c%e1%ba%a3nh-oop" aria-label="Anchor">#</a></span></h3><p>Trong OOP, lớp là nền tảng cho 4 trụ cột: đóng gói (encapsulation - ẩn dữ liệu), kế thừa (inheritance), đa hình (polymorphism - phương thức khác nhau), trừu tượng (abstraction - ẩn chi tiết).</p>
+<p><strong>Minh họa</strong>: Flowchart cơ bản lớp.</p>
+<pre tabindex="0"><code>[ Bản thiết kế: class XeHoi ]
+  |
+  |--&gt; Constructor: khởi tạo thuộc tính (mauSac)
+  |--&gt; Phương thức: chay() (hành vi)
+  |
+  v
+[ Instance: new XeHoi(&#34;đỏ&#34;) ] --&gt; { mauSac: &#34;đỏ&#34;, chay: function }
+</code></pre><hr>
+<h2 id="2-tại-sao-sử-dụng-lớp-lợi-ích-chi-tiết" class="relative group">2. Tại sao sử dụng lớp? (Lợi ích chi tiết) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-t%e1%ba%a1i-sao-s%e1%bb%ad-d%e1%bb%a5ng-l%e1%bb%9bp-l%e1%bb%a3i-%c3%adch-chi-ti%e1%ba%bft" aria-label="Anchor">#</a></span></h2><p>Thay vì lắp ráp xe thủ công mỗi lần (dễ lỗi, mất thời gian), bạn dùng bản thiết kế để sản xuất hàng loạt, dễ sửa (chỉ sửa thiết kế).</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li><strong>Tái sử dụng code</strong>: Tạo nhiều instance từ một lớp.</li>
+<li><strong>Dễ bảo trì</strong>: Sửa phương thức ở lớp, tất cả instance cập nhật.</li>
+<li><strong>Tổ chức tốt</strong>: Nhóm dữ liệu và hành vi liên quan.</li>
+<li><strong>Kế thừa</strong>: Mở rộng lớp mà không lặp code.</li>
+<li><strong>Đóng gói</strong>: Ẩn dữ liệu private, chỉ lộ phương thức.</li>
+</ul>
+<h3 id="21-ví-dụ-thực-tế-trong-ứng-dụng-webgame" class="relative group">2.1. Ví dụ thực tế trong ứng dụng web/game <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#21-v%c3%ad-d%e1%bb%a5-th%e1%bb%b1c-t%e1%ba%bf-trong-%e1%bb%a9ng-d%e1%bb%a5ng-webgame" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Web</strong>: Lớp &ldquo;User&rdquo; với thuộc tính email, password; phương thức login, logout.</li>
+<li><strong>Game</strong>: Lớp &ldquo;Enemy&rdquo; với thuộc tính máu, tốc độ; phương thức tấn công, di chuyển.</li>
+</ul>
+<p><strong>Ví dụ code (ứng dụng web)</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">User</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">email</span><span class="p">,</span> <span class="nx">password</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">email</span> <span class="o">=</span> <span class="nx">email</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">password</span> <span class="o">=</span> <span class="nx">password</span><span class="p">;</span> <span class="c1">// Private
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">login</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">email</span><span class="si">}</span><span class="sb"> đã đăng nhập.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">user1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="s2">&#34;teo@example.com&#34;</span><span class="p">,</span> <span class="s2">&#34;123456&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">user1</span><span class="p">.</span><span class="nx">login</span><span class="p">();</span> <span class="c1">// In: teo@example.com đã đăng nhập.
+</span></span></span></code></pre></div><h3 id="22-bảng-so-sánh-không-lớp-vs-có-lớp" class="relative group">2.2. Bảng so sánh không lớp vs có lớp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#22-b%e1%ba%a3ng-so-s%c3%a1nh-kh%c3%b4ng-l%e1%bb%9bp-vs-c%c3%b3-l%e1%bb%9bp" aria-label="Anchor">#</a></span></h3><table>
+  <thead>
+      <tr>
+          <th>Tiêu chí</th>
+          <th>Không lớp (object literal/prototype thủ công)</th>
+          <th>Có lớp (class syntax)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Tái sử dụng</td>
+          <td>Phải copy code thủ công</td>
+          <td>Tạo instance dễ dàng</td>
+      </tr>
+      <tr>
+          <td>Kế thừa</td>
+          <td>Cài đặt prototype phức tạp</td>
+          <td>Dùng extends đơn giản</td>
+      </tr>
+      <tr>
+          <td>Đọc code</td>
+          <td>Dài dòng, dễ rối</td>
+          <td>Ngắn gọn, rõ ràng</td>
+      </tr>
+      <tr>
+          <td>Bảo trì</td>
+          <td>Sửa nhiều chỗ</td>
+          <td>Sửa một chỗ (lớp)</td>
+      </tr>
+      <tr>
+          <td>Ví dụ</td>
+          <td>function + prototype</td>
+          <td>class + constructor</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="3-khai-báo-lớp-cơ-bản" class="relative group">3. Khai báo lớp cơ bản <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-khai-b%c3%a1o-l%e1%bb%9bp-c%c6%a1-b%e1%ba%a3n" aria-label="Anchor">#</a></span></h2><p>Viết bản thiết kế: bắt đầu bằng &ldquo;class TenLop { }&rdquo;, bên trong là chi tiết.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Tên lớp: Viết hoa chữ cái đầu (convention).</li>
+<li>Nội dung: Constructor, thuộc tính, phương thức.</li>
+<li>Khai báo: Có thể trong file riêng, export/import.</li>
+</ul>
+<h3 id="31-cú-pháp-chi-tiết" class="relative group">3.1. Cú pháp chi tiết <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#31-c%c3%ba-ph%c3%a1p-chi-ti%e1%ba%bft" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">TenLop</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Constructor
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/* Khởi tạo */</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Phương thức
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">tenPhuongThuc</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/* Hành vi */</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="32-hoisting-và-lưu-ý" class="relative group">3.2. Hoisting và lưu ý <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#32-hoisting-v%c3%a0-l%c6%b0u-%c3%bd" aria-label="Anchor">#</a></span></h3><p>Lớp không hoisted đầy đủ: phải khai báo trước khi dùng.
+<strong>Ví dụ lỗi</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HocSinh</span><span class="p">();</span> <span class="c1">// Lỗi: HocSinh chưa khai báo
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">class</span> <span class="nx">HocSinh</span> <span class="p">{}</span> <span class="c1">// phải khai báo class trước mới sử dụng
+</span></span></span></code></pre></div><hr>
+<h2 id="4-constructor-hàm-tạo-chi-tiết" class="relative group">4. Constructor (hàm tạo) chi tiết <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-constructor-h%c3%a0m-t%e1%ba%a1o-chi-ti%e1%ba%bft" aria-label="Anchor">#</a></span></h2><p>Constructor giống &ldquo;lắp khung xe&rdquo; đầu tiên trong nhà máy: đặt màu, động cơ ban đầu.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Chạy tự động khi <code>new</code>.</li>
+<li>Nhận tham số để tùy chỉnh instance.</li>
+<li>Không return (tự return instance).</li>
+</ul>
+<h3 id="41-vai-trò-và-cách-dùng" class="relative group">4.1. Vai trò và cách dùng <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#41-vai-tr%c3%b2-v%c3%a0-c%c3%a1ch-d%c3%b9ng" aria-label="Anchor">#</a></span></h3><p>Khởi tạo thuộc tính, kiểm tra dữ liệu.</p>
+<h3 id="42-ví-dụ-với-tham-số-mặc-định" class="relative group">4.2. Ví dụ với tham số mặc định <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#42-v%c3%ad-d%e1%bb%a5-v%e1%bb%9bi-tham-s%e1%bb%91-m%e1%ba%b7c-%c4%91%e1%bb%8bnh" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">XeHoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">mauSac</span> <span class="o">=</span> <span class="s2">&#34;trắng&#34;</span><span class="p">,</span> <span class="nx">tocDo</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">mauSac</span> <span class="o">=</span> <span class="nx">mauSac</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span> <span class="o">=</span> <span class="nx">tocDo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">xe</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XeHoi</span><span class="p">();</span> <span class="c1">// mauSac: trắng, tocDo: 100
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xe</span><span class="p">.</span><span class="nx">mauSac</span><span class="p">);</span> <span class="c1">// In: trắng
+</span></span></span></code></pre></div><h3 id="43-lỗi-thường-gặp-trong-constructor" class="relative group">4.3. Lỗi thường gặp trong constructor <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#43-l%e1%bb%97i-th%c6%b0%e1%bb%9dng-g%e1%ba%b7p-trong-constructor" aria-label="Anchor">#</a></span></h3><ul>
+<li>Quên <code>this</code>: <code>ten = ten</code> thay vì <code>this.ten = ten</code> (biến cục bộ).</li>
+<li>Không gọi <code>super()</code> trong lớp con.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">XeHoi</span> <span class="kr">extends</span> <span class="nx">Xe</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">,</span> <span class="nx">tocDo</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">);</span> <span class="c1">// Phải gọi constructor lớp cha bằng super()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span> <span class="o">=</span> <span class="nx">tocDo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">thongTin</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="sb">`Tên: </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb">, Màu: </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">mau</span><span class="si">}</span><span class="sb">, Tốc độ: </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span><span class="si">}</span><span class="sb"> km/h`</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>Cách tránh</strong>: Luôn dùng <code>this</code> cho thuộc tính instance.</p>
+<hr>
+<h2 id="5-thuộc-tính-properties-trong-lớp" class="relative group">5. Thuộc tính (properties) trong lớp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-thu%e1%bb%99c-t%c3%adnh-properties-trong-l%e1%bb%9bp" aria-label="Anchor">#</a></span></h2><p>Thuộc tính giống &ldquo;bộ phận xe&rdquo;: bánh xe (chung), màu sơn (riêng từng xe).</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Instance properties: Riêng từng instance, gán <strong><em>trong</em> constructor</strong>.</li>
+<li>Class properties: Chung cho lớp, gán <strong><em>ngoài</em> constructor</strong>.</li>
+</ul>
+<h3 id="51-instance-properties" class="relative group">5.1. Instance properties <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#51-instance-properties" aria-label="Anchor">#</a></span></h3><p>Gán với <code>this</code>.</p>
+<h3 id="52-class-properties" class="relative group">5.2. Class properties <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#52-class-properties" aria-label="Anchor">#</a></span></h3><p>Gán trực tiếp trong lớp (ES2022+).</p>
+<p><strong>Ví dụ code</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">XeHoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">soBanhXe</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">// Class property (chung)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">constructor</span><span class="p">(</span><span class="nx">mauSac</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">mauSac</span> <span class="o">=</span> <span class="nx">mauSac</span><span class="p">;</span> <span class="c1">// Instance property
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">xe1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XeHoi</span><span class="p">(</span><span class="s2">&#34;đỏ&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">xe2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XeHoi</span><span class="p">(</span><span class="s2">&#34;xanh&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xe1</span><span class="p">.</span><span class="nx">soBanhXe</span><span class="p">);</span> <span class="c1">// In: 4
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xe2</span><span class="p">.</span><span class="nx">soBanhXe</span><span class="p">);</span> <span class="c1">// In: 4
+</span></span></span></code></pre></div><h3 id="53-bảng-so-sánh-thuộc-tính-instance-vs-class" class="relative group">5.3. Bảng so sánh thuộc tính instance vs class <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#53-b%e1%ba%a3ng-so-s%c3%a1nh-thu%e1%bb%99c-t%c3%adnh-instance-vs-class" aria-label="Anchor">#</a></span></h3><table>
+  <thead>
+      <tr>
+          <th>Loại</th>
+          <th>Vị trí gán</th>
+          <th>Phạm vi</th>
+          <th>Ví dụ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Instance</td>
+          <td>Trong constructor</td>
+          <td>Riêng từng instance</td>
+          <td>this.mauSac</td>
+      </tr>
+      <tr>
+          <td>Class</td>
+          <td>Ngoài constructor</td>
+          <td>Chung lớp</td>
+          <td>soBanhXe = 4</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="6-phương-thức-methods-trong-lớp" class="relative group">6. Phương thức (methods) trong lớp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#6-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-methods-trong-l%e1%bb%9bp" aria-label="Anchor">#</a></span></h2><p>Phương thức giống &ldquo;nút bấm trên xe&rdquo;: nhấn ga để chạy.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Phương thức là hàm định nghĩa hành vi.</li>
+<li>Chia sẻ qua prototype (tiết kiệm bộ nhớ).</li>
+</ul>
+<h3 id="61-instance-methods" class="relative group">6.1. Instance methods <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#61-instance-methods" aria-label="Anchor">#</a></span></h3><p>Dùng <code>this</code> để truy cập thuộc tính.</p>
+<h3 id="62-ví-dụ-minh-họa-với-nhiều-phương-thức" class="relative group">6.2. Ví dụ minh họa với nhiều phương thức <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#62-v%c3%ad-d%e1%bb%a5-minh-h%e1%bb%8da-v%e1%bb%9bi-nhi%e1%bb%81u-ph%c6%b0%c6%a1ng-th%e1%bb%a9c" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">HocSinh</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">diem</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">ten</span> <span class="o">=</span> <span class="nx">ten</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">diem</span> <span class="o">=</span> <span class="nx">diem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">hocBai</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> đang học.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tinhTrungBinh</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">d</span> <span class="k">of</span> <span class="k">this</span><span class="p">.</span><span class="nx">diem</span><span class="p">)</span> <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">sum</span> <span class="o">/</span> <span class="k">this</span><span class="p">.</span><span class="nx">diem</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HocSinh</span><span class="p">(</span><span class="s2">&#34;Tèo&#34;</span><span class="p">,</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hs</span><span class="p">.</span><span class="nx">hocBai</span><span class="p">();</span> <span class="c1">// In: Tèo đang học.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hs</span><span class="p">.</span><span class="nx">tinhTrungBinh</span><span class="p">());</span> <span class="c1">// In: 8
+</span></span></span></code></pre></div><h3 id="63-sử-dụng-this-chi-tiết" class="relative group">6.3. Sử dụng <code>this</code> chi tiết <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#63-s%e1%bb%ad-d%e1%bb%a5ng-this-chi-ti%e1%ba%bft" aria-label="Anchor">#</a></span></h3><p><code>this</code> trỏ đến instance hiện tại. Mất <code>this</code> nếu dùng arrow function trong phương thức (tránh).</p>
+<hr>
+<h2 id="7-kế-thừa-inheritance-với-extends-và-super" class="relative group">7. Kế thừa (inheritance) với <code>extends</code> và <code>super</code> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#7-k%e1%ba%bf-th%e1%bb%aba-inheritance-v%e1%bb%9bi-extends-v%c3%a0-super" aria-label="Anchor">#</a></span></h2><p>Kế thừa giống xe điện (con) thừa hưởng khung xe từ xe hơi (cha), thêm pin điện.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Kế thừa: Lớp con dùng thuộc tính/phương thức của cha.</li>
+<li><code>extends</code>: Kết nối con với cha.</li>
+<li><code>super</code>: Gọi cha (constructor hoặc phương thức).</li>
+</ul>
+<h3 id="71-khái-niệm-kế-thừa" class="relative group">7.1. Khái niệm kế thừa <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#71-kh%c3%a1i-ni%e1%bb%87m-k%e1%ba%bf-th%e1%bb%aba" aria-label="Anchor">#</a></span></h3><p>Giảm lặp code, tạo hệ thống phân cấp.</p>
+<h3 id="72-cách-dùng-extends" class="relative group">7.2. Cách dùng <code>extends</code> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#72-c%c3%a1ch-d%c3%b9ng-extends" aria-label="Anchor">#</a></span></h3><p>class Con extends Cha { }</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">XeDien</span> <span class="kr">extends</span> <span class="nx">XeHoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">,</span> <span class="nx">pin</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">);</span> <span class="c1">// Gọi constructor lớp cha
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">pin</span> <span class="o">=</span> <span class="nx">pin</span><span class="p">;</span> <span class="c1">// Thuộc tính riêng của lớp con
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="73-sử-dụng-super-cho-constructor-và-phương-thức" class="relative group">7.3. Sử dụng <code>super</code> cho constructor và phương thức <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#73-s%e1%bb%ad-d%e1%bb%a5ng-super-cho-constructor-v%c3%a0-ph%c6%b0%c6%a1ng-th%e1%bb%a9c" aria-label="Anchor">#</a></span></h3><p><code>super()</code> phải gọi trước <code>this</code> trong con.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">,</span> <span class="nx">pin</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">);</span> <span class="c1">// Gọi constructor lớp cha
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">pin</span> <span class="o">=</span> <span class="nx">pin</span><span class="p">;</span> <span class="c1">// Thuộc tính riêng của lớp con
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span></code></pre></div><h3 id="74-override-ghi-đè-phương-thức" class="relative group">7.4. Override (ghi đè) phương thức <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#74-override-ghi-%c4%91%c3%a8-ph%c6%b0%c6%a1ng-th%e1%bb%a9c" aria-label="Anchor">#</a></span></h3><p>Con có thể thay đổi phương thức cha.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">XeHoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">ten</span> <span class="o">=</span> <span class="nx">ten</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span> <span class="o">=</span> <span class="nx">tocDo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">chay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> đang chạy ở tốc độ </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span><span class="si">}</span><span class="sb"> km/h.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">XeDien</span> <span class="kr">extends</span> <span class="nx">XeHoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">,</span> <span class="nx">pin</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">);</span> <span class="c1">// Gọi constructor lớp cha
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">this</span><span class="p">.</span><span class="nx">pin</span> <span class="o">=</span> <span class="nx">pin</span><span class="p">;</span> <span class="c1">// Thuộc tính riêng của lớp con
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Ghi đè (override) phương thức chay()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">chay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> chạy êm ái ở tốc độ </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span><span class="si">}</span><span class="sb"> km/h (điện, pin </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">pin</span><span class="si">}</span><span class="sb">%).`</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">sacPin</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> đang sạc pin...`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">pin</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="75-ví-dụ-đa-cấp-kế-thừa" class="relative group">7.5. Ví dụ đa cấp kế thừa <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#75-v%c3%ad-d%e1%bb%a5-%c4%91a-c%e1%ba%a5p-k%e1%ba%bf-th%e1%bb%aba" aria-label="Anchor">#</a></span></h3><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/class-trong-js/images/kethua_hu_c1ff3746fc8016b3.webp 330w,http://localhost:1313/posts/class-trong-js/images/kethua_hu_5faf32abd1252650.webp 660w
+            
+              
+                ,http://localhost:1313/posts/class-trong-js/images/kethua_hu_ba41e031e09aec1e.webp 697w
+              
+            
+            
+              
+                ,http://localhost:1313/posts/class-trong-js/images/kethua_hu_ba41e031e09aec1e.webp 697w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="697"
+        height="500"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 2"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/class-trong-js/images/kethua_hu_bafdf71debc7f708.png" srcset="http://localhost:1313/posts/class-trong-js/images/kethua_hu_a6b41ac961bba81.png 330w,http://localhost:1313/posts/class-trong-js/images/kethua_hu_bafdf71debc7f708.png 660w
+          
+            ,http://localhost:1313/posts/class-trong-js/images/kethua.png 697w
+          
+          
+            ,http://localhost:1313/posts/class-trong-js/images/kethua.png 697w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">DongVat</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">ten</span> <span class="o">=</span> <span class="nx">ten</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">diChuyen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> di chuyển.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Chim</span> <span class="kr">extends</span> <span class="nx">DongVat</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">bay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> bay.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">ChimSe</span> <span class="kr">extends</span> <span class="nx">Chim</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">diChuyen</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Override
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">super</span><span class="p">.</span><span class="nx">bay</span><span class="p">();</span> <span class="c1">// Gọi cha
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> bay thấp.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">se</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ChimSe</span><span class="p">(</span><span class="s2">&#34;Sẻ&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">se</span><span class="p">.</span><span class="nx">diChuyen</span><span class="p">();</span> <span class="c1">// In: Sẻ bay. Sẻ bay thấp.
+</span></span></span></code></pre></div><p><strong>Minh họa</strong>: Flowchart kế thừa.</p>
+<pre tabindex="0"><code>DongVat (cha)
+  |
+  |--&gt; Chim (con)
+        |
+        |--&gt; ChimSe (cháu)
+              |
+              v
+Override: diChuyen() --&gt; Gọi super.bay()
+</code></pre><hr>
+<h2 id="8-static-methods-và-properties-tĩnh" class="relative group">8. Static methods và properties (tĩnh) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#8-static-methods-v%c3%a0-properties-t%c4%a9nh" aria-label="Anchor">#</a></span></h2><p>Static giống &ldquo;bảng hướng dẫn&rdquo; ở nhà máy, dùng chung, không cần sản xuất xe mới.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Static thuộc lớp, không thuộc instance.</li>
+<li>Gọi: TenLop.tenStatic().</li>
+</ul>
+<h3 id="81-định-nghĩa-và-vai-trò" class="relative group">8.1. Định nghĩa và vai trò <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#81-%c4%91%e1%bb%8bnh-ngh%c4%a9a-v%c3%a0-vai-tr%c3%b2" aria-label="Anchor">#</a></span></h3><p>Dùng cho tiện ích chung, không phụ thuộc instance.</p>
+<h3 id="82-ví-dụ-static-methods" class="relative group">8.2. Ví dụ static methods <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#82-v%c3%ad-d%e1%bb%a5-static-methods" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">ToanHoc</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">static</span> <span class="nx">cong</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ToanHoc</span><span class="p">.</span><span class="nx">cong</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span> <span class="c1">// In: 8
+</span></span></span></code></pre></div><h3 id="83-ví-dụ-static-properties" class="relative group">8.3. Ví dụ static properties <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#83-v%c3%ad-d%e1%bb%a5-static-properties" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Dem</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">static</span> <span class="nx">soLan</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Dem</span><span class="p">.</span><span class="nx">soLan</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="nx">Dem</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="nx">Dem</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Dem</span><span class="p">.</span><span class="nx">soLan</span><span class="p">);</span> <span class="c1">// In: 2
+</span></span></span></code></pre></div><h3 id="84-lỗi-thường-gặp-với-static" class="relative group">8.4. Lỗi thường gặp với static <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#84-l%e1%bb%97i-th%c6%b0%e1%bb%9dng-g%e1%ba%b7p-v%e1%bb%9bi-static" aria-label="Anchor">#</a></span></h3><ul>
+<li>Gọi static từ instance: hs.staticMethod() - lỗi.</li>
+<li>Cách tránh: Luôn gọi từ tên lớp.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">HocSinh</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">ten</span> <span class="o">=</span> <span class="nx">ten</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">static</span> <span class="nx">chao</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Xin chào! Tôi là học sinh.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HocSinh</span><span class="p">(</span><span class="s2">&#34;Minh&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Sai: gọi static qua instance
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">hs</span><span class="p">.</span><span class="nx">chao</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Lỗi: TypeError: hs.chao is not a function
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//  Đúng: gọi static qua tên lớp
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">HocSinh</span><span class="p">.</span><span class="nx">chao</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// → Xin chào! Tôi là học sinh.
+</span></span></span></code></pre></div><hr>
+<h2 id="9-private-fields-và-methods-riêng-tư" class="relative group">9. Private fields và methods (riêng tư) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#9-private-fields-v%c3%a0-methods-ri%c3%aang-t%c6%b0" aria-label="Anchor">#</a></span></h2><p>Private giống &ldquo;két sắt&rdquo; trong nhà, chỉ chủ nhà mở được.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Private: Không truy cập từ ngoài lớp.</li>
+<li>Dùng <code>#</code> trước tên.</li>
+</ul>
+<h3 id="91-tại-sao-cần-private" class="relative group">9.1. Tại sao cần private? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#91-t%e1%ba%a1i-sao-c%e1%ba%a7n-private" aria-label="Anchor">#</a></span></h3><p>Bảo vệ dữ liệu, tránh sửa nhầm.</p>
+<h3 id="92-cú-pháp-với-" class="relative group">9.2. Cú pháp với <code>#</code> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#92-c%c3%ba-ph%c3%a1p-v%e1%bb%9bi-" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">TaiKhoan</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="err">#</span><span class="nx">soDu</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">nap</span><span class="p">(</span><span class="nx">soTien</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">soDu</span> <span class="o">+=</span> <span class="nx">soTien</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="93-private-methods" class="relative group">9.3. Private methods <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#93-private-methods" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">MayTinh</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="err">#</span><span class="nx">tinhBinhPhuong</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tinh</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">tinhBinhPhuong</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">mt</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MayTinh</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mt</span><span class="p">.</span><span class="nx">tinh</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span> <span class="c1">// In: 25
+</span></span></span><span class="line"><span class="cl"><span class="c1">// mt.#tinhBinhPhuong(5); // Lỗi
+</span></span></span></code></pre></div><h3 id="94-so-sánh-với-convention-cũ-_underscore" class="relative group">9.4. So sánh với convention cũ (_underscore) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#94-so-s%c3%a1nh-v%e1%bb%9bi-convention-c%c5%a9-_underscore" aria-label="Anchor">#</a></span></h3><ul>
+<li>Cũ: _soDu (không thật sự ẩn, chỉ convention).</li>
+<li>Mới: #soDu (thật sự ẩn, lỗi nếu truy cập).</li>
+</ul>
+<p><strong>Bảng so sánh</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Phương pháp</th>
+          <th>Mức độ ẩn</th>
+          <th>Cú pháp</th>
+          <th>Ví dụ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Convention</td>
+          <td>Không thật</td>
+          <td>_ten</td>
+          <td>_soDu = 0</td>
+      </tr>
+      <tr>
+          <td>Private</td>
+          <td>Thật</td>
+          <td>#ten</td>
+          <td>#soDu = 0</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="10-getter-và-setter-truy-cập-kiểm-soát" class="relative group">10. Getter và Setter (truy cập kiểm soát) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#10-getter-v%c3%a0-setter-truy-c%e1%ba%adp-ki%e1%bb%83m-so%c3%a1t" aria-label="Anchor">#</a></span></h2><p>Getter giống &ldquo;cửa kính&rdquo; xem đồ trong két sắt mà không mở. Setter giống &ldquo;khe nạp tiền&rdquo; với kiểm tra (chỉ nạp tiền thật).</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>Getter: Lấy giá trị như thuộc tính, nhưng chạy code (tính toán).</li>
+<li>Setter: Đặt giá trị với kiểm tra (validation).</li>
+</ul>
+<h3 id="101-getter-lấy-giá-trị-an-toàn" class="relative group">10.1. Getter: Lấy giá trị an toàn <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#101-getter-l%e1%ba%a5y-gi%c3%a1-tr%e1%bb%8b-an-to%c3%a0n" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">HinhTron</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">banKinh</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">banKinh</span> <span class="o">=</span> <span class="nx">banKinh</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">get</span> <span class="nx">dienTich</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">banKinh</span> <span class="o">**</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">ht</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HinhTron</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ht</span><span class="p">.</span><span class="nx">dienTich</span><span class="p">);</span> <span class="c1">// In: ~78.54 (không cần ())
+</span></span></span></code></pre></div><h3 id="102-setter-đặt-giá-trị-với-validation" class="relative group">10.2. Setter: Đặt giá trị với validation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#102-setter-%c4%91%e1%ba%b7t-gi%c3%a1-tr%e1%bb%8b-v%e1%bb%9bi-validation" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Nguoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">tuoi</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">_tuoi</span> <span class="o">=</span> <span class="nx">tuoi</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">set</span> <span class="nx">tuoi</span><span class="p">(</span><span class="nx">giaTri</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">giaTri</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">giaTri</span> <span class="o">&lt;=</span> <span class="mi">120</span><span class="p">)</span> <span class="k">this</span><span class="p">.</span><span class="nx">_tuoi</span> <span class="o">=</span> <span class="nx">giaTri</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Tuổi không hợp lệ!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">ng</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Nguoi</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">ng</span><span class="p">.</span><span class="nx">tuoi</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span> <span class="c1">// OK
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">ng</span><span class="p">.</span><span class="nx">tuoi</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span><span class="p">;</span> <span class="c1">// In: Tuổi không hợp lệ!
+</span></span></span></code></pre></div><h3 id="103-ví-dụ-kết-hợp-gettersetter-với-private" class="relative group">10.3. Ví dụ kết hợp getter/setter với private <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#103-v%c3%ad-d%e1%bb%a5-k%e1%ba%bft-h%e1%bb%a3p-gettersetter-v%e1%bb%9bi-private" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">NganHang</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="err">#</span><span class="nx">soDu</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">get</span> <span class="nx">soDu</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">soDu</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">set</span> <span class="nx">soDu</span><span class="p">(</span><span class="nx">soTien</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">soTien</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">soDu</span> <span class="o">=</span> <span class="nx">soTien</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">tk</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">NganHang</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">tk</span><span class="p">.</span><span class="nx">soDu</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tk</span><span class="p">.</span><span class="nx">soDu</span><span class="p">);</span> <span class="c1">// In: 1000
+</span></span></span></code></pre></div><h3 id="104-lợi-ích-trong-thực-tế" class="relative group">10.4. Lợi ích trong thực tế <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#104-l%e1%bb%a3i-%c3%adch-trong-th%e1%bb%b1c-t%e1%ba%bf" aria-label="Anchor">#</a></span></h3><ul>
+<li>Kiểm soát dữ liệu (validation).</li>
+<li>Tính toán lazy (chỉ tính khi cần).</li>
+</ul>
+<hr>
+<h2 id="11-so-sánh-với-phương-pháp-prototype-based-cũ" class="relative group">11. So sánh với phương pháp prototype-based (cũ) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#11-so-s%c3%a1nh-v%e1%bb%9bi-ph%c6%b0%c6%a1ng-ph%c3%a1p-prototype-based-c%c5%a9" aria-label="Anchor">#</a></span></h2><p>Prototype giống &ldquo;mẫu thủ công&rdquo; từ giấy, class giống &ldquo;mẫu in 3D&rdquo; hiện đại.</p>
+<p><strong>Giải thích đơn giản</strong>:</p>
+<ul>
+<li>JS là prototype-based: Mọi đối tượng có <strong>proto</strong> trỏ đến prototype.</li>
+<li>Class: Cách viết đẹp cho prototype, tự động thiết lập.</li>
+</ul>
+<h3 id="111-prototype-là-gì" class="relative group">11.1. Prototype là gì? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#111-prototype-l%c3%a0-g%c3%ac" aria-label="Anchor">#</a></span></h3><p>Bản mẫu chia sẻ phương thức.</p>
+<h3 id="112-cách-viết-prototype-thủ-công" class="relative group">11.2. Cách viết prototype thủ công <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#112-c%c3%a1ch-vi%e1%ba%bft-prototype-th%e1%bb%a7-c%c3%b4ng" aria-label="Anchor">#</a></span></h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Tạo hàm khởi tạo (constructor)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">XeHoi</span><span class="p">(</span><span class="nx">ten</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">ten</span> <span class="o">=</span> <span class="nx">ten</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Gắn phương thức vào prototype
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">XeHoi</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">chay</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> đang chạy...`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">xe1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XeHoi</span><span class="p">(</span><span class="s2">&#34;Toyota&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">xe2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XeHoi</span><span class="p">(</span><span class="s2">&#34;Honda&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">xe1</span><span class="p">.</span><span class="nx">chay</span><span class="p">();</span> <span class="c1">// → Toyota đang chạy...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">xe2</span><span class="p">.</span><span class="nx">chay</span><span class="p">();</span> <span class="c1">// → Honda đang chạy...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Kiểm tra nguyên mẫu
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">xe1</span><span class="p">)</span> <span class="o">===</span> <span class="nx">XeHoi</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span> <span class="c1">// true
+</span></span></span></code></pre></div><h3 id="113-bảng-so-sánh-class-vs-prototype" class="relative group">11.3. Bảng so sánh class vs prototype <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#113-b%e1%ba%a3ng-so-s%c3%a1nh-class-vs-prototype" aria-label="Anchor">#</a></span></h3><table>
+  <thead>
+      <tr>
+          <th>Tiêu chí</th>
+          <th>Prototype thủ công</th>
+          <th>Class syntax</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Cú pháp</td>
+          <td>Dài, phức tạp</td>
+          <td>Ngắn, dễ đọc</td>
+      </tr>
+      <tr>
+          <td>Kế thừa</td>
+          <td>Object.create</td>
+          <td>extends</td>
+      </tr>
+      <tr>
+          <td>Static</td>
+          <td>XeHoi.ten = &hellip;</td>
+          <td>static ten()</td>
+      </tr>
+      <tr>
+          <td>Private</td>
+          <td>Không hỗ trợ</td>
+          <td>#ten</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="114-class-hoạt-động-bên-dưới-như-thế-nào" class="relative group">11.4. Class hoạt động bên dưới như thế nào? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#114-class-ho%e1%ba%a1t-%c4%91%e1%bb%99ng-b%c3%aan-d%c6%b0%e1%bb%9bi-nh%c6%b0-th%e1%ba%bf-n%c3%a0o" aria-label="Anchor">#</a></span></h3><p>Class tự động gán phương thức vào prototype.
+<strong>Ví dụ</strong>: HocSinh.prototype.gioiThieu = function&hellip;</p>
+<hr>
+<h2 id="12-các-khái-niệm-nâng-cao" class="relative group">12. Các khái niệm nâng cao <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#12-c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-n%c3%a2ng-cao" aria-label="Anchor">#</a></span></h2><h3 id="121-computed-property-names" class="relative group">12.1. Computed property names <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#121-computed-property-names" aria-label="Anchor">#</a></span></h3><p>Tên thuộc tính động.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">prop</span> <span class="o">=</span> <span class="s2">&#34;ten&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Nguoi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">prop</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Tèo&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">ng</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Nguoi</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ng</span><span class="p">.</span><span class="nx">ten</span><span class="p">);</span> <span class="c1">// In: Tèo
+</span></span></span></code></pre></div><h3 id="122-class-expressions" class="relative group">12.2. Class expressions <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#122-class-expressions" aria-label="Anchor">#</a></span></h3><p>Gán lớp vào biến.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">Lop</span> <span class="o">=</span> <span class="kr">class</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hi&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">l</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lop</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">l</span><span class="p">.</span><span class="nx">sayHi</span><span class="p">();</span> <span class="c1">// In: Hi
+</span></span></span></code></pre></div><h3 id="123-kiểm-tra-instanceof" class="relative group">12.3. Kiểm tra instanceof <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#123-ki%e1%bb%83m-tra-instanceof" aria-label="Anchor">#</a></span></h3><p>Kiểm tra instance thuộc lớp nào.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">HocSinh</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HocSinh</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hs</span> <span class="k">instanceof</span> <span class="nx">HocSinh</span><span class="p">);</span> <span class="c1">// true
+</span></span></span></code></pre></div><hr>
+<h2 id="13-lỗi-thường-gặp-và-cách-tránh" class="relative group">13. Lỗi thường gặp và cách tránh <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#13-l%e1%bb%97i-th%c6%b0%e1%bb%9dng-g%e1%ba%b7p-v%c3%a0-c%c3%a1ch-tr%c3%a1nh" aria-label="Anchor">#</a></span></h2><p><strong>Hình ảnh đời thường</strong>: Lỗi giống như xây nhà quên móng, sụp đổ.</p>
+<h3 id="131-lỗi-quên-new" class="relative group">13.1. Lỗi quên <code>new</code> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#131-l%e1%bb%97i-qu%c3%aan-new" aria-label="Anchor">#</a></span></h3><p><code>HocSinh()</code> - lỗi, phải <code>new HocSinh()</code>.</p>
+<h3 id="132-lỗi-this-không-đúng-ngữ-cảnh" class="relative group">13.2. Lỗi <code>this</code> không đúng ngữ cảnh <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#132-l%e1%bb%97i-this-kh%c3%b4ng-%c4%91%c3%bang-ng%e1%bb%af-c%e1%ba%a3nh" aria-label="Anchor">#</a></span></h3><p>Trong callback, <code>this</code> mất. Cách tránh: Dùng arrow function hoặc bind.</p>
+<p><strong>Ví dụ</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Xe</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">mau</span> <span class="o">=</span> <span class="s2">&#34;đỏ&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">inMau</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">mau</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Xe</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">btn</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">click</span><span class="o">:</span> <span class="nx">x</span><span class="p">.</span><span class="nx">inMau</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="nx">btn</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span> <span class="c1">// undefined (mất this)
+</span></span></span></code></pre></div><p>Cách sửa: <code>click: () =&gt; console.log(this.mau)</code>.</p>
+<h3 id="133-vấn-đề-với-kế-thừa-sâu" class="relative group">13.3. Vấn đề với kế thừa sâu <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#133-v%e1%ba%a5n-%c4%91%e1%bb%81-v%e1%bb%9bi-k%e1%ba%bf-th%e1%bb%aba-s%c3%a2u" aria-label="Anchor">#</a></span></h3><p>Kế thừa nhiều lớp: khó debug. Cách tránh: Giới hạn 2-3 cấp, ưu tiên composition.</p>
+<hr>
+<h2 id="14-ứng-dụng-thực-tế-và-ví-dụ-lớn" class="relative group">14. Ứng dụng thực tế và ví dụ lớn <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#14-%e1%bb%a9ng-d%e1%bb%a5ng-th%e1%bb%b1c-t%e1%ba%bf-v%c3%a0-v%c3%ad-d%e1%bb%a5-l%e1%bb%9bn" aria-label="Anchor">#</a></span></h2><h3 id="141-xây-dựng-lớp-cho-game-đơn-giản" class="relative group">14.1. Xây dựng lớp cho game đơn giản <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#141-x%c3%a2y-d%e1%bb%b1ng-l%e1%bb%9bp-cho-game-%c4%91%c6%a1n-gi%e1%ba%a3n" aria-label="Anchor">#</a></span></h3><p>Lớp &ldquo;Player&rdquo; và &ldquo;Enemy&rdquo; kế thừa &ldquo;Character&rdquo;.</p>
+<p><strong>Ví dụ code đầy đủ</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Character</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">ten</span> <span class="o">=</span> <span class="nx">ten</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">mau</span> <span class="o">=</span> <span class="nx">mau</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tanCong</span><span class="p">(</span><span class="nx">damage</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">mau</span> <span class="o">-=</span> <span class="nx">damage</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> mất </span><span class="si">${</span><span class="nx">damage</span><span class="si">}</span><span class="sb"> máu, còn </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">mau</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Player</span> <span class="kr">extends</span> <span class="nx">Character</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">,</span> <span class="nx">vuKhi</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">vuKhi</span> <span class="o">=</span> <span class="nx">vuKhi</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">suDungVuKhi</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> dùng </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">vuKhi</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Enemy</span> <span class="kr">extends</span> <span class="nx">Character</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">,</span> <span class="nx">tocDo</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">super</span><span class="p">(</span><span class="nx">ten</span><span class="p">,</span> <span class="nx">mau</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span> <span class="o">=</span> <span class="nx">tocDo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">chay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">ten</span><span class="si">}</span><span class="sb"> chạy với tốc độ </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">tocDo</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Player</span><span class="p">(</span><span class="s2">&#34;Hero&#34;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&#34;kiếm&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">enemy</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Enemy</span><span class="p">(</span><span class="s2">&#34;Quái vật&#34;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">player</span><span class="p">.</span><span class="nx">suDungVuKhi</span><span class="p">();</span> <span class="c1">// In: Hero dùng kiếm
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">enemy</span><span class="p">.</span><span class="nx">tanCong</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span> <span class="c1">// In: Quái vật mất 30 máu, còn 20
+</span></span></span></code></pre></div><h3 id="142-lớp-trong-ứng-dụng-web-form-validation" class="relative group">14.2. Lớp trong ứng dụng web (form validation) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#142-l%e1%bb%9bp-trong-%e1%bb%a9ng-d%e1%bb%a5ng-web-form-validation" aria-label="Anchor">#</a></span></h3><p>Lớp &ldquo;FormValidator&rdquo; kiểm tra input.</p>
+<p><strong>Ví dụ code</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">FormValidator</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">constructor</span><span class="p">(</span><span class="nx">formId</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">formId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">validateEmail</span><span class="p">(</span><span class="nx">email</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sr">/\S+@\S+\.\S+/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">email</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">submit</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">email</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">email</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">validateEmail</span><span class="p">(</span><span class="nx">email</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Form hợp lệ!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Email không hợp lệ!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Giả sử HTML có &lt;form id=&#34;myForm&#34;&gt;&lt;input name=&#34;email&#34;&gt;&lt;/form&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">validator</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormValidator</span><span class="p">(</span><span class="s2">&#34;myForm&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">validator</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
+</span></span></code></pre></div><hr>
+<h2 id="15-kết-luận-và-mẹo-sử-dụng" class="relative group">15. Kết luận và mẹo sử dụng <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#15-k%e1%ba%bft-lu%e1%ba%adn-v%c3%a0-m%e1%ba%b9o-s%e1%bb%ad-d%e1%bb%a5ng" aria-label="Anchor">#</a></span></h2><ul>
+<li><strong>Tóm tắt</strong>: Lớp giúp xây dựng code có cấu trúc, dễ mở rộng với kế thừa, private, static, getter/setter.</li>
+<li><strong>Mẹo</strong>:
+<ul>
+<li>Bắt đầu bằng constructor đơn giản, thêm phương thức sau.</li>
+<li>Sử dụng ESLint để check lỗi <code>this</code>.</li>
+<li>Kết hợp với modules (export class) cho dự án lớn.</li>
+<li>Học thêm TypeScript để class mạnh mẽ hơn (type checking).</li>
+<li>Thực hành: Tạo lớp cho dự án cá nhân như todo list (lớp Task).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Flowchart chi tiết</strong>:</p>
+<pre tabindex="0"><code>[ Lớp Cha: DongVat ]
+  |--&gt; Constructor(ten) { this.ten = ten }
+  |--&gt; Phương thức: an() { ... }
+  |--&gt; Static: demDongVat() { ... }
+  |
+  v
+[ Kế thừa: class Cho extends DongVat ]
+  |--&gt; super(ten)
+  |--&gt; #giong (private)
+  |--&gt; Phương thức: sua() { ... }
+  |--&gt; Getter: getGiong() { return this.#giong }
+  |--&gt; Setter: setGiong(g) { this.#giong = g }
+  |
+  v
+[ Instance: new Cho(&#34;Buddy&#34;) ] --&gt; { ten: &#34;Buddy&#34;, #giong: ... }
+                                   |--&gt; Gọi: cho.sua()
+                                   |--&gt; Kiểm tra: cho instanceof DongVat (true)
+</code></pre><hr>
+<h2 id="16-tài-liệu-tham-khảo" class="relative group">16. Tài liệu tham khảo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#16-t%c3%a0i-li%e1%bb%87u-tham-kh%e1%ba%a3o" aria-label="Anchor">#</a></span></h2><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noreferrer">MDN Web Docs: Classes</a></li>
+<li><a href="https://javascript.info/class-inheritance" target="_blank" rel="noreferrer">JavaScript.info: Class Inheritance</a></li>
+<li><a href="https://eloquentjavascript.net/06_object.html" target="_blank" rel="noreferrer">Eloquent JavaScript: The Secret Life of Objects</a></li>
+<li><a href="https://www.typescriptlang.org/docs/handbook/classes.html" target="_blank" rel="noreferrer">TypeScript Handbook: Classes</a> (cho nâng cao)</li>
+</ul>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/posts/object-trong-js/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Hiểu Biết Đối Tượng Trong JavaScrip</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">15 October 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+<section class="contact-section-global">
+    <div class="contact-wrapper-global">
+        <h2 class="contact-title-global">Let me know what's on your mind</h2>
+        <form class="contact-form-global">
+            <div class="form-row-global">
+                <div>
+                    <label>First name *</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Last name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-group-global">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group-global">
+                <label>Leave us a message...</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-global">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="custom-footer-compact">
+    <div class="footer-inner">
+        <p class="footer-text">
+            © 2025 Triệu Xuân Dũng • 
+            Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>  
+            
+        </p>
+    </div>
+    
+    
+    <button id="scrollToTop" class="scroll-btn" aria-label="Scroll to top">↑</button>
+</footer>
+
+<style>
+ 
+
+.contact-section-global {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #FDF6F0;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contact-wrapper-global {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact-title-global {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: #1f2937;
+}
+
+.contact-form-global {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row-global {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-row-global label,
+.form-group-global label {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 0.4rem;
+    color: #4b5563;
+}
+
+.form-row-global input,
+.form-group-global input,
+.form-group-global textarea {
+    width: 100%;
+    padding: 0.625rem 0;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    background: transparent;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-row-global input:focus,
+.form-group-global input:focus,
+.form-group-global textarea:focus {
+    outline: none;
+    border-bottom-color: #667eea;
+}
+
+.form-group-global textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-submit-global {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-global:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+ 
+
+.custom-footer-compact {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-text a:hover {
+    opacity: 0.7;
+}
+
+ 
+.scroll-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #7c82f5 0%, #8654b3 100%);
+}
+
+ 
+
+@media (max-width: 768px) {
+    .contact-section-global {
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+    
+    .contact-wrapper-global {
+        padding: 0 1rem;
+    }
+    
+    .contact-title-global {
+        font-size: 1.5rem;
+    }
+    
+    .form-row-global {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .custom-footer-compact {
+        padding: 1.25rem 0;
+    }
+    
+    .footer-text {
+        font-size: 0.75rem;
+    }
+    
+    .scroll-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}
+
+ 
+
+.dark .contact-section-global {
+    background: var(--color-neutral-900);
+}
+
+.dark .contact-title-global {
+    color: var(--color-neutral-100);
+}
+
+.dark .form-row-global input,
+.dark .form-group-global input,
+.dark .form-group-global textarea {
+    color: var(--color-neutral-100);
+    border-bottom-color: var(--color-neutral-700);
+}
+
+.dark .form-row-global label,
+.dark .form-group-global label {
+    color: var(--color-neutral-400);
+}
+
+.dark .custom-footer-compact {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn:hover {
+    background: linear-gradient(135deg, #5b61d6 0%, #6b4bb0 100%);
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    
+    if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>
+    </div>
+  </body>
+</html>

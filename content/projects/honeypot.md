@@ -5,8 +5,7 @@ description: "Hệ thống phát hiện và phân tích tấn công mạng sử 
 tags: ["Python", "Cowrie", "Ubuntu", "Security", "Networking", "iptables", "SSH", "Honeypot", "Honeynet", "Network Security", "Cyber Security", "Penetration Testing", "Kali Linux", "Snort", "IDS"]
 categories: ["Security", "Dự Án", "An Ninh Mạng"]
 layout: "simple"
-feature: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop" 
-
+feature: "/images/projects/honeypot/anhnen.png"
 ---
 
 # 🍯 HoneyPot/HoneyNet System

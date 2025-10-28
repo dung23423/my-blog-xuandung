@@ -1,0 +1,1430 @@
+
+
+
+  
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Kiểu Dữ Liệu trong JavaScript &middot; Blog của Triệu Xuân Dũng</title>
+    <meta name="title" content="Kiểu Dữ Liệu trong JavaScript &middot; Blog của Triệu Xuân Dũng" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.f2be56d84f60f337db61170ceea852a7d7b84fd7e65eac5ea2c9490909441bd9.css"
+    integrity="sha256-8r5W2E9g8zfbYRcM7qhSp9e4T9fmXqxeoslJCQlEG9k="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/kieu-du-lieu-cua/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/kieu-du-lieu-cua/">
+  <meta property="og:site_name" content="Blog của Triệu Xuân Dũng">
+  <meta property="og:title" content="Kiểu Dữ Liệu trong JavaScript">
+  <meta property="og:description" content="Developer &amp; Blogger">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Kiểu Dữ Liệu">
+    <meta property="article:tag" content="Lập Trình Web">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kiểu Dữ Liệu trong JavaScript">
+  <meta name="twitter:description" content="Developer &amp; Blogger">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Kiểu Dữ Liệu trong JavaScript",
+    "headline": "Kiểu Dữ Liệu trong JavaScript",
+    
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/kieu-du-lieu-cua\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Triệu Xuân Dũng"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-15T00:00:00\u002b00:00",
+    "datePublished": "2025-10-15T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-10-15T00:00:00\u002b00:00",
+    
+    "keywords": ["JavaScript","Kiểu Dữ Liệu","Lập Trình Web"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "992"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Trang Chủ",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/",
+       "name": "Lập Trình",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Kiểu Dữ Liệu Trong Java Script",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Triệu Xuân Dũng" />
+  
+  
+    
+      <link href="https://mastodon.social/@yourusername" rel="me" />
+    
+      <link href="https://github.com/yourusername" rel="me" />
+    
+      <link href="https://linkedin.com/in/yourprofile" rel="me" />
+    
+      <link href="https://facebook.com/yourprofile" rel="me" />
+    
+      <link href="https://twitter.com/yourusername" rel="me" />
+    
+      <link href="mailto:your@email.com" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+<style>
+ 
+@media (max-width: 768px) {
+    .mobile-menu-wrapper {
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        pointer-events: none;
+    }
+    
+    .mobile-menu-wrapper > * {
+        pointer-events: auto;
+    }
+    
+    .mobile-nav-btn,
+    .mobile-search-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .mobile-nav-btn span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-nav-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-nav-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .mobile-search-btn {
+        background: white;
+        border: 2px solid #667eea;
+    }
+    
+    .mobile-search-btn svg {
+        width: 24px;
+        height: 24px;
+        color: #667eea;
+    }
+    
+     
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        z-index: 1999;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        padding-top: 5rem;
+    }
+    
+    .mobile-sidebar.active {
+        left: 0;
+    }
+    
+    .mobile-sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        color: #374151;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+    }
+    
+    .mobile-sidebar a:hover {
+        background: rgba(102, 126, 234, 0.1);
+        border-left-color: #667eea;
+        color: #667eea;
+    }
+    
+    .mobile-sidebar svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+     
+    .mobile-search-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(5px);
+        z-index: 2001;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+    
+    .mobile-search-overlay.active {
+        display: flex;
+    }
+    
+    .search-box {
+        background: white;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        position: relative;
+    }
+    
+    .search-box input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #667eea;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+    
+    .search-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #9ca3af;
+        cursor: pointer;
+    }
+    
+     
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1998;
+        display: none;
+    }
+    
+    .mobile-overlay.active {
+        display: block;
+    }
+    
+     
+    .dark .mobile-sidebar,
+    .dark .search-box {
+        background: #1f2937;
+    }
+    
+    .dark .mobile-sidebar a {
+        color: #d1d5db;
+    }
+    
+    .dark .search-box input {
+        background: #111827;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-wrapper,
+    .mobile-sidebar,
+    .mobile-search-overlay,
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.innerWidth > 768) return;
+    
+    
+    const menuHTML = `
+        <div class="mobile-menu-wrapper">
+            <button class="mobile-nav-btn" id="mobileNavBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <a href="/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                Trang chủ
+            </a>
+            <a href="/about/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                Về tôi
+            </a>
+            <a href="/projects/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                Dự án
+            </a>
+            <a href="/posts/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Bài viết
+            </a>
+            <a href="/contact/">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Liên hệ
+            </a>
+        </div>
+        
+        <div class="mobile-search-overlay" id="mobileSearchOverlay">
+            <div class="search-box">
+                <button class="search-close" id="searchClose">×</button>
+                <input type="text" placeholder="Tìm kiếm bài viết..." id="searchInput">
+            </div>
+        </div>
+        
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+    `;
+    
+    document.body.insertAdjacentHTML('afterbegin', menuHTML);
+    
+    
+    const navBtn = document.getElementById('mobileNavBtn');
+    const searchBtn = document.getElementById('mobileSearchBtn');
+    const sidebar = document.getElementById('mobileSidebar');
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const overlay = document.getElementById('mobileOverlay');
+    const searchClose = document.getElementById('searchClose');
+    
+    
+    function toggleMenu() {
+        navBtn.classList.toggle('active');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    function toggleSearch() {
+        searchOverlay.classList.toggle('active');
+        document.body.style.overflow = searchOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+    
+    
+    navBtn.addEventListener('click', toggleMenu);
+    searchBtn.addEventListener('click', toggleSearch);
+    overlay.addEventListener('click', toggleMenu);
+    searchClose.addEventListener('click', toggleSearch);
+    
+    
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});
+</script>
+
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Blog của Triệu Xuân Dũng</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/"
+                  title="Trang chủ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Trang chủ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title="Về tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Về tôi</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/projects/"
+                  title="Dự án của tôi"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Dự án</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Bài viết</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/contact/"
+                  title="Liên hệ"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Liên hệ</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Kiểu Dữ Liệu trong JavaScript
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">15 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Lập Trình</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="http://localhost:1313/tags/javascript/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Javascript</a
+            >
+          
+            <a
+              href="http://localhost:1313/tags/ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Kiểu Dữ Liệu</a
+            >
+          
+            <a
+              href="http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh-web/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Lập Trình Web</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-kiểu-dữ-liệu">A. Kiểu Dữ Liệu</a>
+      <ul>
+        <li><a href="#kiểu-nguyên-thủy-primitive-types">Kiểu Nguyên Thủy (Primitive Types)</a></li>
+        <li><a href="#kiểu-object">Kiểu Object</a></li>
+      </ul>
+    </li>
+    <li><a href="#b-number">B. Number</a>
+      <ul>
+        <li><a href="#1-tổng-quan">1. Tổng Quan</a></li>
+        <li><a href="#2-toán-tử">2. Toán Tử</a></li>
+        <li><a href="#3-giá-trị-đặc-biệt">3. Giá Trị Đặc Biệt</a></li>
+        <li><a href="#4-phương-thức-number">4. Phương Thức Number</a></li>
+        <li><a href="#5-thuộc-tính-number">5. Thuộc Tính Number</a></li>
+      </ul>
+    </li>
+    <li><a href="#c-boolean">C. Boolean</a>
+      <ul>
+        <li><a href="#1-tổng-quan-1">1. Tổng Quan</a></li>
+        <li><a href="#2-truthy--falsy">2. Truthy &amp; Falsy</a></li>
+        <li><a href="#3-thuộc-tính--phương-thức">3. Thuộc Tính &amp; Phương Thức</a></li>
+        <li><a href="#4-mẹo-boolean">4. Mẹo Boolean</a></li>
+      </ul>
+    </li>
+    <li><a href="#d-string">D. String</a>
+      <ul>
+        <li><a href="#1-tổng-quan-2">1. Tổng Quan</a></li>
+        <li><a href="#2-thuộc-tính--phương-thức">2. Thuộc Tính &amp; Phương Thức</a></li>
+      </ul>
+    </li>
+    <li><a href="#e-array-1">E. Array 1</a>
+      <ul>
+        <li><a href="#1-tổng-quan-3">1. Tổng Quan</a></li>
+        <li><a href="#2-array-và-object">2. Array và Object</a></li>
+        <li><a href="#3-thuộc-tính--phương-thức-1">3. Thuộc Tính &amp; Phương Thức</a></li>
+      </ul>
+    </li>
+    <li><a href="#f-array-2">F. Array 2</a>
+      <ul>
+        <li><a href="#1-phương-thức-2">1. Phương Thức 2</a></li>
+        <li><a href="#2-constructor-methods">2. Constructor Methods</a></li>
+        <li><a href="#3-sắp-xếp">3. Sắp Xếp</a></li>
+        <li><a href="#4-tìm-maxmin">4. Tìm Max/Min</a></li>
+      </ul>
+    </li>
+    <li><a href="#g-array-iteration-methods">G. Array Iteration Methods</a>
+      <ul>
+        <li><a href="#1-tổng-quan-4">1. Tổng Quan</a></li>
+        <li><a href="#2-phương-thức-lặp">2. Phương Thức Lặp</a></li>
+        <li><a href="#3-arrow-function">3. Arrow Function</a></li>
+      </ul>
+    </li>
+    <li><a href="#h-date">H. Date</a>
+      <ul>
+        <li><a href="#1-đối-tượng-date">1. Đối Tượng Date</a></li>
+        <li><a href="#2-định-dạng-date">2. Định Dạng Date</a></li>
+        <li><a href="#3-getset-methods">3. Get/Set Methods</a></li>
+        <li><a href="#4-thao-tác-date">4. Thao Tác Date</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="a-kiểu-dữ-liệu" class="relative group">A. Kiểu Dữ Liệu <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#a-ki%e1%bb%83u-d%e1%bb%af-li%e1%bb%87u" aria-label="Anchor">#</a></span></h2><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="http://localhost:1313/posts/kieu-du-lieu-cua/images/cac-kieu-du-lieu-trong-js-thuong-gap_hu_8e81b70428223dd.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="600"
+        height="446"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 1"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/kieu-du-lieu-cua/images/cac-kieu-du-lieu-trong-js-thuong-gap.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>Trong JavaScript, có 6 kiểu dữ liệu cơ bản:</p>
+<ul>
+<li><strong>Number</strong></li>
+<li><strong>Boolean</strong></li>
+<li><strong>String</strong></li>
+<li><strong>Null</strong></li>
+<li><strong>Undefined</strong></li>
+<li><strong>Object</strong></li>
+</ul>
+<p>Mặc dù JavaScript là ngôn ngữ weak type (kiểu yếu), không có nghĩa là nó không có khái niệm kiểu dữ liệu. JavaScript không yêu cầu chỉ định rõ ràng kiểu dữ liệu và có khả năng ép kiểu linh hoạt.</p>
+<h3 id="kiểu-nguyên-thủy-primitive-types" class="relative group">Kiểu Nguyên Thủy (Primitive Types) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ki%e1%bb%83u-nguy%c3%aan-th%e1%bb%a7y-primitive-types" aria-label="Anchor">#</a></span></h3><p>Năm kiểu đầu (Number, Boolean, String, Null, Undefined) được gọi là primitive types. Chúng chỉ chứa dữ liệu thuần túy, ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">z</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span></code></pre></div><p>Các kiểu primitive có thể sử dụng method và property như object nhờ cơ chế wrapper. Khi gọi method/property, JavaScript tạm thời biến đổi primitive thành object:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Number</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">z</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span></span></code></pre></div><p>Tuy nhiên, tránh sử dụng cách này vì nó gây rối, dài dòng và có thể dẫn đến lỗi so sánh (luôn trả về <code>false</code> do so sánh địa chỉ). Thay vào đó, dùng <code>valueOf()</code> để lấy giá trị primitive từ wrapper.</p>
+<h3 id="kiểu-object" class="relative group">Kiểu Object <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ki%e1%bb%83u-object" aria-label="Anchor">#</a></span></h3><p>Kiểu <code>object</code> chứa thuộc tính (property) và phương thức (method), được khởi tạo bằng <code>new Object()</code> hoặc cú pháp ngắn gọn <code>{}</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ten</span><span class="o">:</span> <span class="s2">&#34;Nguyen Van A&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tuoi</span><span class="o">:</span> <span class="mi">25</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Từ <code>object</code>, ta có các biến thể như mảng (array), function, Date, v.v.</p>
+<h2 id="b-number" class="relative group">B. Number <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b-number" aria-label="Anchor">#</a></span></h2><h3 id="1-tổng-quan" class="relative group">1. Tổng Quan <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-t%e1%bb%95ng-quan" aria-label="Anchor">#</a></span></h3><p><code>Number</code> dùng cho cả số nguyên và số thực, luôn có dấu (signed). Kiểu được xác định dựa trên giá trị gán:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">b</span> <span class="o">=</span> <span class="mf">2.5</span><span class="p">;</span> <span class="c1">// Nhiều biến cùng dòng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="mf">12e-3</span><span class="p">;</span> <span class="c1">// Dạng khoa học
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">;</span> <span class="c1">// Rút gọn 0.25
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">e</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// Viết nhiều dòng
+</span></span></span></code></pre></div><p>Số có thể viết dạng hexa (<code>0xff</code>) hoặc octal (<code>017</code>), nhưng tránh bắt đầu bằng 0 trừ khi hiểu rõ.</p>
+<h3 id="2-toán-tử" class="relative group">2. Toán Tử <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-to%c3%a1n-t%e1%bb%ad" aria-label="Anchor">#</a></span></h3><p>Toán tử trong JS giống các ngôn ngữ khác, từ ES6 có thêm <code>**</code> (lũy thừa). Phép cộng đặc biệt khi kết hợp number và string:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="s2">&#34;Hi &#34;</span> <span class="o">+</span> <span class="nx">x</span><span class="p">;</span> <span class="c1">// y = &#34;Hi 5&#34;
+</span></span></span></code></pre></div><p>Nhân chia giữa string số sẽ tự ép kiểu:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">s1</span> <span class="o">=</span> <span class="s2">&#34;2000&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">s2</span> <span class="o">=</span> <span class="s2">&#34;10&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">s1</span> <span class="o">/</span> <span class="nx">s2</span><span class="p">;</span> <span class="c1">// result = 200
+</span></span></span></code></pre></div><h3 id="3-giá-trị-đặc-biệt" class="relative group">3. Giá Trị Đặc Biệt <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-gi%c3%a1-tr%e1%bb%8b-%c4%91%e1%ba%b7c-bi%e1%bb%87t" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>NaN</strong>: Kết quả phép tính không hợp lệ (ví dụ: <code>100 / &quot;Apple&quot;</code>), kiểm tra bằng <code>isNaN()</code>.</li>
+<li><strong>Infinity</strong>: Kết quả quá lớn hoặc chia cho 0, kiểm tra bằng <code>isFinite()</code>.</li>
+</ul>
+<h3 id="4-phương-thức-number" class="relative group">4. Phương Thức Number <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-number" aria-label="Anchor">#</a></span></h3><p>Phương thức như <code>toString()</code> có thể gọi trực tiếp từ giá trị:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">x</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span> <span class="c1">// &#34;123&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">23</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span> <span class="c1">// &#34;123&#34;
+</span></span></span></code></pre></div><h3 id="5-thuộc-tính-number" class="relative group">5. Thuộc Tính Number <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-thu%e1%bb%99c-t%c3%adnh-number" aria-label="Anchor">#</a></span></h3><p>Truy cập qua <code>Number</code>, không qua biến:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_VALUE</span><span class="p">;</span>       <span class="c1">// Ok
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mf">123.</span><span class="nx">MAX_VALUE</span><span class="p">;</span>          <span class="c1">// Sai
+</span></span></span></code></pre></div><h2 id="c-boolean" class="relative group">C. Boolean <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c-boolean" aria-label="Anchor">#</a></span></h2><h3 id="1-tổng-quan-1" class="relative group">1. Tổng Quan <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-t%e1%bb%95ng-quan-1" aria-label="Anchor">#</a></span></h3><p><code>Boolean</code> lưu trữ <code>true</code> hoặc <code>false</code>, dùng trong điều kiện:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Đúng&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="2-truthy--falsy" class="relative group">2. Truthy &amp; Falsy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-truthy--falsy" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Falsy</strong>: <code>0</code>, <code>false</code>, <code>&quot;&quot;</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code>.</li>
+<li><strong>Truthy</strong>: Ngược lại, bao gồm <code>Infinity</code>, <code>-Infinity</code>.</li>
+<li>Ép kiểu: <code>!!x</code> biến thành <code>Boolean</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!!</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!!</span><span class="nx">y</span><span class="p">);</span> <span class="c1">// false
+</span></span></span></code></pre></div><h3 id="3-thuộc-tính--phương-thức" class="relative group">3. Thuộc Tính &amp; Phương Thức <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-thu%e1%bb%99c-t%c3%adnh--ph%c6%b0%c6%a1ng-th%e1%bb%a9c" aria-label="Anchor">#</a></span></h3><p>Chỉ có <code>toString()</code> và <code>valueOf()</code>.</p>
+<h3 id="4-mẹo-boolean" class="relative group">4. Mẹo Boolean <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-m%e1%ba%b9o-boolean" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Shorthand</strong>: <code>&lt;condition&gt; &amp;&amp; &lt;statement&gt;</code> thay cho <code>if</code>.</li>
+<li><strong>Default Value</strong>: <code>fileName = fileName || &quot;Noname.txt&quot;;</code> thay cho kiểm tra rỗng.</li>
+</ul>
+<h2 id="d-string" class="relative group">D. String <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#d-string" aria-label="Anchor">#</a></span></h2><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_7736b813e4ce62f3.webp 330w,http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_c6c463792fa4a3dc.webp 660w
+            
+              ,http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_c2efc031f25079d7.webp 1024w
+            
+            
+              ,http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_8962d72851cc771b.webp 1320w
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1920"
+        height="1080"
+        class="mx-auto my-0 rounded-md"
+        alt="Ảnh 2"
+        loading="lazy" decoding="async"
+        
+          src="http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_98a80e6b905be414.png" srcset="http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_c6fe196c904b3644.png 330w,http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_98a80e6b905be414.png 660w
+          
+            ,http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_47e340ba92e7b15.png 1024w
+          
+          
+            ,http://localhost:1313/posts/kieu-du-lieu-cua/images/String-to-Array-JS_hu_5efc35eb48926534.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h3 id="1-tổng-quan-2" class="relative group">1. Tổng Quan <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-t%e1%bb%95ng-quan-2" aria-label="Anchor">#</a></span></h3><p><code>String</code> lưu dữ liệu text, dùng nháy đơn hoặc kép:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">s1</span> <span class="o">=</span> <span class="s2">&#34;I&#39;m Vu&#34;</span><span class="p">;</span> <span class="c1">// Nháy kép
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">s2</span> <span class="o">=</span> <span class="s1">&#39;He said &#34;ABC&#34;&#39;</span><span class="p">;</span> <span class="c1">// Nháy đơn
+</span></span></span></code></pre></div><p>Truy cập ngoài phạm vi trả về <code>undefined</code>. Chuỗi là mảng ký tự, index từ 0.</p>
+<h3 id="2-thuộc-tính--phương-thức" class="relative group">2. Thuộc Tính &amp; Phương Thức <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-thu%e1%bb%99c-t%c3%adnh--ph%c6%b0%c6%a1ng-th%e1%bb%a9c" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Length</strong>: <code>s.length</code> (không dùng <code>()</code>).</li>
+<li><strong>Truy Cập Ký Tự</strong>: <code>s[0]</code>, <code>s.charAt(1)</code>, <code>s.charCodeAt(2)</code>.</li>
+<li><strong>Nối Chuỗi</strong>: <code>s1.concat(&quot; &quot;, s2)</code>.</li>
+<li><strong>Trim</strong>: <code>s.trim()</code> loại bỏ khoảng trắng.</li>
+<li><strong>Chuyển Hoa/Thường</strong>: <code>s.toUpperCase()</code>, <code>s.toLowerCase()</code>.</li>
+<li><strong>Tìm Vị Trí</strong>: <code>s.indexOf(&quot;nh&quot;)</code>, <code>s.lastIndexOf(&quot;nh&quot;)</code>, <code>s.search(/anh/i)</code>.</li>
+<li><strong>Trích Xuất</strong>: <code>s.substring(0, 3)</code>, <code>s.substr(4, 3)</code>, <code>s.slice(-3)</code>.</li>
+<li><strong>Thay Thế</strong>: <code>s.replace(&quot;anh&quot;, &quot;em&quot;)</code>.</li>
+<li><strong>Tách Chuỗi</strong>: <code>s.split(&quot; &quot;)</code>, <code>s.split(/ {1,}/)</code>.</li>
+</ul>
+<h2 id="e-array-1" class="relative group">E. Array 1 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#e-array-1" aria-label="Anchor">#</a></span></h2><h3 id="1-tổng-quan-3" class="relative group">1. Tổng Quan <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-t%e1%bb%95ng-quan-3" aria-label="Anchor">#</a></span></h3><p><code>Array</code> lưu nhiều giá trị, truy cập bằng index (từ 0):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">third_prime</span> <span class="o">=</span> <span class="nx">primes</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span> <span class="c1">// 5
+</span></span></span></code></pre></div><p>Array cho phép nhiều kiểu dữ liệu, không giới hạn số phần tử.</p>
+<h3 id="2-array-và-object" class="relative group">2. Array và Object <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-array-v%c3%a0-object" aria-label="Anchor">#</a></span></h3><p>Array là object, <code>typeof primes</code> trả về <code>object</code>. Có thể dùng constructor <code>new Array(2, 3, 5, 7)</code> nhưng nên dùng <code>[]</code>.</p>
+<h3 id="3-thuộc-tính--phương-thức-1" class="relative group">3. Thuộc Tính &amp; Phương Thức <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-thu%e1%bb%99c-t%c3%adnh--ph%c6%b0%c6%a1ng-th%e1%bb%a9c-1" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Length</strong>: <code>primes.length</code>.</li>
+<li><strong>Thêm/Phổ</strong>: <code>push()</code>, <code>unshift()</code>, <code>pop()</code>, <code>shift()</code>.</li>
+<li><strong>Xóa</strong>: <code>delete primes[2]</code>.</li>
+</ul>
+<h2 id="f-array-2" class="relative group">F. Array 2 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#f-array-2" aria-label="Anchor">#</a></span></h2><h3 id="1-phương-thức-2" class="relative group">1. Phương Thức 2 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-2" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Concat</strong>: <code>a.concat(b)</code>.</li>
+<li><strong>Splice</strong>: <code>primes.splice(2, 1, 5, 7)</code>.</li>
+<li><strong>Slice</strong>: <code>primes.slice(0, 4)</code>.</li>
+<li><strong>Join</strong>: <code>primes.join(&quot;, &quot;)</code>.</li>
+<li><strong>Find</strong>: <code>a.includes(2)</code>, <code>a.indexOf(2)</code>.</li>
+</ul>
+<h3 id="2-constructor-methods" class="relative group">2. Constructor Methods <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-constructor-methods" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>isArray</strong>: <code>Array.isArray(primes)</code>.</li>
+<li><strong>of</strong>: <code>Array.of(1, 2, 3)</code>.</li>
+<li><strong>from</strong>: <code>Array.from(a, x =&gt; x * 2)</code>.</li>
+</ul>
+<h3 id="3-sắp-xếp" class="relative group">3. Sắp Xếp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-s%e1%ba%afp-x%e1%ba%bfp" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Sort</strong>: <code>primes.sort((a, b) =&gt; a - b)</code>.</li>
+</ul>
+<h3 id="4-tìm-maxmin" class="relative group">4. Tìm Max/Min <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-t%c3%acm-maxmin" aria-label="Anchor">#</a></span></h3><ul>
+<li><code>Math.max.apply(null, primes)</code>.</li>
+</ul>
+<h2 id="g-array-iteration-methods" class="relative group">G. Array Iteration Methods <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#g-array-iteration-methods" aria-label="Anchor">#</a></span></h2><h3 id="1-tổng-quan-4" class="relative group">1. Tổng Quan <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-t%e1%bb%95ng-quan-4" aria-label="Anchor">#</a></span></h3><p>Phương thức lặp như <code>forEach()</code>, <code>map()</code>, <code>filter()</code>, v.v., dùng callback function.</p>
+<h3 id="2-phương-thức-lặp" class="relative group">2. Phương Thức Lặp <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-l%e1%ba%b7p" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>forEach</strong>: <code>a.forEach((value, index) =&gt; console.log(value))</code>.</li>
+<li><strong>Map</strong>: <code>b = a.map(x =&gt; x * 2)</code>.</li>
+<li><strong>Filter</strong>: <code>c = primes.filter(x =&gt; x &lt; 10)</code>.</li>
+<li><strong>Every/Some</strong>: <code>primes.every(x =&gt; x &gt; 0)</code>, <code>primes.some(x =&gt; x &gt; 10)</code>.</li>
+<li><strong>Find</strong>: <code>a.findIndex(x =&gt; x &gt; 10)</code>.</li>
+<li><strong>Reduce</strong>: <code>sum = a.reduce((prev, curr) =&gt; prev + curr)</code>.</li>
+</ul>
+<h3 id="3-arrow-function" class="relative group">3. Arrow Function <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-arrow-function" aria-label="Anchor">#</a></span></h3><p>Sử dụng <code>=&gt;</code> để viết ngắn gọn:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+</span></span></code></pre></div><h2 id="h-date" class="relative group">H. Date <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#h-date" aria-label="Anchor">#</a></span></h2><h3 id="1-đối-tượng-date" class="relative group">1. Đối Tượng Date <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-date" aria-label="Anchor">#</a></span></h3><p>Tạo <code>Date</code> với các cách:</p>
+<ul>
+<li><strong>Hiện Tại</strong>: <code>let current = new Date();</code></li>
+<li><strong>Tùy Chỉnh</strong>: <code>let birthday = new Date(2001, 7, 27);</code></li>
+<li><strong>Miliseconds</strong>: <code>let root = new Date(0);</code></li>
+<li><strong>Chuỗi</strong>: <code>let birthday = new Date(&quot;August 27, 2001&quot;);</code></li>
+</ul>
+<h3 id="2-định-dạng-date" class="relative group">2. Định Dạng Date <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-%c4%91%e1%bb%8bnh-d%e1%ba%a1ng-date" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>ISO</strong>: <code>2001-08-27</code>, <code>2001-08-27T06:30:00Z</code>.</li>
+<li><strong>Long Date</strong>: <code>August 27 2001</code>.</li>
+<li><strong>Short Date</strong>: <code>08/27/2001</code>.</li>
+</ul>
+<h3 id="3-getset-methods" class="relative group">3. Get/Set Methods <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-getset-methods" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Get</strong>: <code>d.getFullYear()</code>, <code>d.getMonth()</code>.</li>
+<li><strong>Set</strong>: <code>d.setMonth(7)</code>.</li>
+</ul>
+<h3 id="4-thao-tác-date" class="relative group">4. Thao Tác Date <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-thao-t%c3%a1c-date" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Hiển Thị</strong>: <code>d.toString()</code>.</li>
+<li><strong>Miliseconds</strong>: <code>Date.parse(&quot;August 27, 2001&quot;)</code>.</li>
+<li><strong>So Sánh</strong>: <code>d1.getTime() &gt; d2.getTime()</code>.</li>
+<li><strong>Cộng Ngày</strong>: <code>tomorrow.setDate(today.getDate() + 1)</code>.</li>
+</ul>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/posts/toan-tu/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Toán tử và so sánh chuỗi</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">15 October 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="http://localhost:1313/posts/object-trong-js/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Hiểu Biết Đối Tượng Trong JavaScrip</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-15 00:00:00 &#43;0000 UTC">15 October 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+<section class="contact-section-global">
+    <div class="contact-wrapper-global">
+        <h2 class="contact-title-global">Let me know what's on your mind</h2>
+        <form class="contact-form-global">
+            <div class="form-row-global">
+                <div>
+                    <label>First name *</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Last name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-group-global">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group-global">
+                <label>Leave us a message...</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-global">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="custom-footer-compact">
+    <div class="footer-inner">
+        <p class="footer-text">
+            © 2025 Triệu Xuân Dũng • 
+            Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>  
+            
+        </p>
+    </div>
+    
+    
+    <button id="scrollToTop" class="scroll-btn" aria-label="Scroll to top">↑</button>
+</footer>
+
+<style>
+ 
+
+.contact-section-global {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #FDF6F0;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contact-wrapper-global {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact-title-global {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: #1f2937;
+}
+
+.contact-form-global {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row-global {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-row-global label,
+.form-group-global label {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 0.4rem;
+    color: #4b5563;
+}
+
+.form-row-global input,
+.form-group-global input,
+.form-group-global textarea {
+    width: 100%;
+    padding: 0.625rem 0;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    background: transparent;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-row-global input:focus,
+.form-group-global input:focus,
+.form-group-global textarea:focus {
+    outline: none;
+    border-bottom-color: #667eea;
+}
+
+.form-group-global textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-submit-global {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-global:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+ 
+
+.custom-footer-compact {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-text a:hover {
+    opacity: 0.7;
+}
+
+ 
+.scroll-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #7c82f5 0%, #8654b3 100%);
+}
+
+ 
+
+@media (max-width: 768px) {
+    .contact-section-global {
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+    
+    .contact-wrapper-global {
+        padding: 0 1rem;
+    }
+    
+    .contact-title-global {
+        font-size: 1.5rem;
+    }
+    
+    .form-row-global {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .custom-footer-compact {
+        padding: 1.25rem 0;
+    }
+    
+    .footer-text {
+        font-size: 0.75rem;
+    }
+    
+    .scroll-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}
+
+ 
+
+.dark .contact-section-global {
+    background: var(--color-neutral-900);
+}
+
+.dark .contact-title-global {
+    color: var(--color-neutral-100);
+}
+
+.dark .form-row-global input,
+.dark .form-group-global input,
+.dark .form-group-global textarea {
+    color: var(--color-neutral-100);
+    border-bottom-color: var(--color-neutral-700);
+}
+
+.dark .form-row-global label,
+.dark .form-group-global label {
+    color: var(--color-neutral-400);
+}
+
+.dark .custom-footer-compact {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+}
+
+.dark .scroll-btn:hover {
+    background: linear-gradient(135deg, #5b61d6 0%, #6b4bb0 100%);
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    
+    if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>
+    </div>
+  </body>
+</html>

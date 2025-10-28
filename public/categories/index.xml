@@ -6,20 +6,13 @@
     <description>Recent content in Categories on Blog của Triệu Xuân Dũng</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Backend</title>
-      <link>http://localhost:1313/categories/backend/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/backend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Career</title>
-      <link>http://localhost:1313/categories/career/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/career/</guid>
+      <title>Lập Trình</title>
+      <link>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</guid>
       <description></description>
     </item>
     <item>
@@ -44,24 +37,10 @@
       <description></description>
     </item>
     <item>
-      <title>Kiểu Dữ Liệu</title>
-      <link>http://localhost:1313/categories/ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lập Trình Web</title>
-      <link>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh-web/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh-web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Spring Boot</title>
-      <link>http://localhost:1313/categories/spring-boot/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/spring-boot/</guid>
+      <title>Career</title>
+      <link>http://localhost:1313/categories/career/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/career/</guid>
       <description></description>
     </item>
     <item>

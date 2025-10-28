@@ -6,12 +6,12 @@
     <description>Recent content in Career on Blog của Triệu Xuân Dũng</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hành trình 4 tháng từ &#39;Hello World&#39; đến Spring Boot: Kinh nghiệm học Java của một sinh viên</title>
       <link>http://localhost:1313/posts/hoc-java-tu-zero-kinh-nghiem/</link>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/hoc-java-tu-zero-kinh-nghiem/</guid>
       <description>4 tháng, từ người chưa biết gì về Java đến có thể build REST API với Spring Boot. Đây là những gì tôi đã học được - và cả những sai lầm đáng tiếc.</description>
     </item>

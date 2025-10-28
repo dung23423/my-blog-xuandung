@@ -1,6 +1,6 @@
 ---
 title: "Hành trình 4 tháng từ 'Hello World' đến Spring Boot: Kinh nghiệm học Java của một sinh viên"
-date: 2025-10-14
+date: 2025-10-12
 draft: false
 tags: ["Java", "Học tập", "Kinh nghiệm", "Roadmap", "Beginner"]
 categories: ["Java", "Career"]
